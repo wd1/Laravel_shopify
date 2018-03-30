@@ -4,43 +4,69 @@
 @section('description', 'Resend the activation key')
 
 @section('content')
-	<div class="container">
-		<div class="card-container text-center">
-			<h1>Reset Password</h1>
-			<h2>Please provide your email address</h2>
-			@if (session('status'))
-				<div class="alert alert-success">
-					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-					{{ session('status') }}
+<div class="m-grid m-grid--hor m-grid--root m-page">
+		<div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--2 m-login-2--skin-2 m-login--signup" id="m_login" style="background-image: url({!! asset('components/assets/app/media/img//bg/bg-3.jpg') !!};">
+			<div class="m-grid__item m-grid__item--fluid	m-login__wrapper">
+				<div class="m-login__container">
+					<div class="m-login__logo">
+						<a href="#">
+							<img src="{!! asset('components/assets/app/media/img//logos/logo-1.png') !!}">
+						</a>
+						</div>
+					<div class="">
+						<div class="m-login__head">
+							<h3 class="m-login__title">
+								Forgotten Password ?
+							</h3>
+							<div class="m-login__desc">
+								Enter your email to reset your password:
+								@if (session('status'))
+									<div class="alert alert-success">
+										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+										{{ session('status') }}
+									</div>
+								@endif
+								@if ($errors->has('email'))
+									<div class="alert alert-danger fade in">
+										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+										{{ $errors->first('email') }}
+									</div>
+								@endif
+							</div>
+						</div>
+						<form class="m-login__form m-form"  method="POST" action="{{ url('/password/email') }}">
+							<div class="form-group m-form__group">
+								{{ csrf_field() }}
+								<input type="email" id="email" name="email" class="form-control m-input" placeholder="Email" value="{{ old('email') }}" required autofocus>
+								@if ($errors->has('email'))
+									<span class="help-block">
+										<strong>{{ $errors->first('email') }}</strong>
+									</span>
+								@endif
+							</div>
+							<div class="m-login__form-action">
+								<button id="m_login_forget_password_submit"  type="submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air  m-login__btn m-login__btn--primaryr">
+									Request
+								</button>
+								&nbsp;&nbsp;
+								<a href="{{ url('/login') }}" id="m_login_forget_password_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom m-login__btn">
+									Cancel
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="m-login__account" style="display:block;">
+						<span class="m-login__account-msg">
+							Don't have an account yet ?
+						</span>
+						&nbsp;&nbsp;
+						<a href="{{ url('/register') }}" id="m_login_signup" class="m-link m-link--light m-login__account-link">
+							Sign Up
+						</a>
+					</div>
 				</div>
-			@endif
-			@if ($errors->has('email'))
-				<div class="alert alert-danger fade in">
-					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-					{{ $errors->first('email') }}
-				</div>
-			@endif
+			</div>
 		</div>
-        <div class="card card-container">
-            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-            <img id="profile-img" class="profile-img-card" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" />
-            <p id="profile-name" class="profile-name-card"></p>
-            <form class="form-signin" method="POST" action="{{ url('/password/email') }}">
-                {{ csrf_field() }}
-                <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="{{ old('email') }}" required autofocus>
-				@if ($errors->has('email'))
-					<span class="help-block">
-						<strong>{{ $errors->first('email') }}</strong>
-					</span>
-				@endif
-
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Send Password Reset Link</button>
-            </form><!-- /form -->
-            <a href="{{ url('/username/reminder') }}" class="forgot-password">Forgot username?</a>
-        </div><!-- /card-container -->
-		<div class="card-container text-center">
-			<a href="{{ url('/register') }}" class="new-account">Create an account</a> or <a href="{{ url('/login') }}" class="new-account">Login</a>
-		</div>
-		
-    </div><!-- /container -->
+	</div>
+	
 @endsection

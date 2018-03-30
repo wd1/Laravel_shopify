@@ -4,6 +4,8 @@
 @section('description', 'Reset Your Password')
 
 @section('content')
+	
+	
 	<div class="container">
 		<div class="card-container text-center">
 			<h1>Reset Password</h1>

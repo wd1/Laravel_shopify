@@ -51,7 +51,7 @@
 									<!-- <a href="javascript:;" id="m_login_forget_password" class="m-link">
 										Forget Password ?
 									</a> -->
-									<a href="{{ url('/password/reset') }}" class="forgot-password">Forgot password?</a> or <a href="{{ url('/username/reminder') }}" class="forgot-password">Forgot username?</a>
+									<a href="{{ url('/password/reset') }}" class="forgot-password">Forgot password?</a>
 								</div>
 							</div>
 							<div class="m-login__form-action">

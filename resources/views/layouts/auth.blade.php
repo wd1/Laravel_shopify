@@ -31,8 +31,8 @@
 <body>
 
 	@yield('content')
-    <script src="components/assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
-    <script src="components/assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
+    <script src="{!! asset('components/assets/vendors/base/vendors.bundle.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('components/assets/demo/default/base/scripts.bundle.js') !!}" type="text/javascript"></script>
     <!--end::Base Scripts -->   
     <!--begin::Page Snippets -->
 </body>
