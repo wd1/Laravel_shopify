@@ -10,7 +10,6 @@ class PagesController extends Controller
 
     public function getHome()
     {
-
         return view('auth.login');
     }
 }
