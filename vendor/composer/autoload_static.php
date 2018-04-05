@@ -13,10 +13,10 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -54,6 +54,7 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         ),
         'R' => 
         array (
+            'RocketCode\\' => 11,
             'Ramsey\\Uuid\\' => 12,
         ),
         'P' => 
@@ -178,6 +179,10 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         'SuperClosure\\' => 
         array (
             0 => __DIR__ . '/..' . '/jeremeamia/SuperClosure/src',
+        ),
+        'RocketCode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rocket-code/shopify/src/RocketCode',
         ),
         'Ramsey\\Uuid\\' => 
         array (

@@ -1906,6 +1906,40 @@
         ]
     },
     {
+        "name": "rocket-code/shopify",
+        "version": "2.0.2",
+        "version_normalized": "2.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/joshrps/laravel-shopify-API-wrapper.git",
+            "reference": "adf4d5e01e248e7ed1be5245d8c2af52c454831c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/joshrps/laravel-shopify-API-wrapper/zipball/adf4d5e01e248e7ed1be5245d8c2af52c454831c",
+            "reference": "adf4d5e01e248e7ed1be5245d8c2af52c454831c",
+            "shasum": ""
+        },
+        "require": {
+            "laravel/framework": "~5.0"
+        },
+        "time": "2015-07-13T14:23:48+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "RocketCode\\": "src/RocketCode"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Rocket Code",
+                "email": "josh@rocketcode.io"
+            }
+        ]
+    },
+    {
         "name": "sebastian/code-unit-reverse-lookup",
         "version": "1.0.1",
         "version_normalized": "1.0.1.0",

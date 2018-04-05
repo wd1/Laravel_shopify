@@ -8,7 +8,7 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
-class LoginController extends Controller
+class InstallController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -47,34 +47,12 @@ class LoginController extends Controller
     {
         $this->middleware('guest', ['except' => 'logout']);
         $this->auth = $auth;
-        
-    }
-
-    public function login(Request $request)
-    {
-        
-
-        $username      = $request->get('username');
-        $password   = $request->get('password');
-        $remember   = $request->get('remember');
-
-        if ($this->auth->attempt([
-            'username'     => $username,
-            'password'  => $password,
-			'activated'  => 1,
-        ], $remember == 1 ? true : false)) {
-
-            return redirect()->route('admin.dashboard');
-
-        }
-        else {
-
-            return redirect()->back()
-                ->with('message','Incorrect username or password')
-                ->with('status', 'danger')
-                ->withInput();
-        }
-
+        $sh = \App::make('ShopifyAPI', ['API_KEY' => '1c06f823f80fe177c960e57f9424f04f', 'API_SECRET' => '954609206564ee424552f5849dc8c444', 'SHOP_DOMAIN' => 'nymbltest.myshopify.com', 'ACCESS_TOKEN' => '']);
+        $authorization_uri = $sh->installURL([
+            'permissions' => array('write_orders', 'write_products'),
+            'redirect' => 'http://nymbl.io/dashboard/'  // update this to where Shopify should redirect the user
+        ]);
+        echo sprintf('<a href=\'%s\'>Shopify Login</a>', $authorization_uri);
     }
 
 }

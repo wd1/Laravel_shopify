@@ -87,6 +87,7 @@ class RegisterController extends Controller
             'username' => $data['email'],
 			'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
+            'storename' => $data['storename'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'activated' => !config('settings.send_activation_email')  // if we do not send the activation email, then set this flag to 1 right away
