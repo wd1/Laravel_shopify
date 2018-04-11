@@ -11,7 +11,7 @@ class PagesController extends Controller
     public function getDashboard()
     {
         
-        return view('admin.pages.shopify_link');
+        return view('admin.pages.dashboard');
     }
 	
 	public function getBlank()
