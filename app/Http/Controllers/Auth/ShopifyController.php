@@ -12,7 +12,7 @@ class ShopifyController extends Controller
 {
     public function access(Request $request)
     {
-        $shop = 'Nymblstoretest.myshopify.com';
+        $shop = '';
 
         if(Session::has('access_token'))
         {
