@@ -20,6 +20,11 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 	Route::get('/blank', ['as' => 'admin.blank', 'uses' => 'PagesController@getBlank']);
 });
 
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/', 'Auth\ShopifyController@access');
+    Route::get('authCallback', 'Auth\ShopifyController@authCallback');
+});
+
 // auth routes setup
 Auth::routes();
 
@@ -32,16 +37,3 @@ Route::post('activation/resend', ['as' =>  'activation_key_resend.post', 'uses' 
 // username forgot_username
 Route::get('username/reminder', ['as' =>  'username_reminder', 'uses' => 'Auth\ForgotUsernameController@showForgotUsernameForm']);
 Route::post('username/reminder', ['as' =>  'username_reminder.post', 'uses' => 'Auth\ForgotUsernameController@sendUserameReminder']);
-Route::get('/show_products', function() { 
-    // Code put here will run when you navigate to /show_products 
-    // This creates an instance of the Shopify API wrapper and 
-    // authenticates our app. 
-    $shopify = App::make('ShopifyAPI', [ 
-        'API_KEY'       => '523993ed46a672f471f10a40859e8509', 
-        'API_SECRET'    => '1a1fe365c8e59d9f1ce47ed2637b9c7c', 
-        'SHOP_DOMAIN'   => 'pavlotest.myshopify.com', 
-        'ACCESS_TOKEN'  => '' 
-    ]); 
-
-    // Continue.. 
-}); 
