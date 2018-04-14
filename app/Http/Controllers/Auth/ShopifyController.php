@@ -19,7 +19,7 @@ class ShopifyController extends Controller
         {
             $shop = $request->session()->get('shop');
             $access_token = $request->session()->get('access_token');
-            $shopify = App::make('ShopifyAPI',[
+            $shopify = \App::make('ShopifyAPI',[
                 'API_KEY'     => '523993ed46a672f471f10a40859e8509',
                 'API_SECRET'  => '1a1fe365c8e59d9f1ce47ed2637b9c7c',
                 'SHOP_DOMAIN' =>$shop,
@@ -48,7 +48,7 @@ class ShopifyController extends Controller
     }
     public function doAuth($shop)
     {
-        $shopify = App::make('ShopifyAPI',[
+        $shopify = \App::make('ShopifyAPI',[
             'API_KEY'     => '523993ed46a672f471f10a40859e8509',
             'API_SECRET'  => '1a1fe365c8e59d9f1ce47ed2637b9c7c',
             'SHOP_DOMAIN' =>$shop,
@@ -69,7 +69,7 @@ class ShopifyController extends Controller
         if (isset($_GET['code']))
         {
             $shop = $_GET['shop'];
-            $shopify = App::make('ShopifyAPI',[
+            $shopify = \App::make('ShopifyAPI',[
                 'API_KEY'     => '523993ed46a672f471f10a40859e8509',
                 'API_SECRET'  => '1a1fe365c8e59d9f1ce47ed2637b9c7c',
                 'SHOP_DOMAIN' =>$shop,
