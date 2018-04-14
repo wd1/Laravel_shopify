@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
+use Session;
 
 class ShopifyController extends Controller
 {
@@ -41,7 +42,7 @@ class ShopifyController extends Controller
                 $shop = $_GET['shop'];
                 return $this->doAuth($shop);
             } else {
-                return view('welcome');
+                return view('auth.login');
             }
         }
     }
