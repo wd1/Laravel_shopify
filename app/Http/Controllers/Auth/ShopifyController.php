@@ -96,8 +96,8 @@ class ShopifyController extends Controller
             $shop->owner = $shopinfo->shop->shop_owner;
             $shop->save();
 
-            // return redirect('/');
-            return view('auth.login');
+            return redirect('/');
+            // return view('auth.login');
         }
     }
 }
