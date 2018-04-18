@@ -97,7 +97,7 @@ class ShopifyController extends Controller
             $shop->save();
 
             // return redirect('/');
-            return redirect()->route('admin.dashboard');
+            return view('auth.login');
         }
     }
 }
