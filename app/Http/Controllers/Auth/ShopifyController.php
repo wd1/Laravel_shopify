@@ -96,7 +96,7 @@ class ShopifyController extends Controller
             $shop->owner = $shopinfo->shop->shop_owner;
             $shop->save();
 
-            return redirect('/');
+            return redirect('../admin');
         }
     }
 }
