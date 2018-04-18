@@ -26,7 +26,7 @@
 									</div>
 								</div>
 								<form class="m-login__form m-form" method="POST" action="{{ url('/register') }}">
-									<div class="form-group m-form__group">
+									<!-- <div class="form-group m-form__group">
 										{{ csrf_field() }}
 										<input type="text" id="username" name="username" class="form-control m-input" placeholder="Username" value="{{ old('username') }}" style="display:none;">
 										@if ($errors->has('username'))
@@ -53,7 +53,7 @@
 									</div>
 									<div class="form-group m-form__group">
 										<input class="form-control m-input" type="text" placeholder="Store Name" name="storename">
-									</div>
+									</div> -->
 									<div class="form-group m-form__group">
 										<input type="email" id="email" name="email" class="form-control m-input" placeholder="Email address" value="{{ old('email') }}" required autofocus>
 										@if ($errors->has('email'))
@@ -130,7 +130,7 @@
 									@endif
 								</div>
 								<div class="form-group m-form__group">
-									<input type="password" id="password" name="password" class="form-control m-input m-login__form-input--last" placeholder="Password" required>
+									<input type="password" id="signin_password" name="password" class="form-control m-input m-login__form-input--last" placeholder="Password" required>
 									@if ($errors->has('password'))
 										<span class="help-block">
 											<strong>{{ $errors->first('password') }}</strong>
