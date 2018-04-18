@@ -33,8 +33,8 @@ class ShopifyController extends Controller
             {
                 $call = $e->getMessage();
             }
-            return redirect()->route('admin.dashboard');
-            // return view('admin.pages.dashboard');
+            // return redirect()->route('admin.dashboard');
+            return view('admin.pages.dashboard');
             // return view('shopify.index', compact('call'));
         } else {
             if (isset($_GET['shop']) && $_GET['shop'] !=null )
@@ -43,7 +43,7 @@ class ShopifyController extends Controller
                 $shop = $_GET['shop'];
                 return $this->doAuth($shop);
             } else {
-                return view('auth.register_login');
+                return view('auth.login');
             }
         }
     }

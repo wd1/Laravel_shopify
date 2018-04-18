@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/',         ['as' => 'front.home',   'uses' => 'Front\PagesController@getHome']);
+//Route::get('/',         ['as' => 'front.home',   'uses' => 'Front\PagesController@getHome']);
 
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth'], function()
