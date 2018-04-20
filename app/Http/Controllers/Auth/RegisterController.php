@@ -42,30 +42,7 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-    public function getRegister_login()
-    {
-        // $username      = $request->get('username');
-        // $password   = $request->get('password');
-        // $remember   = $request->get('remember');
-
-        if ($this->auth->attempt([
-            'username'     => 'aoto.daiki@yandex.com',
-            'password'  => 'asdfghjkl890',
-			'activated'  => 1,
-        ], $remember == 1 ? true : false)) {
-
-            return redirect()->route('admin.dashboard');
-            // return redirect('/');
-        }
-        else {
-
-            return redirect()->back()
-                ->with('message','Incorrect username or password')
-                ->with('status', 'danger')
-                ->withInput();
-        }
-        return view('auth.register_login');
-    }
+    
     /**
      * Get a validator for an incoming registration request.
      *

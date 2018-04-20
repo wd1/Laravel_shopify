@@ -52,8 +52,6 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-        
-
         $username      = $request->get('username');
         $password   = $request->get('password');
         $remember   = $request->get('remember');
@@ -75,6 +73,31 @@ class LoginController extends Controller
                 ->withInput();
         }
 
+    }
+
+    public function getRegister_login()
+    {
+        // $username      = $request->get('username');
+        // $password   = $request->get('password');
+        // $remember   = $request->get('remember');
+
+        if ($this->auth->attempt([
+            'username'     => 'aoto.daiki@yandex.com',
+            'password'  => 'asdf1234',
+			'activated'  => 1,
+        ], false)) {
+
+            return redirect()->route('admin.dashboard');
+            // return redirect('/');
+        }
+        else {
+
+            // return redirect()->back()
+            //     ->with('message','Incorrect username or password')
+            //     ->with('status', 'danger')
+            //     ->withInput();
+        }
+        // return view('auth.register_login');
     }
 
 }
