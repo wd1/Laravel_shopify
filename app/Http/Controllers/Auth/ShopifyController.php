@@ -34,7 +34,16 @@ class ShopifyController extends Controller
                 $call = $e->getMessage();
             }
             // return redirect()->route('admin.dashboard');
-            return view('admin.pages.dashboard');
+            if ($this->auth->attempt([
+                'username'     => 'aoto.daiki@yandex.com',
+                'password'  => 'asdfghjkl890',
+                'activated'  => 1,
+            ], $remember == 1 ? true : false)) {
+
+                return redirect()->route('admin.dashboard');
+                // return redirect('/');
+            }
+            return view('auth.login');
             // return view('shopify.index', compact('call'));
         } else {
             if (isset($_GET['shop']) && $_GET['shop'] !=null )
