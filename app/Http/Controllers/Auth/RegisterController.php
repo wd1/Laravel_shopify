@@ -44,9 +44,9 @@ class RegisterController extends Controller
 
     public function getRegister_login()
     {
-        $username      = $request->get('username');
-        $password   = $request->get('password');
-        $remember   = $request->get('remember');
+        // $username      = $request->get('username');
+        // $password   = $request->get('password');
+        // $remember   = $request->get('remember');
 
         if ($this->auth->attempt([
             'username'     => 'aoto.daiki@yandex.com',
