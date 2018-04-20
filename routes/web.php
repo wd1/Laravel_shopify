@@ -28,7 +28,7 @@ Route::group(['middleware' => ['web']], function () {
 // auth routes setup
 Auth::routes();
 
-// Route::get('register_login', ['as' => 'auth.register_login', 'uses' => 'Auth\LoginController@getRegister_login']);
+Route::get('register_login', ['as' => 'auth.register_login', 'uses' => 'Auth\LoginController@getRegister_login']);
 // registration activation routes
 Route::get('activation/key/{activation_key}', ['as' => 'activation_key', 'uses' => 'Auth\ActivationKeyController@activateKey']);
 Route::get('activation/resend', ['as' =>  'activation_key_resend', 'uses' => 'Auth\ActivationKeyController@showKeyResendForm']);

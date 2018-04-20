@@ -34,18 +34,18 @@ class ShopifyController extends Controller
                 $call = $e->getMessage();
             }
             // return redirect()->route('admin.dashboard');
-            if ($this->auth->attempt([
-                'username'     => 'aoto.daiki@yandex.com',
-                'password'  => 'asdf1234',
-                'activated'  => 1,
-            ], false)) {
+            // if ($this->auth->attempt([
+            //     'username'     => 'aoto.daiki@yandex.com',
+            //     'password'  => 'asdf1234',
+            //     'activated'  => 1,
+            // ], false)) {
 
                 return view('admin.pages.dashboard');
                 // return redirect('/');
-            } else {
+            // } else {
 
-                return view('auth.login');
-            }
+            //     return view('auth.login');
+            // }
             // return view('auth.login');
             // return view('shopify.index', compact('call'));
         } else {

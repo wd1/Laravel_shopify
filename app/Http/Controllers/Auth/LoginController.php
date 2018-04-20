@@ -87,7 +87,7 @@ class LoginController extends Controller
 			'activated'  => 1,
         ], false)) {
 
-            return redirect()->route('admin.dashboard');
+            // return redirect()->route('admin.dashboard');
             // return redirect('/');
         }
         else {
