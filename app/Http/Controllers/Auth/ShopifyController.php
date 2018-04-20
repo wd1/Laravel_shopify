@@ -40,7 +40,7 @@ class ShopifyController extends Controller
                 'activated'  => 1,
             ], false)) {
 
-                return redirect()->route('admin.dashboard');
+                return view('admin.pages.dashboard');
                 // return redirect('/');
             } else {
 
