@@ -42,6 +42,9 @@ class ShopifyController extends Controller
 
                 return redirect()->route('admin.dashboard');
                 // return redirect('/');
+            } else {
+
+                return view('auth.login');
             }
             // return view('auth.login');
             // return view('shopify.index', compact('call'));
