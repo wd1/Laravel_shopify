@@ -81,6 +81,8 @@
     <script src="{!! asset('assets/js/plugins/morris/morris.min.js') !!}"></script>
     <script src="{!! asset('assets/js/plugins/morris/morris-data.js') !!}"></script>
     -->
+    <script src="{!! asset('components/assets/vendors/base/vendors.bundle.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('components/assets/demo/default/base/scripts.bundle.js') !!}" type="text/javascript"></script>
     
     <!--end::Page Snippets -->   
     <!-- begin::Page Loader -->
