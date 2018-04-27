@@ -612,6 +612,16 @@
 													</div>
 												</div>
 											</li>
+											<li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
+												
+												<a href="{{ route('auth0login') }}" class="m-menu__link m-menu__toggle">
+													<span class="m-menu__item-here"></span>
+													<i class="m-menu__link-icon flaticon-stopwatch"></i>
+													<span class="m-menu__link-text">
+														Link Account
+													</span>
+												</a>
+											</li>
 										</ul>
 									</div>
 									<!-- END: Horizontal Menu -->
@@ -1473,75 +1483,43 @@
 							<div class="row">
 								<div class="col-xl-6">
 									<!--begin:: Widgets/Quick Stats-->
-									<div class="row m-row--full-height">
-										<div class="col-sm-12 col-md-12 col-lg-6">
-											<div class="m-portlet m-portlet--half-height m-portlet--border-bottom-brand ">
-												<div class="m-portlet__body">
-													<div class="m-widget26">
-														<div class="m-widget26__number">
-															570
-															<small>
-																All Sales
-															</small>
-														</div>
-														<div class="m-widget26__chart" style="height:90px; width: 220px;">
-															<canvas id="m_chart_quick_stats_1"></canvas>
-														</div>
-													</div>
+									<div class="m-portlet m-portlet--full-height m-portlet--fit ">
+										<div class="m-portlet__head">
+											<div class="m-portlet__head-caption">
+												<div class="m-portlet__head-title">
+													<h3 class="m-portlet__head-text">
+														Automated Mockups
+													</h3>
 												</div>
 											</div>
-											<div class="m--space-30"></div>
-											<div class="m-portlet m-portlet--half-height m-portlet--border-bottom-danger ">
-												<div class="m-portlet__body">
-													<div class="m-widget26">
-														<div class="m-widget26__number">
-															690
-															<small>
-																All Orders
-															</small>
-														</div>
-														<div class="m-widget26__chart" style="height:90px; width: 220px;">
-															<canvas id="m_chart_quick_stats_2"></canvas>
-														</div>
+											<div class="m-portlet__head-tools">
+												<ul class="nav nav-pills nav-pills--brand m-nav-pills--align-right m-nav-pills--btn-pill m-nav-pills--btn-sm" role="tablist">
+													<li class="nav-item m-tabs__item">
+														<a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_widget4_tab1_content" role="tab">
+															All Products
+														</a>
+													</li>
+													<li class="nav-item m-tabs__item">
+														<a class="nav-link m-tabs__link" data-toggle="tab" href="#m_widget4_tab2_content" role="tab">
+															Specific Products
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-group m-form__group row">
+											<label class="col-form-label col-lg-3 col-sm-12">File Type Validation</label>
+											<div class="col-lg-4 col-md-9 col-sm-12">
+												<div class="m-dropzone dropzone m-dropzone--success dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-three">
+													<div class="m-dropzone__msg dz-message needsclick">
+														<h3 class="m-dropzone__msg-title">Drop files here or click to upload.</h3>
+														<span class="m-dropzone__msg-desc">Only .png, .jpg, and .jpeg are allowed for upload</span>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-12 col-md-12 col-lg-6">
-											<div class="m-portlet m-portlet--half-height m-portlet--border-bottom-success ">
-												<div class="m-portlet__body">
-													<div class="m-widget26">
-														<div class="m-widget26__number">
-															230
-															<small>
-																All Transactions
-															</small>
-														</div>
-														<div class="m-widget26__chart" style="height:90px; width: 220px;">
-															<canvas id="m_chart_quick_stats_3"></canvas>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="m--space-30"></div>
-											<div class="m-portlet m-portlet--half-height m-portlet--border-bottom-accent ">
-												<div class="m-portlet__body">
-													<div class="m-widget26">
-														<div class="m-widget26__number">
-															470
-															<small>
-																All Comissions
-															</small>
-														</div>
-														<div class="m-widget26__chart" style="height:90px; width: 220px;">
-															<canvas id="m_chart_quick_stats_4"></canvas>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										<!--end:: Widgets/Quick Stats-->
 									</div>
-									<!--end:: Widgets/Quick Stats-->
 								</div>
 								<div class="col-xl-6">
 									<!--begin:: Widgets/Finance Summary-->

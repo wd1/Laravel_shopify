@@ -113,4 +113,40 @@ class ShopifyController extends Controller
             // return view('auth.login');
         }
     }
+
+    public function linkShop()
+    {
+            //https://zacshopify.auth0.com/authorize?client_id=39N7cl60QG2JNHuPNh64kZXlLWFm7Cp9&response_type=code&connection=shopify&prompt=consent&redirect_uri=https://manage.auth0.com/tester/callback?connection=shopify&scope=openid%20profile
+            $shop = 'demostore1-2.myshopify.com';
+            $shopify = \App::make('ShopifyAPI',[
+                'API_KEY'     => '523993ed46a672f471f10a40859e8509',
+                'API_SECRET'  => '1a1fe365c8e59d9f1ce47ed2637b9c7c',
+                'SHOP_DOMAIN' =>$shop,
+                'ACCESS_TOKEN'=>''
+            ]);
+
+            $access_token = $shopify->getAccessToken('aaa');
+            session(['shop' => $shop, 'access_token' => $accessToken]);
+
+            try
+            {
+                $shopinfo = $shopify->call(['URL' => 'shop.json', 'METHOD' => 'GET']);
+            }
+            catch (Exception $e)
+            {
+                $shopinfo = $e->getMessage();
+            }
+
+            $shop = Shop::firstOrNev(['name' => $shop]);
+            $shop->name = Session::get('shop');
+            $shop->access_token = $accessToken;
+            $shop->shop_name = $shopinfo->shop->name;
+            $shop->email = $shopinfo->shop->email;
+            $shop->owner = $shopinfo->shop->shop_owner;
+            $shop->save();
+
+            return redirect('/');
+
+       
+    }
 }

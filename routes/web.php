@@ -23,11 +23,16 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'Auth\ShopifyController@access');
     Route::get('authCallback', 'Auth\ShopifyController@authCallback');
+    Route::get('linkShop', 'Auth\ShopifyController@linkShop');
 });
 
 // auth routes setup
 Auth::routes();
 
+Route::get('/auth0login', 'Auth\Auth0IndexController@login' )->name( 'auth0login' );
+Route::get('/auth0logout', 'Auth\Auth0IndexController@logout' )->name( 'auth0logout' )->middleware('auth');
+
+Route::get( '/auth0/callback', '\Auth0\Login\Auth0Controller@callback' )->name( 'auth0-callback' );
 Route::get('register_login', ['as' => 'auth.register_login', 'uses' => 'Auth\LoginController@getRegister_login']);
 // registration activation routes
 Route::get('activation/key/{activation_key}', ['as' => 'activation_key', 'uses' => 'Auth\ActivationKeyController@activateKey']);
