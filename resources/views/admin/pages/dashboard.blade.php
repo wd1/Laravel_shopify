@@ -357,7 +357,7 @@
 													<span class="m-menu__item-here"></span>
 													<i class="m-menu__link-icon flaticon-stopwatch"></i>
 													<span class="m-menu__link-text">
-														Orders
+														Library
 													</span>
 													<i class="m-menu__hor-arrow la la-angle-down"></i>
 													<i class="m-menu__ver-arrow la la-angle-right"></i>
@@ -1464,17 +1464,7 @@
 										Dashboard
 									</h3>
 								</div>
-								<div>
-									<span class="m-subheader__daterange" id="m_dashboard_daterangepicker">
-										<span class="m-subheader__daterange-label">
-											<span class="m-subheader__daterange-title"></span>
-											<span class="m-subheader__daterange-date m--font-brand"></span>
-										</span>
-										<a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
-											<i class="la la-angle-down"></i>
-										</a>
-									</span>
-								</div>
+								
 							</div>
 						</div>
 						<!-- END: Subheader -->
@@ -1488,7 +1478,7 @@
 											<div class="m-portlet__head-caption">
 												<div class="m-portlet__head-title">
 													<h3 class="m-portlet__head-text">
-														Automated Mockups
+														Create Products
 													</h3>
 												</div>
 											</div>
@@ -1512,8 +1502,9 @@
 											<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 40px;">
 												<div style="padding: 100px;" class="m-dropzone dropzone m-dropzone--success dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-three">
 													<div class="m-dropzone__msg dz-message needsclick">
-														<h3 class="m-dropzone__msg-title">Drop files here or click to upload.</h3>
-														<span class="m-dropzone__msg-desc">Only .png, .jpg, and .jpeg are allowed for upload</span>
+														<h3 class="m-dropzone__msg-title">Drop design here or click to upload.</h3>
+														<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 
+Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 													</div>
 												</div>
 											</div>
