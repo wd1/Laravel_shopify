@@ -41,7 +41,7 @@
 										<span></span>
 									</a>
 									<!-- END -->
-			<!-- BEGIN: Topbar Toggler -->
+									<!-- BEGIN: Topbar Toggler -->
 									<a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon">
 										<i class="flaticon-more"></i>
 									</a>
@@ -946,7 +946,7 @@
 										<li class="m-nav__item m-dropdown m-dropdown--medium m-dropdown--arrow  m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" data-dropdown-toggle="click">
 											<a href="#" class="m-nav__link m-dropdown__toggle">
 												<span class="m-topbar__username m--hidden-mobile">
-													Mark
+													{{ Auth::user()->first_name }}
 												</span>
 												<span class="m-topbar__userpic">
 													<img src="assets/css/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt=""/>
@@ -967,10 +967,10 @@
 															</div>
 															<div class="m-card-user__details">
 																<span class="m-card-user__name m--font-weight-500">
-																	Mark Andre
+																	{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
 																</span>
 																<a href="" class="m-card-user__email m--font-weight-300 m-link">
-																	mark.andre@gmail.com
+																	{{ Auth::user()->email }}
 																</a>
 															</div>
 														</div>
@@ -1509,7 +1509,7 @@
 										</div>
 										<div class="form-group m-form__group row">
 											
-											<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 40px;">
 												<div style="padding: 100px;" class="m-dropzone dropzone m-dropzone--success dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-three">
 													<div class="m-dropzone__msg dz-message needsclick">
 														<h3 class="m-dropzone__msg-title">Drop files here or click to upload.</h3>
@@ -1550,7 +1550,7 @@
 										<div class="m-portlet__body">
 											<div class="tab-content">
 												<div class="tab-pane active">
-													<div class="m-widget12 m-widget12--chart-bottom m--margin-top-10" style="min-height: 450px">
+													<div class="m-widget12 m-widget12--chart-bottom m--margin-top-10" style="">
 														<div class="m-widget12__item">
 															<span class="m-widget12__text1">
 																Annual Companies Taxes EMS
