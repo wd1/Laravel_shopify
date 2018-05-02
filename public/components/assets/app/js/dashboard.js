@@ -1392,9 +1392,6 @@ var Dashboard = function() {
                     visible: 'lg'
                 }
             }, {
-                field: "ShipDate",
-                title: "Ship Date"
-            }, {
                 field: "Status",
                 title: "Status",
                 width: 100,
@@ -1432,6 +1429,9 @@ var Dashboard = function() {
                     };
                     return '<span class="m-badge ' + status[row.Status].class + ' m-badge--wide">' + status[row.Status].title + '</span>';
                 }
+            }, {
+                field: "ShipDate",
+                title: "Ship Date"
             }, {
                 field: "Type",
                 title: "Type",
