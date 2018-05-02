@@ -10,7 +10,7 @@ class PagesController extends Controller
 
     public function getHome()
     {
-        return redirect("/");
+        return redirect("/login");
         // return view('admin.pages.shopify_link');
     }
 }

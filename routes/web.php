@@ -11,17 +11,17 @@
 |
 */
 
-//Route::get('/',         ['as' => 'front.home',   'uses' => 'Front\PagesController@getHome']);
+Route::get('/',         ['as' => 'front.home',   'uses' => 'Front\PagesController@getHome']);
 
 
-Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth'], function()
+Route::group(['namespace' => 'Admin', 'prefix' => '', 'middleware' => 'auth'], function()
 {
     Route::get('/', ['as' => 'admin.dashboard', 'uses' => 'PagesController@getDashboard']);
 	Route::get('/blank', ['as' => 'admin.blank', 'uses' => 'PagesController@getBlank']);
 });
 
 Route::group(['middleware' => ['web']], function () {
-    Route::get('/', 'Auth\ShopifyController@access');
+    Route::get('/login', 'Auth\ShopifyController@access');
     Route::get('authCallback', 'Auth\ShopifyController@authCallback');
     Route::get('linkShop', 'Auth\ShopifyController@linkShop');
 });

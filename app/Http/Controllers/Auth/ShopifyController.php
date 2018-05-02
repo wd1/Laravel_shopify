@@ -55,7 +55,8 @@ class ShopifyController extends Controller
                 $shop = $_GET['shop'];
                 return $this->doAuth($shop);
             } else {
-                return view('auth.login');
+                // return view('auth.login');
+                return redirect('/login');
             }
         }
     }
@@ -109,7 +110,8 @@ class ShopifyController extends Controller
             $shop->owner = $shopinfo->shop->shop_owner;
             $shop->save();
 
-            return redirect('/');
+            // return redirect('/');
+            return redirect('/login');
             // return view('auth.login');
         }
     }
@@ -145,7 +147,9 @@ class ShopifyController extends Controller
             $shop->owner = $shopinfo->shop->shop_owner;
             $shop->save();
 
-            return redirect('/');
+            // return redirect('/');
+            // return view('auth.login');
+            return redirect('/login');
 
        
     }
