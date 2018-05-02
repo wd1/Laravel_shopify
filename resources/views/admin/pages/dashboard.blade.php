@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Dashboard')
+@section('title', 'Nymbl | Dashboard')
 @section('description', 'This is the dashboard')
 
 @section('content')

@@ -80,8 +80,9 @@
     <script src="{!! asset('assets/js/plugins/morris/raphael.min.js') !!}"></script>
     <script src="{!! asset('assets/js/plugins/morris/morris.min.js') !!}"></script>
     <script src="{!! asset('assets/js/plugins/morris/morris-data.js') !!}"></script>
-    -->
     <script src="{!! asset('components/assets/vendors/base/vendors.bundle.js') !!}" type="text/javascript"></script>
+    -->
+    
     <script src="{!! asset('components/assets/demo/default/base/scripts.bundle.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('components/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('components/assets/app/js/dashboard.js') !!}" type="text/javascript"></script>
