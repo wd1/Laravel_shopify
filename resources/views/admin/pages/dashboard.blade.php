@@ -8,7 +8,7 @@
 		<div class="m-page-loader m-page-loader--base">
 			<div class="m-blockui">
 				<span>
-					Please wait...
+					Waiting for nymbl.io ...
 				</span>
 				<span>
 					<div class="m-loader m-loader--brand"></div>
@@ -1438,11 +1438,11 @@
 												</ul>
 											</div>
 										</div>
-										<div class="form-group m-form__group row">
+										<div class="form-group m-form__group row" style="height:90%;">
 											
 											<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 40px;">
-												<div style="padding: 100px;" class="m-dropzone dropzone m-dropzone--success dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-three">
-													<div class="m-dropzone__msg dz-message needsclick">
+												<div style="padding: 100px; height:100%;" class="m-dropzone dropzone m-dropzone--success dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-three">
+													<div class="m-dropzone__msg dz-message needsclick" style="margin-top:25%;">
 														<h3 class="m-dropzone__msg-title">Drop design here or click to upload.</h3>
 														<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 
 Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
@@ -1561,7 +1561,7 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 											<div class="m-portlet__head-caption">
 												<div class="m-portlet__head-title">
 													<h3 class="m-portlet__head-text">
-														Application Sales
+														Product Sales
 													</h3>
 												</div>
 											</div>
@@ -1595,7 +1595,7 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 																			#
 																		</td>
 																		<td class="m-widget11__app">
-																			Application
+																			Category
 																		</td>
 																		<td class="m-widget11__sales">
 																			Sales
@@ -1623,10 +1623,10 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 																		</td>
 																		<td>
 																			<span class="m-widget11__title">
-																				Vertex 2.0
+																				Apparel
 																			</span>
 																			<span class="m-widget11__sub">
-																				Vertex To By Again
+																				T-Shirts, Hoodies ...
 																			</span>
 																		</td>
 																		<td>
@@ -1654,10 +1654,10 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 																		</td>
 																		<td>
 																			<span class="m-widget11__title">
-																				Metronic
+																				Homewares
 																			</span>
 																			<span class="m-widget11__sub">
-																				Powerful Admin Theme
+																				Pillows, Towels ...
 																			</span>
 																		</td>
 																		<td>
@@ -1685,10 +1685,10 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 																		</td>
 																		<td>
 																			<span class="m-widget11__title">
-																				Apex
+																				Device Cases
 																			</span>
 																			<span class="m-widget11__sub">
-																				The Best Selling App
+																				iPhone, Galaxy, Laptop ...
 																			</span>
 																		</td>
 																		<td>
@@ -1716,10 +1716,10 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 																		</td>
 																		<td>
 																			<span class="m-widget11__title">
-																				Cascades
+																				Wall Art
 																			</span>
 																			<span class="m-widget11__sub">
-																				Design Tool
+																				Canvas, Posters, Prints ...
 																			</span>
 																		</td>
 																		<td>
@@ -1926,723 +1926,13 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 									<!--end:: Widgets/Application Sales-->
 								</div>
 								<div class="col-xl-4">
-									<!--begin:: Widgets/Latest Updates-->
-									<div class="m-portlet m-portlet--full-height m-portlet--fit ">
-										<div class="m-portlet__head">
-											<div class="m-portlet__head-caption">
-												<div class="m-portlet__head-title">
-													<h3 class="m-portlet__head-text">
-														Latest Updates
-													</h3>
-												</div>
-											</div>
-											<div class="m-portlet__head-tools">
-												<ul class="m-portlet__nav">
-													<li class="m-portlet__nav-item m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" data-dropdown-toggle="hover">
-														<a href="#" class="m-portlet__nav-link m-dropdown__toggle dropdown-toggle btn btn--sm m-btn--pill btn-secondary m-btn m-btn--label-brand">
-															Today
-														</a>
-														<div class="m-dropdown__wrapper">
-															<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-															<div class="m-dropdown__inner">
-																<div class="m-dropdown__body">
-																	<div class="m-dropdown__content">
-																		<ul class="m-nav">
-																			<li class="m-nav__item">
-																				<a href="" class="m-nav__link">
-																					<i class="m-nav__link-icon flaticon-share"></i>
-																					<span class="m-nav__link-text">
-																						Activity
-																					</span>
-																				</a>
-																			</li>
-																			<li class="m-nav__item">
-																				<a href="" class="m-nav__link">
-																					<i class="m-nav__link-icon flaticon-chat-1"></i>
-																					<span class="m-nav__link-text">
-																						Messages
-																					</span>
-																				</a>
-																			</li>
-																			<li class="m-nav__item">
-																				<a href="" class="m-nav__link">
-																					<i class="m-nav__link-icon flaticon-info"></i>
-																					<span class="m-nav__link-text">
-																						FAQ
-																					</span>
-																				</a>
-																			</li>
-																			<li class="m-nav__item">
-																				<a href="" class="m-nav__link">
-																					<i class="m-nav__link-icon flaticon-lifebuoy"></i>
-																					<span class="m-nav__link-text">
-																						Support
-																					</span>
-																				</a>
-																			</li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="m-portlet__body">
-											<div class="m-widget4 m-widget4--chart-bottom" style="min-height: 350px">
-												<div class="m-widget4__item">
-													<div class="m-widget4__ext">
-														<a href="#" class="m-widget4__icon m--font-brand">
-															<i class="flaticon-interface-3"></i>
-														</a>
-													</div>
-													<div class="m-widget4__info">
-														<span class="m-widget4__text">
-															Make Metronic Great Again
-														</span>
-													</div>
-													<div class="m-widget4__ext">
-														<span class="m-widget4__number m--font-accent">
-															+500
-														</span>
-													</div>
-												</div>
-												<div class="m-widget4__item">
-													<div class="m-widget4__ext">
-														<a href="#" class="m-widget4__icon m--font-brand">
-															<i class="flaticon-folder-4"></i>
-														</a>
-													</div>
-													<div class="m-widget4__info">
-														<span class="m-widget4__text">
-															Green Maker Team
-														</span>
-													</div>
-													<div class="m-widget4__ext">
-														<span class="m-widget4__stats m--font-info">
-															<span class="m-widget4__number m--font-accent">
-																-64
-															</span>
-														</span>
-													</div>
-												</div>
-												<div class="m-widget4__item">
-													<div class="m-widget4__ext">
-														<a href="#" class="m-widget4__icon m--font-brand">
-															<i class="flaticon-line-graph"></i>
-														</a>
-													</div>
-													<div class="m-widget4__info">
-														<span class="m-widget4__text">
-															Make Apex Great Again
-														</span>
-													</div>
-													<div class="m-widget4__ext">
-														<span class="m-widget4__stats m--font-info">
-															<span class="m-widget4__number m--font-accent">
-																+1080
-															</span>
-														</span>
-													</div>
-												</div>
-												<div class="m-widget4__item m-widget4__item--last">
-													<div class="m-widget4__ext">
-														<a href="#" class="m-widget4__icon m--font-brand">
-															<i class="flaticon-diagram"></i>
-														</a>
-													</div>
-													<div class="m-widget4__info">
-														<span class="m-widget4__text">
-															A Programming Language
-														</span>
-													</div>
-													<div class="m-widget4__ext">
-														<span class="m-widget4__stats m--font-info">
-															<span class="m-widget4__number m--font-accent">
-																+19
-															</span>
-														</span>
-													</div>
-												</div>
-												<div class="m-widget4__chart m-portlet-fit--sides m--margin-top-20 m-portlet-fit--bottom1" style="height:120px;">
-													<canvas id="m_chart_latest_updates"></canvas>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--end:: Widgets/Latest Updates-->
-								</div>
-							</div>
-							<!--End::Section-->
-<!--Begin::Section-->
-							<div class="row">
-								<div class="col-xl-6 col-lg-12">
-									<!--Begin::Portlet-->
-									<div class="m-portlet  m-portlet--full-height ">
-										<div class="m-portlet__head">
-											<div class="m-portlet__head-caption">
-												<div class="m-portlet__head-title">
-													<h3 class="m-portlet__head-text">
-														Recent Activities
-													</h3>
-												</div>
-											</div>
-											<div class="m-portlet__head-tools">
-												<ul class="m-portlet__nav">
-													<li class="m-portlet__nav-item m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" data-dropdown-toggle="hover" aria-expanded="true">
-														<a href="#" class="m-portlet__nav-link m-portlet__nav-link--icon m-portlet__nav-link--icon-xl m-dropdown__toggle">
-															<i class="la la-ellipsis-h m--font-brand"></i>
-														</a>
-														<div class="m-dropdown__wrapper">
-															<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-															<div class="m-dropdown__inner">
-																<div class="m-dropdown__body">
-																	<div class="m-dropdown__content">
-																		<ul class="m-nav">
-																			<li class="m-nav__section m-nav__section--first">
-																				<span class="m-nav__section-text">
-																					Quick Actions
-																				</span>
-																			</li>
-																			<li class="m-nav__item">
-																				<a href="" class="m-nav__link">
-																					<i class="m-nav__link-icon flaticon-share"></i>
-																					<span class="m-nav__link-text">
-																						Activity
-																					</span>
-																				</a>
-																			</li>
-																			<li class="m-nav__item">
-																				<a href="" class="m-nav__link">
-																					<i class="m-nav__link-icon flaticon-chat-1"></i>
-																					<span class="m-nav__link-text">
-																						Messages
-																					</span>
-																				</a>
-																			</li>
-																			<li class="m-nav__item">
-																				<a href="" class="m-nav__link">
-																					<i class="m-nav__link-icon flaticon-info"></i>
-																					<span class="m-nav__link-text">
-																						FAQ
-																					</span>
-																				</a>
-																			</li>
-																			<li class="m-nav__item">
-																				<a href="" class="m-nav__link">
-																					<i class="m-nav__link-icon flaticon-lifebuoy"></i>
-																					<span class="m-nav__link-text">
-																						Support
-																					</span>
-																				</a>
-																			</li>
-																			<li class="m-nav__separator m-nav__separator--fit"></li>
-																			<li class="m-nav__item">
-																				<a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
-																					Cancel
-																				</a>
-																			</li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="m-portlet__body">
-											<div class="m-scrollable mCustomScrollbar _mCS_5 mCS-autoHide" data-scrollbar-shown="true" data-scrollable="true" data-max-height="380" style="overflow: visible; height: 380px; max-height: 380px; position: relative;">
-												<!--Begin::Timeline 2 -->
-												<div class="m-timeline-2">
-													<div class="m-timeline-2__items  m--padding-top-25 m--padding-bottom-30">
-														<div class="m-timeline-2__item">
-															<span class="m-timeline-2__item-time">
-																10:00
-															</span>
-															<div class="m-timeline-2__item-cricle">
-																<i class="fa fa-genderless m--font-danger"></i>
-															</div>
-															<div class="m-timeline-2__item-text  m--padding-top-5">
-																Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
-																<br>
-																incididunt ut labore et dolore magna
-															</div>
-														</div>
-														<div class="m-timeline-2__item m--margin-top-30">
-															<span class="m-timeline-2__item-time">
-																12:45
-															</span>
-															<div class="m-timeline-2__item-cricle">
-																<i class="fa fa-genderless m--font-success"></i>
-															</div>
-															<div class="m-timeline-2__item-text m-timeline-2__item-text--bold">
-																AEOL Meeting With
-															</div>
-															<div class="m-list-pics m-list-pics--sm m--padding-left-20">
-																<a href="#">
-																	<img src="assets/css/app/media/img/users/100_4.jpg" title="">
-																</a>
-																<a href="#">
-																	<img src="assets/css/app/media/img/users/100_13.jpg" title="">
-																</a>
-																<a href="#">
-																	<img src="assets/css/app/media/img/users/100_11.jpg" title="">
-																</a>
-																<a href="#">
-																	<img src="assets/css/app/media/img/users/100_14.jpg" title="">
-																</a>
-															</div>
-														</div>
-														<div class="m-timeline-2__item m--margin-top-30">
-															<span class="m-timeline-2__item-time">
-																14:00
-															</span>
-															<div class="m-timeline-2__item-cricle">
-																<i class="fa fa-genderless m--font-brand"></i>
-															</div>
-															<div class="m-timeline-2__item-text m--padding-top-5">
-																Make Deposit
-																<a href="#" class="m-link m-link--brand m--font-bolder">
-																	USD 700
-																</a>
-																To ESL.
-															</div>
-														</div>
-														<div class="m-timeline-2__item m--margin-top-30">
-															<span class="m-timeline-2__item-time">
-																16:00
-															</span>
-															<div class="m-timeline-2__item-cricle">
-																<i class="fa fa-genderless m--font-warning"></i>
-															</div>
-															<div class="m-timeline-2__item-text m--padding-top-5">
-																Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
-																<br>
-																incididunt ut labore et dolore magna elit enim at minim
-																<br>
-																veniam quis nostrud
-															</div>
-														</div>
-														<div class="m-timeline-2__item m--margin-top-30">
-															<span class="m-timeline-2__item-time">
-																17:00
-															</span>
-															<div class="m-timeline-2__item-cricle">
-																<i class="fa fa-genderless m--font-info"></i>
-															</div>
-															<div class="m-timeline-2__item-text m--padding-top-5">
-																Placed a new order in
-																<a href="#" class="m-link m-link--brand m--font-bolder">
-																	SIGNATURE MOBILE
-																</a>
-																marketplace.
-															</div>
-														</div>
-														<div class="m-timeline-2__item m--margin-top-30">
-															<span class="m-timeline-2__item-time">
-																16:00
-															</span>
-															<div class="m-timeline-2__item-cricle">
-																<i class="fa fa-genderless m--font-brand"></i>
-															</div>
-															<div class="m-timeline-2__item-text m--padding-top-5">
-																Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
-																<br>
-																incididunt ut labore et dolore magna elit enim at minim
-																<br>
-																veniam quis nostrud
-															</div>
-														</div>
-														<div class="m-timeline-2__item m--margin-top-30">
-															<span class="m-timeline-2__item-time">
-																17:00
-															</span>
-															<div class="m-timeline-2__item-cricle">
-																<i class="fa fa-genderless m--font-danger"></i>
-															</div>
-															<div class="m-timeline-2__item-text m--padding-top-5">
-																Received a new feedback on
-																<a href="#" class="m-link m-link--brand m--font-bolder">
-																	FinancePro App
-																</a>
-																product.
-															</div>
-														</div>
-													</div>
-												</div>
-												<!--End::Timeline 2 -->
-											</div>
-										</div>
-									</div>
-									<!--End::Portlet-->
-								</div>
-								<div class="col-xl-6 col-lg-12">
-									<!--Begin::Portlet-->
-									<div class="m-portlet m-portlet--full-height ">
-										<div class="m-portlet__head">
-											<div class="m-portlet__head-caption">
-												<div class="m-portlet__head-title">
-													<h3 class="m-portlet__head-text">
-														Recent Notifications
-													</h3>
-												</div>
-											</div>
-											<div class="m-portlet__head-tools">
-												<ul class="nav nav-pills nav-pills--brand m-nav-pills--align-right m-nav-pills--btn-pill m-nav-pills--btn-sm" role="tablist">
-													<li class="nav-item m-tabs__item">
-														<a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_widget2_tab1_content" role="tab">
-															Today
-														</a>
-													</li>
-													<li class="nav-item m-tabs__item">
-														<a class="nav-link m-tabs__link" data-toggle="tab" href="#m_widget2_tab2_content" role="tab">
-															Month
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="m-portlet__body">
-											<div class="tab-content">
-												<div class="tab-pane active" id="m_widget2_tab1_content">
-													<!--Begin::Timeline 3 -->
-													<div class="m-timeline-3">
-														<div class="m-timeline-3__items">
-															<div class="m-timeline-3__item m-timeline-3__item--info">
-																<span class="m-timeline-3__item-time">
-																	09:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Bob
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--warning">
-																<span class="m-timeline-3__item-time">
-																	10:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Lorem ipsum dolor sit amit
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Sean
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--brand">
-																<span class="m-timeline-3__item-time">
-																	11:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Lorem ipsum dolor sit amit eiusmdd tempor
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By James
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--success">
-																<span class="m-timeline-3__item-time">
-																	12:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Lorem ipsum dolor
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By James
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--danger">
-																<span class="m-timeline-3__item-time">
-																	14:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Lorem ipsum dolor sit amit,consectetur eiusmdd
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Derrick
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--info">
-																<span class="m-timeline-3__item-time">
-																	15:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Lorem ipsum dolor sit amit,consectetur
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Iman
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--brand">
-																<span class="m-timeline-3__item-time">
-																	17:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Lorem ipsum dolor sit consectetur eiusmdd tempor
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Aziko
-																		</a>
-																	</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!--End::Timeline 3 -->
-												</div>
-												<div class="tab-pane" id="m_widget2_tab2_content">
-													<!--Begin::Timeline 3 -->
-													<div class="m-timeline-3">
-														<div class="m-timeline-3__items">
-															<div class="m-timeline-3__item m-timeline-3__item--info">
-																<span class="m-timeline-3__item-time m--font-focus">
-																	09:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Contrary to popular belief, Lorem Ipsum is not simply random text.
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Bob
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--warning">
-																<span class="m-timeline-3__item-time m--font-warning">
-																	10:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		There are many variations of passages of Lorem Ipsum available.
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Sean
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--brand">
-																<span class="m-timeline-3__item-time m--font-primary">
-																	11:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Contrary to popular belief, Lorem Ipsum is not simply random text.
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By James
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--success">
-																<span class="m-timeline-3__item-time m--font-success">
-																	12:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		The standard chunk of Lorem Ipsum used since the 1500s is reproduced.
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By James
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--danger">
-																<span class="m-timeline-3__item-time m--font-warning">
-																	14:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Latin words, combined with a handful of model sentence structures.
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Derrick
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--info">
-																<span class="m-timeline-3__item-time m--font-info">
-																	15:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Contrary to popular belief, Lorem Ipsum is not simply random text.
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Iman
-																		</a>
-																	</span>
-																</div>
-															</div>
-															<div class="m-timeline-3__item m-timeline-3__item--brand">
-																<span class="m-timeline-3__item-time m--font-danger">
-																	17:00
-																</span>
-																<div class="m-timeline-3__item-desc">
-																	<span class="m-timeline-3__item-text">
-																		Lorem Ipsum is therefore always free from repetition, injected humour.
-																	</span>
-																	<br>
-																	<span class="m-timeline-3__item-user-name">
-																		<a href="#" class="m-link m-link--metal m-timeline-3__item-link">
-																			By Aziko
-																		</a>
-																	</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!--End::Timeline 3 -->
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--End::Portlet-->
-								</div>
-							</div>
-							<!--End::Section-->
-<!--Begin::Section-->
-							<div class="row">
-								<div class="col-xl-8">
-									<!--begin:: Widgets/Finance Summary-->
-									<div class="m-portlet m-portlet--full-height m-portlet--fit ">
-										<div class="m-portlet__head">
-											<div class="m-portlet__head-caption">
-												<div class="m-portlet__head-title">
-													<h3 class="m-portlet__head-text">
-														Finance Summary
-													</h3>
-												</div>
-											</div>
-											<div class="m-portlet__head-tools">
-												<ul class="nav nav-pills nav-pills--brand m-nav-pills--align-right m-nav-pills--btn-pill m-nav-pills--btn-sm" role="tablist">
-													<li class="nav-item m-tabs__item">
-														<a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_widget4_tab1_content" role="tab">
-															Month
-														</a>
-													</li>
-													<li class="nav-item m-tabs__item">
-														<a class="nav-link m-tabs__link" data-toggle="tab" href="#m_widget4_tab2_content" role="tab">
-															All Time
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="m-portlet__body">
-											<div class="tab-content">
-												<div class="tab-pane active">
-													<div class="m-widget12 m-widget12--chart-bottom m--margin-top-10" style="">
-														<div class="m-widget12__item">
-															<span class="m-widget12__text1">
-																Annual Companies Taxes EMS
-																<br>
-																<span>
-																	$500,000
-																</span>
-															</span>
-															<span class="m-widget12__text2">
-																Next Tax Review Date
-																<br>
-																<span>
-																	July 24,2017
-																</span>
-															</span>
-														</div>
-														<div class="m-widget12__item">
-															<span class="m-widget12__text1">
-																Avarage Product Price
-																<br>
-																<span>
-																	$60,70
-																</span>
-															</span>
-															<div class="m-widget12__text2">
-																<div class="m-widget12__desc">
-																	Satisfication Rate
-																</div>
-																<br>
-																<div class="m-widget12__progress">
-																	<div class="m-widget12__progress-sm progress m-progress--sm">
-																		<div class="m-widget12__progress-bar progress-bar bg-brand" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-																	</div>
-																	<span class="m-widget12__stats">
-																		63%
-																	</span>
-																</div>
-															</div>
-														</div>
-														<div class="m-widget12__chart m-portlet-fit--sides" style="height:290px;">
-															<canvas id="m_chart_finance_summary"></canvas>
-														</div>
-													</div>
-												</div>
-												<div class="tab-pane"></div>
-											</div>
-										</div>
-									</div>
-									<!--end:: Widgets/Finance Summary-->
-								</div>
-								<div class="col-xl-4">
 									<!--begin:: Widgets/Audit Log-->
 									<div class="m-portlet m-portlet--full-height ">
 										<div class="m-portlet__head">
 											<div class="m-portlet__head-caption">
 												<div class="m-portlet__head-title">
 													<h3 class="m-portlet__head-text">
-														Audit Log
+														News & Alerts
 													</h3>
 												</div>
 											</div>
@@ -2873,7 +2163,7 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 									<!--end:: Widgets/Audit Log-->
 								</div>
 							</div>
-							<!--End::Section-->
+
 						</div>
 					</div>
 				</div>
@@ -2885,9 +2175,9 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 					<div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
 						<div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
 							<span class="m-footer__copyright">
-								2017 &copy; Metronic theme by
-								<a href="https://keenthemes.com" class="m-link">
-									Keenthemes
+								2018 &copy; Nymbl. All Rights Reserved.
+								<a href="" class="m-link">
+									
 								</a>
 							</span>
 						</div>
