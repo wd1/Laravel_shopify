@@ -16838,7 +16838,7 @@ and dependencies (minified).
 		// override these in your code to change the default behavior and style
 		$.blockUI.defaults = {
 			// message displayed when blocking (use null for no message)
-			message:  '<h1>Waiting for Nymbl.io ...</h1>',
+			message:  '<h1>Initializing...</h1>',
 
 			title: null,		// title string; only used when theme == true
 			draggable: true,	// only used when theme == true (requires jquery-ui.js to be loaded)
@@ -62081,7 +62081,7 @@ $.notifyDefaults({
 		 *	$('#tree').jstree({
 		 *		'core' : {
 		 *			'strings' : {
-		 *				'Loading ...' : 'Waiting for Nymbl.io  ...'
+		 *				'Loading ...' : 'Initializing...'
 		 *			}
 		 *		}
 		 *	});

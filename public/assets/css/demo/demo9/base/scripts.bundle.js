@@ -4385,7 +4385,7 @@ $(document).ready(function() {
 		// By default the stirngs will be in the plugin source and here can override it
 		translate: {
 			records: {
-				processing: 'Waiting for Nymbl.io ...',
+				processing: 'Initializing...',
 				noRecords: 'No records found',
 			},
 			toolbar: {
