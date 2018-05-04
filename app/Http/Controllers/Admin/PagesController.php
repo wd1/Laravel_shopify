@@ -18,4 +18,28 @@ class PagesController extends Controller
     {
         return view('admin.pages.blank');
     }
+
+    public function upload(Request $request)
+    {
+        $this->validate($request, [
+
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
+        ]);
+
+
+        $image = $request->file('image');
+
+        $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
+
+        $destinationPath = public_path('/images');
+
+        $image->move($destinationPath, $input['imagename']);
+
+
+        $this->postImage->add($input);
+
+
+        return back()->with('success','Image Upload successful');
+    }
 }

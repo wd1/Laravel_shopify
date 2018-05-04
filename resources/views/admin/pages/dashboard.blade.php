@@ -1427,21 +1427,21 @@
 												<ul class="nav nav-pills nav-pills--brand m-nav-pills--align-right m-nav-pills--btn-pill m-nav-pills--btn-sm" role="tablist">
 													<li class="nav-item m-tabs__item">
 														<a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_widget4_tab1_content" role="tab">
-															All Products
+															All
 														</a>
 													</li>
 													<li class="nav-item m-tabs__item">
 														<a class="nav-link m-tabs__link" data-toggle="tab" href="#m_widget4_tab2_content" role="tab">
-															Specific Products
+															Choose Items
 														</a>
 													</li>
 												</ul>
 											</div>
 										</div>
-										<div class="form-group m-form__group row" style="height:90%;">
+										<div class="form-group m-form__group row" style="height:75%;">
 											
-											<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 40px;">
-												<div style="padding: 100px; height:100%;" class="m-dropzone dropzone m-dropzone--success dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-three">
+											<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 40px 40px 10px;">
+												<div style="padding: 100px; height:100%;" class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
 													<div class="m-dropzone__msg dz-message needsclick" style="margin-top:25%;">
 														<h3 class="m-dropzone__msg-title">Drop design here or click to upload.</h3>
 														<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 
@@ -1451,6 +1451,16 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 											</div>
 										</div>
 										<!--end:: Widgets/Quick Stats-->
+										<div class="m-portlet__foot m-portlet__foot--fit">
+											<div class="m-form__actions m-form__actions">
+												<div class="row">
+													<div class="col-lg-8 ml-lg-auto">
+														<button type="reset" class="btn btn-brand">Submit</button>
+														<button type="reset" class="btn btn-secondary">Cancel</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="col-xl-6">

@@ -1414,15 +1414,15 @@ var Dashboard = function() {
                             'class': ' m-badge--primary'
                         },
                         4: {
-                            'title': 'Success',
+                            'title': 'Processing',
                             'class': ' m-badge--success'
                         },
                         5: {
-                            'title': 'Info',
+                            'title': 'Transit',
                             'class': ' m-badge--info'
                         },
                         6: {
-                            'title': 'Danger',
+                            'title': 'Error',
                             'class': ' m-badge--danger'
                         },
                         7: {

@@ -27,7 +27,7 @@
     <link href="{!! asset('assets/css/vendors/base/vendors.bundle.css') !!}" rel="stylesheet" type="text/css" />
     <link href="{!! asset('assets/css/demo/demo9/base/style.bundle.css') !!}" rel="stylesheet" type="text/css" />
     <!--end::Base Styles -->
-    <link rel="shortcut icon" href="{!! asset('assets/css/demo/demo9/media/img/logo/favicon.png') !!}" />
+    <link rel="shortcut icon" href="{!! asset('assets/css/demo/demo9/media/img/logo/dashboardfavicon.png') !!}" />
     
     <!--
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -83,6 +83,7 @@
     -->
     <script src="{!! asset('components/assets/vendors/base/vendors.bundle.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('components/assets/demo/default/base/scripts.bundle.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('components/assets/demo/default/custom/components/forms/widgets/dropzone.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('components/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('components/assets/app/js/dashboard.js') !!}" type="text/javascript"></script>
     <!--end::Page Snippets -->   

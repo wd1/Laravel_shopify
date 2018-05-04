@@ -24,6 +24,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/login', 'Auth\ShopifyController@access');
     Route::get('authCallback', 'Auth\ShopifyController@authCallback');
     Route::get('linkShop', 'Auth\ShopifyController@linkShop');
+    Route::post('/upload', ['as' =>  'upload', 'uses' => 'Admin\PagesController@upload']);
+    // Route::get('/upload', ['as' =>  'upload', 'uses' => 'Admin\PagesController@upload']);
 });
 
 // auth routes setup
@@ -42,3 +44,4 @@ Route::post('activation/resend', ['as' =>  'activation_key_resend.post', 'uses' 
 // username forgot_username
 Route::get('username/reminder', ['as' =>  'username_reminder', 'uses' => 'Auth\ForgotUsernameController@showForgotUsernameForm']);
 Route::post('username/reminder', ['as' =>  'username_reminder.post', 'uses' => 'Auth\ForgotUsernameController@sendUserameReminder']);
+
