@@ -32,7 +32,7 @@ class PagesController extends Controller
 
         $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
 
-        $destinationPath = public_path('/library');
+        $destinationPath = '/library';
 
         $image->move($destinationPath, $input['imagename']);
 
