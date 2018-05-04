@@ -27,7 +27,7 @@
     <link href="{!! asset('assets/css/vendors/base/vendors.bundle.css') !!}" rel="stylesheet" type="text/css" />
     <link href="{!! asset('assets/css/demo/demo9/base/style.bundle.css') !!}" rel="stylesheet" type="text/css" />
     <!--end::Base Styles -->
-    <link rel="shortcut icon" href="{!! asset('assets/css/demo/demo9/media/img/logo/dashboardfavicon.png') !!}" />
+    <link rel="shortcut icon" href="{!! asset('assets/css/demo/demo9/media/img/logo/favicon.png') !!}" />
     
     <!--
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">

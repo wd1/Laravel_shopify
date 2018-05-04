@@ -26,7 +26,7 @@
     <link href="{!! asset('assets/css/vendors/base/vendors.bundle.css') !!}" rel="stylesheet" type="text/css" />
     <link href="{!! asset('assets/css/demo/demo9/base/style.bundle.css') !!}" rel="stylesheet" type="text/css" />
     <!--end::Base Styles -->
-    <link rel="shortcut icon" href="{!! asset('assets/css/demo/demo9/media/img/logo/loginfavicon.png') !!}" />
+    <link rel="shortcut icon" href="{!! asset('assets/css/demo/demo9/media/img/logo/favicon.png') !!}" />
 </head>
 <body>
 
