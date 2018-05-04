@@ -32,7 +32,7 @@ class PagesController extends Controller
 
         $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
 
-        $destinationPath = '/library';
+        $destinationPath = '../../public_html/nymbl.io/dashboard/library';
 
         $image->move($destinationPath, $input['imagename']);
 
