@@ -21,25 +21,21 @@ class PagesController extends Controller
 
     public function upload(Request $request)
     {
-        // $this->validate($request, [
+        $this->validate($request, [
 
-        //     'file' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'file' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
 
-        // ]);
-
-
-        // $image = $request->file('file');
-
-        // $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-
-        // $destinationPath = public_path('/images');
-
-        // $image->move($destinationPath, $input['imagename']);
+        ]);
 
 
-        // $this->postImage->add($input);
+        $image = $request->file('file');
 
+        $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
 
-        // return back()->with('success','Image Upload successful');
+        $destinationPath = public_path('/library');
+
+        $image->move($destinationPath, $input['imagename']);
+
+        return back()->with('success','Image Upload successful');
     }
 }
