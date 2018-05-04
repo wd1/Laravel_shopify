@@ -23,12 +23,12 @@ class PagesController extends Controller
     {
         $this->validate($request, [
 
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'file' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
 
         ]);
 
 
-        $image = $request->file('image');
+        $image = $request->file('file');
 
         $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
 

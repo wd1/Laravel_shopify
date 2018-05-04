@@ -1438,9 +1438,34 @@
 												</ul>
 											</div>
 										</div>
-										<div class="form-group m-form__group row" style="height:75%;">
+										<form class="m-form m-form--fit m-form--label-align-right">
+											<div class="m-portlet__body">
+												<div class="form-group m-form__group row" style="height:75%;">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 40px 40px 10px;">
+														<div style="padding: 100px; height:100%;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
+															<div class="m-dropzone__msg dz-message needsclick">
+																<h3 class="m-dropzone__msg-title">Drop design here or click to upload.</h3>
+																<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 
+Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="m-portlet__foot m-portlet__foot--fit">
+												<div class="m-form__actions m-form__actions">
+													<div class="row">
+														<div class="col-lg-9 ml-lg-auto">
+															<button type="reset" class="btn btn-brand">Submit</button>
+															<button type="reset" class="btn btn-secondary">Cancel</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+										<!-- <div class="form-group m-form__group row" >
 											
-											<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 40px 40px 10px;">
+											<div class="col-lg-12 col-md-12 col-sm-12" >
 												<div style="padding: 100px; height:100%;" class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
 													<div class="m-dropzone__msg dz-message needsclick" style="margin-top:25%;">
 														<h3 class="m-dropzone__msg-title">Drop design here or click to upload.</h3>
@@ -1449,18 +1474,8 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 													</div>
 												</div>
 											</div>
-										</div>
+										</div> -->
 										<!--end:: Widgets/Quick Stats-->
-										<div class="m-portlet__foot m-portlet__foot--fit">
-											<div class="m-form__actions m-form__actions">
-												<div class="row">
-													<div class="col-lg-8 ml-lg-auto">
-														<button type="reset" class="btn btn-brand">Submit</button>
-														<button type="reset" class="btn btn-secondary">Cancel</button>
-													</div>
-												</div>
-											</div>
-										</div>
 									</div>
 								</div>
 								<div class="col-xl-6">
