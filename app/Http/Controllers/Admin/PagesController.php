@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Auth;
 
 class PagesController extends Controller
 {
@@ -33,7 +34,7 @@ class PagesController extends Controller
         $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
 
         // $destinationPath = '../../public_html/nymbl.io/dashboard/library';
-        $destinationPath = '../../nymbl.io/dashboard/library';
+        $destinationPath = '../../library/'.(auth()->user()->id+100000);
 
         $image->move($destinationPath, $input['imagename']);
 
