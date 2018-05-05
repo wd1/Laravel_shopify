@@ -27,7 +27,7 @@
 							<div class="m-stack m-stack--ver m-stack--general">
 								<div class="m-stack__item m-stack__item--middle m-brand__logo">
 									<a href="{{  url('/admin/') }}" class="m-brand__logo-wrapper">
-										<img alt="" src="assets/css/demo/demo9/media/img/logo/logo.png"/>
+										<img alt="" style="width:31px;" src="assets/css/demo/demo9/media/img/logo/dashboardfavicon.png"/>
 									</a>
 								</div>
 								<div class="m-stack__item m-stack__item--middle m-brand__tools">
@@ -631,7 +631,7 @@
 						<div class="m-stack__item m-stack__item--middle m-stack__item--center">
 							<!-- BEGIN: Brand -->
 							<a href="{{  url('/admin/') }}" class="m-brand m-brand--desktop">
-								<img alt="" src="assets/css/demo/demo9/media/img/logo/logo.png"/>
+								<img alt="" style="width:31px;" src="assets/css/demo/demo9/media/img/logo/dashboardfavicon.png"/>
 							</a>
 							<!-- END: Brand -->
 						</div>
