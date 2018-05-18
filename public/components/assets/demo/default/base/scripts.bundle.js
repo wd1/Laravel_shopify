@@ -469,9 +469,11 @@ var mApp = function() {
 
             if (options.message && options.message.length > 0) {
                 var classes = 'm-blockui ' + (options.shadow === false ? 'm-blockui-no-shadow' : '');
-
+                
                 html = '<div class="' + classes + '"><span>' + options.message + '</span><span>' + loading + '</span></div>';
                 options.width = mUtil.realWidth(html) + 10;
+                options.width = 10;
+                console.log(options.width);
                 if (target == 'body') {
                     html = '<div class="' + classes + '" style="margin-left:-'+ (options.width / 2) +'px;"><span>' + options.message + '</span><span>' + loading + '</span></div>';
                 }
@@ -4385,7 +4387,7 @@ $(document).ready(function() {
 		// By default the stirngs will be in the plugin source and here can override it
 		translate: {
 			records: {
-				processing: 'Initializing...',
+				processing: 'Loading...',
 				noRecords: 'No records found',
 			},
 			toolbar: {

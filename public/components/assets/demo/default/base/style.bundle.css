@@ -25511,7 +25511,7 @@ body.m-portlet--fullscreen {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  display: table;
+  display: block;
   table-layout: fixed; }
   .m-blockui > span {
     display: table-cell;
@@ -25521,7 +25521,7 @@ body.m-portlet--fullscreen {
     font-weight: 400; }
     .m-blockui > span > .m-loader,
     .m-blockui > span > .m-spinner {
-      margin-right: 10px; }
+      margin-right: 100px; }
 
 .m-blockui {
   background: #ffffff;

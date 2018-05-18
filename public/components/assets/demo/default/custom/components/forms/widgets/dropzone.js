@@ -37,9 +37,9 @@ var DropzoneDemo = function () {
         Dropzone.options.mDropzoneThree = {
             paramName: "file", // The name that will be used to transfer the file
             maxFiles: 10,
-            maxFilesize: 10, // MB
+            maxFilesize: 20, // MB
             addRemoveLinks: true,
-            acceptedFiles: "image/*,application/pdf,.psd",
+            acceptedFiles: "image/*",
             accept: function(file, done) {
                 if (file.name == "justinbieber.jpg") {
                     done("Naha, you don't.");

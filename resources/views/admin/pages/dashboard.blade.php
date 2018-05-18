@@ -8,7 +8,7 @@
 		<div class="m-page-loader m-page-loader--base">
 			<div class="m-blockui">
 				<span>
-					Initializing...
+					Loading...
 				</span>
 				<span>
 					<div class="m-loader m-loader--brand"></div>
@@ -362,7 +362,7 @@
 													<i class="m-menu__hor-arrow la la-angle-down"></i>
 													<i class="m-menu__ver-arrow la la-angle-right"></i>
 												</a>
-												<div class="m-menu__submenu  m-menu__submenu--fixed-xl m-menu__submenu--center" >
+												<!-- <div class="m-menu__submenu  m-menu__submenu--fixed-xl m-menu__submenu--center" >
 													<span class="m-menu__arrow m-menu__arrow--adjust"></span>
 													<div class="m-menu__subnav">
 														<ul class="m-menu__content">
@@ -610,7 +610,7 @@
 															</li>
 														</ul>
 													</div>
-												</div>
+												</div> -->
 											</li>
 											<!-- <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
 												
@@ -1441,10 +1441,10 @@
 										<form class="m-form m-form--fit m-form--label-align-right" style="height:100%;">
 											<div class="m-portlet__body">
 												<div class="form-group m-form__group row" style="height:95%;">
-													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px;">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px 10px;">
 														<div style="padding: 100px; height:100%;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
 															<div class="m-dropzone__msg dz-message needsclick" style="margin-top:25%;">
-																<h3 class="m-dropzone__msg-title">Drop design here or click to upload.</h3>
+																<h3 class="m-dropzone__msg-title">Drop design(s) here or click to upload.</h3>
 																<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 
 Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 															</div>
