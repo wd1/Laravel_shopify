@@ -20,6 +20,12 @@ class PagesController extends Controller
         return view('admin.pages.blank');
     }
 
+    public function getDesignLibrary()
+    {
+        return view('admin.pages.designlibrary');
+    }
+
+
     public function upload(Request $request)
     {
         $this->validate($request, [

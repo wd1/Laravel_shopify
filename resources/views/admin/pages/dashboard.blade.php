@@ -26,7 +26,7 @@
 						<div class="m-stack__item m-brand m-brand--mobile">
 							<div class="m-stack m-stack--ver m-stack--general">
 								<div class="m-stack__item m-stack__item--middle m-brand__logo">
-									<a href="{{  url('/admin/') }}" class="m-brand__logo-wrapper">
+									<a href="{{route('admin.dashboard')}}" class="m-brand__logo-wrapper">
 										<img alt="" style="width:31px;" src="assets/css/demo/demo9/media/img/logo/dashboardfavicon.png"/>
 									</a>
 								</div>
@@ -80,7 +80,7 @@
 													<span class="m-menu__arrow m-menu__arrow--adjust"></span>
 													<ul class="m-menu__subnav">
 														<li class="m-menu__item "  aria-haspopup="true">
-															<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+															<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																<i class="m-menu__link-icon flaticon-diagram"></i>
 																<span class="m-menu__link-title">
 																	<span class="m-menu__link-wrap">
@@ -109,42 +109,42 @@
 																<span class="m-menu__arrow "></span>
 																<ul class="m-menu__subnav">
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Latest Orders
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Pending Orders
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Processed Orders
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Delivery Reports
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Payments
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Customers
 																			</span>
@@ -166,35 +166,35 @@
 																<span class="m-menu__arrow "></span>
 																<ul class="m-menu__subnav">
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Customer Feedbacks
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Supplier Feedbacks
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Reviewed Feedbacks
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Resolved Feedbacks
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Feedback Reports
 																			</span>
@@ -204,7 +204,7 @@
 															</div>
 														</li>
 														<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-															<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+															<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																<i class="m-menu__link-icon flaticon-users"></i>
 																<span class="m-menu__link-text">
 																	Register Member
@@ -237,7 +237,7 @@
 																</h3>
 																<ul class="m-menu__inner">
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-map"></i>
 																			<span class="m-menu__link-text">
 																				Annual Reports
@@ -245,7 +245,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-user"></i>
 																			<span class="m-menu__link-text">
 																				HR Reports
@@ -253,7 +253,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-clipboard"></i>
 																			<span class="m-menu__link-text">
 																				IPO Reports
@@ -261,7 +261,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-graphic-1"></i>
 																			<span class="m-menu__link-text">
 																				Finance Margins
@@ -269,7 +269,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-graphic-2"></i>
 																			<span class="m-menu__link-text">
 																				Revenue Reports
@@ -287,7 +287,7 @@
 																</h3>
 																<ul class="m-menu__inner">
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -297,7 +297,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -307,7 +307,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -317,7 +317,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -327,7 +327,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -337,7 +337,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -352,8 +352,8 @@
 													</div>
 												</div>
 											</li>
-											<li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
-												<a  href="#" class="m-menu__link m-menu__toggle">
+											<li class="m-menu__item">
+												<a  href="{{route('admin.designlibrary')}}" class="m-menu__link">
 													<span class="m-menu__item-here"></span>
 													<i class="m-menu__link-icon flaticon-suitcase"></i>
 													<span class="m-menu__link-text">
@@ -375,7 +375,7 @@
 																</h3>
 																<ul class="m-menu__inner">
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-map"></i>
 																			<span class="m-menu__link-text">
 																				Annual Reports
@@ -383,7 +383,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-user"></i>
 																			<span class="m-menu__link-text">
 																				HR Reports
@@ -391,7 +391,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-clipboard"></i>
 																			<span class="m-menu__link-text">
 																				IPO Reports
@@ -399,7 +399,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-graphic-1"></i>
 																			<span class="m-menu__link-text">
 																				Finance Margins
@@ -407,7 +407,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-icon flaticon-graphic-2"></i>
 																			<span class="m-menu__link-text">
 																				Revenue Reports
@@ -425,7 +425,7 @@
 																</h3>
 																<ul class="m-menu__inner">
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -435,7 +435,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -445,7 +445,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -455,7 +455,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -465,7 +465,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -475,7 +475,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
 																				<span></span>
 																			</i>
@@ -495,7 +495,7 @@
 																</h3>
 																<ul class="m-menu__inner">
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																				<span></span>
 																			</i>
@@ -505,7 +505,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																				<span></span>
 																			</i>
@@ -515,7 +515,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																				<span></span>
 																			</i>
@@ -525,7 +525,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																				<span></span>
 																			</i>
@@ -535,7 +535,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																				<span></span>
 																			</i>
@@ -545,7 +545,7 @@
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																				<span></span>
 																			</i>
@@ -565,42 +565,42 @@
 																</h3>
 																<ul class="m-menu__inner">
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Report Adjusments
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Sources & Mediums
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Reporting Settings
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Conversions
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Report Flows
 																			</span>
 																		</a>
 																	</li>
 																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																		<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 																			<span class="m-menu__link-text">
 																				Audit & Logs
 																			</span>
@@ -630,7 +630,7 @@
 						</div>
 						<div class="m-stack__item m-stack__item--middle m-stack__item--center">
 							<!-- BEGIN: Brand -->
-							<a href="{{  url('/admin/') }}" class="m-brand m-brand--desktop">
+							<a href="{{route('admin.dashboard')}}" class="m-brand m-brand--desktop">
 								<img alt="" style="width:31px;" src="assets/css/demo/demo9/media/img/logo/dashboardfavicon.png"/>
 							</a>
 							<!-- END: Brand -->
@@ -1044,7 +1044,7 @@
 										</span>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1054,7 +1054,7 @@
 										</a>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1064,7 +1064,7 @@
 										</a>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1077,7 +1077,7 @@
 							</div>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-suitcase"></i>
 								<span class="m-menu__link-text">
 									Finance
@@ -1121,7 +1121,7 @@
 										</span>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<span class="m-menu__link-text">
 												Reports
 											</span>
@@ -1138,28 +1138,28 @@
 											<span class="m-menu__arrow"></span>
 											<ul class="m-menu__subnav">
 												<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-													<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+													<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 														<span class="m-menu__link-text">
 															Pending
 														</span>
 													</a>
 												</li>
 												<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-													<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+													<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 														<span class="m-menu__link-text">
 															Urgent
 														</span>
 													</a>
 												</li>
 												<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-													<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+													<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 														<span class="m-menu__link-text">
 															Done
 														</span>
 													</a>
 												</li>
 												<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-													<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+													<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 														<span class="m-menu__link-text">
 															Archive
 														</span>
@@ -1169,14 +1169,14 @@
 										</div>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<span class="m-menu__link-text">
 												Clients
 											</span>
 										</a>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<span class="m-menu__link-text">
 												Audit
 											</span>
@@ -1186,7 +1186,7 @@
 							</div>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-light"></i>
 								<span class="m-menu__link-text">
 									Administration
@@ -1194,7 +1194,7 @@
 							</a>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-share"></i>
 								<span class="m-menu__link-text">
 									Management
@@ -1208,7 +1208,7 @@
 							<i class="m-menu__section-icon flaticon-more-v3"></i>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-graphic"></i>
 								<span class="m-menu__link-text">
 									Accounting
@@ -1216,7 +1216,7 @@
 							</a>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-network"></i>
 								<span class="m-menu__link-text">
 									Products
@@ -1224,7 +1224,7 @@
 							</a>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-network"></i>
 								<span class="m-menu__link-text">
 									Sales
@@ -1232,7 +1232,7 @@
 							</a>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-alert"></i>
 								<span class="m-menu__link-title">
 									<span class="m-menu__link-wrap">
@@ -1249,7 +1249,7 @@
 							</a>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-technology"></i>
 								<span class="m-menu__link-text">
 									IPO
@@ -1281,7 +1281,7 @@
 										</span>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1291,7 +1291,7 @@
 										</a>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1301,7 +1301,7 @@
 										</a>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1332,7 +1332,7 @@
 										</span>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1342,7 +1342,7 @@
 										</a>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1352,7 +1352,7 @@
 										</a>
 									</li>
 									<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-										<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+										<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1365,7 +1365,7 @@
 							</div>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-cogwheel"></i>
 								<span class="m-menu__link-text">
 									Files
@@ -1373,7 +1373,7 @@
 							</a>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-lifebuoy"></i>
 								<span class="m-menu__link-text">
 									Security
@@ -1381,7 +1381,7 @@
 							</a>
 						</li>
 						<li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
-							<a  href="{{  url('/admin/blank') }}" class="m-menu__link ">
+							<a  href="{{route('admin.blank')}}" class="m-menu__link ">
 								<i class="m-menu__link-icon flaticon-settings"></i>
 								<span class="m-menu__link-text">
 									Options

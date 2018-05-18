@@ -42,6 +42,13 @@ var DatatableRecordSelectionDemo = function() {
 				textAlign: 'center',
 				selector: {class: 'm-checkbox--solid m-checkbox--brand'},
 			}, {
+				field: 'thumb_image',
+				title: 'Thumbnail',
+				width: 100,
+				template: function(row) {
+					return '<img style="width:100px;height:100px;" src="//cdn3.volusion.com/zrdfe.utzda/v/vspfiles/photos/categories/1817-T.jpg"'+'</>';
+				},
+			}, {
 				field: 'ID',
 				title: 'ID',
 				width: 40,

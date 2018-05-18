@@ -86,6 +86,7 @@
     <script src="{!! asset('components/assets/demo/default/custom/components/forms/widgets/dropzone.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('components/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('components/assets/app/js/dashboard.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('components/assets/demo/default/custom/components/datatables/base/record-selection.js') !!}" type="text/javascript"></script>
     <!--end::Page Snippets -->   
     <!-- begin::Page Loader -->
     <script>
