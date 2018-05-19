@@ -19,6 +19,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => '', 'middleware' => 'auth'], f
     Route::get('/', ['as' => 'admin.dashboard', 'uses' => 'PagesController@getDashboard']);
 	Route::get('/blank', ['as' => 'admin.blank', 'uses' => 'PagesController@getBlank']);
     Route::get('/designlibrary', ['as' => 'admin.designlibrary', 'uses' => 'PagesController@getDesignLibrary']);
+    Route::get('/faq', ['as' => 'admin.faq', 'uses' => 'PagesController@getFAQ']);
 });
 
 Route::group(['middleware' => ['web']], function () {

@@ -1441,7 +1441,7 @@
 										<form class="m-form m-form--fit m-form--label-align-right" style="height:100%;">
 											<div class="m-portlet__body">
 												<div class="form-group m-form__group row" style="height:95%;">
-													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px 10px;">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px 18px;margin-left: -5px;">
 														<div style="padding: 100px; height:100%;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
 															<div class="m-dropzone__msg dz-message needsclick" style="margin-top:25%;">
 																<h3 class="m-dropzone__msg-title">Drop design(s) here or click to upload.</h3>

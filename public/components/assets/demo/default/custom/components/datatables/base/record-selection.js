@@ -46,7 +46,7 @@ var DatatableRecordSelectionDemo = function() {
 				title: 'Thumbnail',
 				width: 100,
 				template: function(row) {
-					return '<img style="width:100px;height:100px;" src="//cdn3.volusion.com/zrdfe.utzda/v/vspfiles/photos/categories/1817-T.jpg"'+'</>';
+					return '<img style="width:100px;height:100px;" src="http://nymbl.io/dashboard/assets/img/no_image.jpg"'+'</>';
 				},
 			}, {
 				field: 'ID',
@@ -183,61 +183,61 @@ var DatatableRecordSelectionDemo = function() {
 
 	};
 
-	var serverSelectorDemo = function() {
+	// var serverSelectorDemo = function() {
 
-		// enable extension
-		options.extensions = {
-			checkbox: {},
-		};
-		options.search = {
-			input: $('#generalSearch1'),
-		};
+	// 	// enable extension
+	// 	options.extensions = {
+	// 		checkbox: {},
+	// 	};
+	// 	options.search = {
+	// 		input: $('#generalSearch1'),
+	// 	};
 
-		var datatable = $('#server_record_selection').mDatatable(options);
+	// 	var datatable = $('#server_record_selection').mDatatable(options);
 
-		$('#m_form_status1').on('change', function() {
-			datatable.search($(this).val().toLowerCase(), 'Status');
-		});
+	// 	$('#m_form_status1').on('change', function() {
+	// 		datatable.search($(this).val().toLowerCase(), 'Status');
+	// 	});
 
-		$('#m_form_type1').on('change', function() {
-			datatable.search($(this).val().toLowerCase(), 'Type');
-		});
+	// 	$('#m_form_type1').on('change', function() {
+	// 		datatable.search($(this).val().toLowerCase(), 'Type');
+	// 	});
 
-		$('#m_form_status1,#m_form_type1').selectpicker();
+	// 	$('#m_form_status1,#m_form_type1').selectpicker();
 
-		datatable.on('m-datatable--on-click-checkbox m-datatable--on-layout-updated', function(e) {
-			// datatable.checkbox() access to extension methods
-			var ids = datatable.checkbox().getSelectedId();
-			var count = ids.length;
-			$('#m_datatable_selected_number1').html(count);
-			if (count > 0) {
-				$('#m_datatable_group_action_form1').collapse('show');
-			} else {
-				$('#m_datatable_group_action_form1').collapse('hide');
-			}
-		});
+	// 	datatable.on('m-datatable--on-click-checkbox m-datatable--on-layout-updated', function(e) {
+	// 		// datatable.checkbox() access to extension methods
+	// 		var ids = datatable.checkbox().getSelectedId();
+	// 		var count = ids.length;
+	// 		$('#m_datatable_selected_number1').html(count);
+	// 		if (count > 0) {
+	// 			$('#m_datatable_group_action_form1').collapse('show');
+	// 		} else {
+	// 			$('#m_datatable_group_action_form1').collapse('hide');
+	// 		}
+	// 	});
 
-		$('#m_modal_fetch_id_server').on('show.bs.modal', function(e) {
-			var ids = datatable.checkbox().getSelectedId();
-			var c = document.createDocumentFragment();
-			for (var i = 0; i < ids.length; i++) {
-				var li = document.createElement('li');
-				li.setAttribute('data-id', ids[i]);
-				li.innerHTML = 'Selected record ID: ' + ids[i];
-				c.appendChild(li);
-			}
-			$(e.target).find('.m_datatable_selected_ids').append(c);
-		}).on('hide.bs.modal', function(e) {
-			$(e.target).find('.m_datatable_selected_ids').empty();
-		});
+	// 	$('#m_modal_fetch_id_server').on('show.bs.modal', function(e) {
+	// 		var ids = datatable.checkbox().getSelectedId();
+	// 		var c = document.createDocumentFragment();
+	// 		for (var i = 0; i < ids.length; i++) {
+	// 			var li = document.createElement('li');
+	// 			li.setAttribute('data-id', ids[i]);
+	// 			li.innerHTML = 'Selected record ID: ' + ids[i];
+	// 			c.appendChild(li);
+	// 		}
+	// 		$(e.target).find('.m_datatable_selected_ids').append(c);
+	// 	}).on('hide.bs.modal', function(e) {
+	// 		$(e.target).find('.m_datatable_selected_ids').empty();
+	// 	});
 
-	};
+	// };
 
 	return {
 		// public functions
 		init: function() {
 			localSelectorDemo();
-			serverSelectorDemo();
+			// serverSelectorDemo();
 		},
 	};
 }();

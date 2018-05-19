@@ -25,6 +25,10 @@ class PagesController extends Controller
         return view('admin.pages.designlibrary');
     }
 
+    public function getFAQ()
+    {
+        return view('admin.pages.faq');
+    }
 
     public function upload(Request $request)
     {

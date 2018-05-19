@@ -1,12 +1,10 @@
-
 @extends('layouts.admin')
 
-@section('title', 'Design Library')
-@section('description', 'This is the Design Library page')
+@section('title', 'Nymbl | Dashboard')
+@section('description', 'This is the dashboard')
 
 @section('content')
-
-		<div class="m-grid m-grid--hor m-grid--root m-page" style="padding: 70px;">
+		<div class="m-grid m-grid--hor m-grid--root m-page" style="padding:70px;">
 			<!-- BEGIN: Header -->
 			<header class="m-grid__item    m-header "  data-minimize="minimize" data-minimize-mobile="minimize" data-minimize-offset="200" data-minimize-mobile-offset="200" >
 				<div class="m-container m-container--fluid m-container--full-height">
@@ -1011,7 +1009,7 @@
 		>
 						<ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
 							<li class="m-menu__item " aria-haspopup="true" >
-								<a  href="../../../index.html" class="m-menu__link ">
+								<a  href="../../index.html" class="m-menu__link ">
 									<i class="m-menu__link-icon flaticon-line-graph"></i>
 									<span class="m-menu__link-title">
 										<span class="m-menu__link-wrap">
@@ -1052,7 +1050,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/state.html" class="m-menu__link ">
+											<a  href="../../components/base/state.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1062,7 +1060,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/typography.html" class="m-menu__link ">
+											<a  href="../../components/base/typography.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1072,7 +1070,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/stack.html" class="m-menu__link ">
+											<a  href="../../components/base/stack.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1082,7 +1080,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/tables.html" class="m-menu__link ">
+											<a  href="../../components/base/tables.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1092,7 +1090,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/progress.html" class="m-menu__link ">
+											<a  href="../../components/base/progress.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1102,7 +1100,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/modal.html" class="m-menu__link ">
+											<a  href="../../components/base/modal.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1112,7 +1110,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/alerts.html" class="m-menu__link ">
+											<a  href="../../components/base/alerts.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1122,7 +1120,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/popover.html" class="m-menu__link ">
+											<a  href="../../components/base/popover.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1132,7 +1130,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/tooltip.html" class="m-menu__link ">
+											<a  href="../../components/base/tooltip.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1142,7 +1140,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/blockui.html" class="m-menu__link ">
+											<a  href="../../components/base/blockui.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1152,7 +1150,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/spinners.html" class="m-menu__link ">
+											<a  href="../../components/base/spinners.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1162,7 +1160,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/scrollable.html" class="m-menu__link ">
+											<a  href="../../components/base/scrollable.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1172,7 +1170,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/dropdown.html" class="m-menu__link ">
+											<a  href="../../components/base/dropdown.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1195,7 +1193,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/base/tabs/bootstrap.html" class="m-menu__link ">
+														<a  href="../../components/base/tabs/bootstrap.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1205,7 +1203,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/base/tabs/line.html" class="m-menu__link ">
+														<a  href="../../components/base/tabs/line.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1218,7 +1216,7 @@
 											</div>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/accordions.html" class="m-menu__link ">
+											<a  href="../../components/base/accordions.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1228,7 +1226,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/navs.html" class="m-menu__link ">
+											<a  href="../../components/base/navs.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1238,7 +1236,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/lists.html" class="m-menu__link ">
+											<a  href="../../components/base/lists.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1248,7 +1246,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/treeview.html" class="m-menu__link ">
+											<a  href="../../components/base/treeview.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1258,7 +1256,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/bootstrap-notify.html" class="m-menu__link ">
+											<a  href="../../components/base/bootstrap-notify.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1268,7 +1266,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/toastr.html" class="m-menu__link ">
+											<a  href="../../components/base/toastr.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1278,7 +1276,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/base/sweetalert2.html" class="m-menu__link ">
+											<a  href="../../components/base/sweetalert2.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1302,7 +1300,7 @@
 									<span class="m-menu__arrow"></span>
 									<ul class="m-menu__subnav">
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/icons/flaticon.html" class="m-menu__link ">
+											<a  href="../../components/icons/flaticon.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1312,7 +1310,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/icons/fontawesome.html" class="m-menu__link ">
+											<a  href="../../components/icons/fontawesome.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1322,7 +1320,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/icons/lineawesome.html" class="m-menu__link ">
+											<a  href="../../components/icons/lineawesome.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1332,7 +1330,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/icons/socicons.html" class="m-menu__link ">
+											<a  href="../../components/icons/socicons.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1376,7 +1374,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/buttons/base/default.html" class="m-menu__link ">
+														<a  href="../../components/buttons/base/default.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1386,7 +1384,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/buttons/base/square.html" class="m-menu__link ">
+														<a  href="../../components/buttons/base/square.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1396,7 +1394,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/buttons/base/pill.html" class="m-menu__link ">
+														<a  href="../../components/buttons/base/pill.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1406,7 +1404,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/buttons/base/air.html" class="m-menu__link ">
+														<a  href="../../components/buttons/base/air.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1419,7 +1417,7 @@
 											</div>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/buttons/group.html" class="m-menu__link ">
+											<a  href="../../components/buttons/group.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1429,7 +1427,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/buttons/dropdown.html" class="m-menu__link ">
+											<a  href="../../components/buttons/dropdown.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -1452,7 +1450,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/buttons/icon/lineawesome.html" class="m-menu__link ">
+														<a  href="../../components/buttons/icon/lineawesome.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1462,7 +1460,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/buttons/icon/fontawesome.html" class="m-menu__link ">
+														<a  href="../../components/buttons/icon/fontawesome.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1472,7 +1470,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/buttons/icon/flaticon.html" class="m-menu__link ">
+														<a  href="../../components/buttons/icon/flaticon.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1519,7 +1517,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/controls/base.html" class="m-menu__link ">
+														<a  href="../../components/forms/controls/base.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1529,7 +1527,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/controls/checkbox-radio.html" class="m-menu__link ">
+														<a  href="../../components/forms/controls/checkbox-radio.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1539,7 +1537,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/controls/input-group.html" class="m-menu__link ">
+														<a  href="../../components/forms/controls/input-group.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1549,7 +1547,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/controls/switch.html" class="m-menu__link ">
+														<a  href="../../components/forms/controls/switch.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1559,7 +1557,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/controls/option.html" class="m-menu__link ">
+														<a  href="../../components/forms/controls/option.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1585,7 +1583,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-datepicker.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-datepicker.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1595,7 +1593,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-datetimepicker.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-datetimepicker.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1605,7 +1603,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-timepicker.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-timepicker.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1615,7 +1613,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-daterangepicker.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-daterangepicker.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1625,7 +1623,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-touchspin.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-touchspin.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1635,7 +1633,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-maxlength.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-maxlength.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1645,7 +1643,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-switch.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-switch.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1655,7 +1653,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-multipleselectsplitter.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-multipleselectsplitter.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1665,7 +1663,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-select.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-select.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1675,7 +1673,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/select2.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/select2.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1685,7 +1683,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/typeahead.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/typeahead.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1695,7 +1693,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/nouislider.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/nouislider.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1705,7 +1703,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/form-repeater.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/form-repeater.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1715,7 +1713,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/ion-range-slider.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/ion-range-slider.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1725,7 +1723,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/input-mask.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/input-mask.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1735,7 +1733,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/summernote.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/summernote.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1745,7 +1743,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/bootstrap-markdown.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/bootstrap-markdown.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1755,7 +1753,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/autosize.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/autosize.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1765,7 +1763,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/clipboard.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/clipboard.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1775,7 +1773,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/dropzone.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/dropzone.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1785,7 +1783,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/widgets/recaptcha.html" class="m-menu__link ">
+														<a  href="../../components/forms/widgets/recaptcha.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1811,7 +1809,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/layouts/default-forms.html" class="m-menu__link ">
+														<a  href="../../components/forms/layouts/default-forms.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1821,7 +1819,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/layouts/multi-column-forms.html" class="m-menu__link ">
+														<a  href="../../components/forms/layouts/multi-column-forms.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1831,7 +1829,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/layouts/action-bars.html" class="m-menu__link ">
+														<a  href="../../components/forms/layouts/action-bars.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1857,7 +1855,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/validation/states.html" class="m-menu__link ">
+														<a  href="../../components/forms/validation/states.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1867,7 +1865,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/validation/form-controls.html" class="m-menu__link ">
+														<a  href="../../components/forms/validation/form-controls.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1877,7 +1875,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/validation/form-widgets.html" class="m-menu__link ">
+														<a  href="../../components/forms/validation/form-widgets.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1903,7 +1901,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/wizard/wizard-1.html" class="m-menu__link ">
+														<a  href="../../components/forms/wizard/wizard-1.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1913,7 +1911,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/wizard/wizard-2.html" class="m-menu__link ">
+														<a  href="../../components/forms/wizard/wizard-2.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1923,7 +1921,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/wizard/wizard-3.html" class="m-menu__link ">
+														<a  href="../../components/forms/wizard/wizard-3.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1933,7 +1931,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/wizard/wizard-4.html" class="m-menu__link ">
+														<a  href="../../components/forms/wizard/wizard-4.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1943,7 +1941,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/forms/wizard/wizard-5.html" class="m-menu__link ">
+														<a  href="../../components/forms/wizard/wizard-5.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -1958,7 +1956,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="m-menu__item  m-menu__item--submenu m-menu__item--open m-menu__item--expanded" aria-haspopup="true"  data-menu-submenu-toggle="hover">
+							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
 								<a  href="#" class="m-menu__link m-menu__toggle">
 									<i class="m-menu__link-icon flaticon-tabs"></i>
 									<span class="m-menu__link-text">
@@ -1976,7 +1974,7 @@
 												</span>
 											</span>
 										</li>
-										<li class="m-menu__item  m-menu__item--submenu m-menu__item--open m-menu__item--expanded" aria-haspopup="true"  data-menu-submenu-toggle="hover">
+										<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
 											<a  href="#" class="m-menu__link m-menu__toggle">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
@@ -1990,7 +1988,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/data-local.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/data-local.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2000,7 +1998,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/data-json.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/data-json.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2010,7 +2008,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/data-ajax.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/data-ajax.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2020,7 +2018,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/html-table.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/html-table.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2029,8 +2027,8 @@
 															</span>
 														</a>
 													</li>
-													<li class="m-menu__item  m-menu__item--active" aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/record-selection.html" class="m-menu__link ">
+													<li class="m-menu__item " aria-haspopup="true" >
+														<a  href="../../components/datatables/base/record-selection.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2040,7 +2038,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/local-sort.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/local-sort.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2050,7 +2048,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/row-details.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/row-details.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2060,7 +2058,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/column-rendering.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/column-rendering.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2070,7 +2068,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/column-width.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/column-width.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2080,7 +2078,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/responsive-columns.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/responsive-columns.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2090,7 +2088,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/base/translation.html" class="m-menu__link ">
+														<a  href="../../components/datatables/base/translation.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2116,7 +2114,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/scrolling/vertical.html" class="m-menu__link ">
+														<a  href="../../components/datatables/scrolling/vertical.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2126,7 +2124,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/scrolling/horizontal.html" class="m-menu__link ">
+														<a  href="../../components/datatables/scrolling/horizontal.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2136,7 +2134,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/scrolling/both.html" class="m-menu__link ">
+														<a  href="../../components/datatables/scrolling/both.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2162,7 +2160,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/locked/left.html" class="m-menu__link ">
+														<a  href="../../components/datatables/locked/left.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2172,7 +2170,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/locked/right.html" class="m-menu__link ">
+														<a  href="../../components/datatables/locked/right.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2182,7 +2180,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/locked/both.html" class="m-menu__link ">
+														<a  href="../../components/datatables/locked/both.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2192,7 +2190,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/locked/html-table.html" class="m-menu__link ">
+														<a  href="../../components/datatables/locked/html-table.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2218,7 +2216,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/child/data-local.html" class="m-menu__link ">
+														<a  href="../../components/datatables/child/data-local.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2228,7 +2226,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/child/data-ajax.html" class="m-menu__link ">
+														<a  href="../../components/datatables/child/data-ajax.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2254,7 +2252,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/api/methods.html" class="m-menu__link ">
+														<a  href="../../components/datatables/api/methods.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2264,7 +2262,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/datatables/api/events.html" class="m-menu__link ">
+														<a  href="../../components/datatables/api/events.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2298,7 +2296,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/portlets/base.html" class="m-menu__link ">
+											<a  href="../../components/portlets/base.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2308,7 +2306,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/portlets/advanced.html" class="m-menu__link ">
+											<a  href="../../components/portlets/advanced.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2318,7 +2316,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/portlets/creative.html" class="m-menu__link ">
+											<a  href="../../components/portlets/creative.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2328,7 +2326,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/portlets/tabbed.html" class="m-menu__link ">
+											<a  href="../../components/portlets/tabbed.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2338,7 +2336,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/portlets/draggable.html" class="m-menu__link ">
+											<a  href="../../components/portlets/draggable.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2348,7 +2346,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/portlets/tools.html" class="m-menu__link ">
+											<a  href="../../components/portlets/tools.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2379,7 +2377,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/timeline/timeline-1.html" class="m-menu__link ">
+											<a  href="../../components/timeline/timeline-1.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2389,7 +2387,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/timeline/timeline-2.html" class="m-menu__link ">
+											<a  href="../../components/timeline/timeline-2.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2420,7 +2418,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/widgets/general.html" class="m-menu__link ">
+											<a  href="../../components/widgets/general.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2430,7 +2428,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/widgets/chart.html" class="m-menu__link ">
+											<a  href="../../components/widgets/chart.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2461,7 +2459,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/calendar/basic.html" class="m-menu__link ">
+											<a  href="../../components/calendar/basic.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2471,7 +2469,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/calendar/list-view.html" class="m-menu__link ">
+											<a  href="../../components/calendar/list-view.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2481,7 +2479,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/calendar/google.html" class="m-menu__link ">
+											<a  href="../../components/calendar/google.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2491,7 +2489,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/calendar/external-events.html" class="m-menu__link ">
+											<a  href="../../components/calendar/external-events.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2501,7 +2499,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/calendar/background-events.html" class="m-menu__link ">
+											<a  href="../../components/calendar/background-events.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2545,7 +2543,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/charts/amcharts/charts.html" class="m-menu__link ">
+														<a  href="../../components/charts/amcharts/charts.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2555,7 +2553,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/charts/amcharts/stock-charts.html" class="m-menu__link ">
+														<a  href="../../components/charts/amcharts/stock-charts.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2565,7 +2563,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a  href="../../../components/charts/amcharts/maps.html" class="m-menu__link ">
+														<a  href="../../components/charts/amcharts/maps.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2578,7 +2576,7 @@
 											</div>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/charts/flotcharts.html" class="m-menu__link ">
+											<a  href="../../components/charts/flotcharts.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2588,7 +2586,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/charts/google-charts.html" class="m-menu__link ">
+											<a  href="../../components/charts/google-charts.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2598,7 +2596,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/charts/morris-charts.html" class="m-menu__link ">
+											<a  href="../../components/charts/morris-charts.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2629,7 +2627,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/maps/google-maps.html" class="m-menu__link ">
+											<a  href="../../components/maps/google-maps.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2639,7 +2637,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/maps/jqvmap.html" class="m-menu__link ">
+											<a  href="../../components/maps/jqvmap.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2670,7 +2668,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/utils/session-timeout.html" class="m-menu__link ">
+											<a  href="../../components/utils/session-timeout.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2680,7 +2678,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../components/utils/idle-timer.html" class="m-menu__link ">
+											<a  href="../../components/utils/idle-timer.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2717,7 +2715,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../snippets/general/pricing-tables/pricing-table-1.html" class="m-menu__link ">
+											<a  href="../../snippets/general/pricing-tables/pricing-table-1.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2727,7 +2725,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../snippets/general/pricing-tables/pricing-table-2.html" class="m-menu__link ">
+											<a  href="../../snippets/general/pricing-tables/pricing-table-2.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2737,7 +2735,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../snippets/general/pricing-tables/pricing-table-3.html" class="m-menu__link ">
+											<a  href="../../snippets/general/pricing-tables/pricing-table-3.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2747,7 +2745,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../snippets/general/pricing-tables/pricing-table-4.html" class="m-menu__link ">
+											<a  href="../../snippets/general/pricing-tables/pricing-table-4.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2778,7 +2776,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../snippets/invoices/invoice-1.html" class="m-menu__link ">
+											<a  href="../../snippets/invoices/invoice-1.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2788,7 +2786,7 @@
 											</a>
 										</li>
 										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../snippets/invoices/invoice-2.html" class="m-menu__link ">
+											<a  href="../../snippets/invoices/invoice-2.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2800,7 +2798,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
+							<li class="m-menu__item  m-menu__item--submenu m-menu__item--open m-menu__item--expanded" aria-haspopup="true"  data-menu-submenu-toggle="hover">
 								<a  href="#" class="m-menu__link m-menu__toggle">
 									<i class="m-menu__link-icon flaticon-exclamation"></i>
 									<span class="m-menu__link-text">
@@ -2818,8 +2816,8 @@
 												</span>
 											</span>
 										</li>
-										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../../snippets/faq/faq-1.html" class="m-menu__link ">
+										<li class="m-menu__item  m-menu__item--active" aria-haspopup="true" >
+											<a  href="../../snippets/faq/faq-1.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -2863,7 +2861,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/user/login-1.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/user/login-1.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2873,7 +2871,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/user/login-2.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/user/login-2.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2883,7 +2881,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/user/login-3.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/user/login-3.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2893,7 +2891,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/user/login-4.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/user/login-4.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2903,7 +2901,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/user/login-5.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/user/login-5.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2929,7 +2927,7 @@
 												<span class="m-menu__arrow"></span>
 												<ul class="m-menu__subnav">
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/errors/error-1.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/errors/error-1.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2939,7 +2937,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/errors/error-2.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/errors/error-2.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2949,7 +2947,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/errors/error-3.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/errors/error-3.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2959,7 +2957,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/errors/error-4.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/errors/error-4.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2969,7 +2967,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/errors/error-5.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/errors/error-5.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -2979,7 +2977,7 @@
 														</a>
 													</li>
 													<li class="m-menu__item " aria-haspopup="true" >
-														<a target="_blank" href="../../../snippets/pages/errors/error-6.html" class="m-menu__link ">
+														<a target="_blank" href="../../snippets/pages/errors/error-6.html" class="m-menu__link ">
 															<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 																<span></span>
 															</i>
@@ -3005,11 +3003,11 @@
 						<div class="d-flex align-items-center">
 							<div class="mr-auto">
 								<h3 class="m-subheader__title m-subheader__title--separator">
-									Design Library
+									FAQ v1
 								</h3>
 								<ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
 									<li class="m-nav__item m-nav__item--home">
-										<a href="{{route('admin.dashboard')}}" class="m-nav__link m-nav__link--icon">
+										<a href="#" class="m-nav__link m-nav__link--icon">
 											<i class="m-nav__link-icon la la-home"></i>
 										</a>
 									</li>
@@ -3019,7 +3017,17 @@
 									<li class="m-nav__item">
 										<a href="" class="m-nav__link">
 											<span class="m-nav__link-text">
-												List of All Designs
+												FAQS
+											</span>
+										</a>
+									</li>
+									<li class="m-nav__separator">
+										-
+									</li>
+									<li class="m-nav__item">
+										<a href="" class="m-nav__link">
+											<span class="m-nav__link-text">
+												FAQ v1
 											</span>
 										</a>
 									</li>
@@ -3091,242 +3099,547 @@
 					</div>
 					<!-- END: Subheader -->
 					<div class="m-content">
-						<div class="m-portlet m-portlet--mobile">
+						<!--begin::Portlet-->
+						<div class="m-portlet m-portlet--space">
 							<div class="m-portlet__head">
 								<div class="m-portlet__head-caption">
 									<div class="m-portlet__head-title">
 										<h3 class="m-portlet__head-text">
-											Design Datatable
+											FAQ Example
 										</h3>
 									</div>
 								</div>
 								<div class="m-portlet__head-tools">
 									<ul class="m-portlet__nav">
 										<li class="m-portlet__nav-item">
-											<div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" data-dropdown-toggle="hover" aria-expanded="true">
-												<a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
-													<i class="la la-ellipsis-h m--font-brand"></i>
-												</a>
-												<div class="m-dropdown__wrapper">
-													<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-													<div class="m-dropdown__inner">
-														<div class="m-dropdown__body">
-															<div class="m-dropdown__content">
-																<ul class="m-nav">
-																	<li class="m-nav__section m-nav__section--first">
-																		<span class="m-nav__section-text">
-																			Quick Actions
-																		</span>
-																	</li>
-																	<li class="m-nav__item">
-																		<a href="" class="m-nav__link">
-																			<i class="m-nav__link-icon flaticon-share"></i>
-																			<span class="m-nav__link-text">
-																				Create Post
-																			</span>
-																		</a>
-																	</li>
-																	<li class="m-nav__item">
-																		<a href="" class="m-nav__link">
-																			<i class="m-nav__link-icon flaticon-chat-1"></i>
-																			<span class="m-nav__link-text">
-																				Send Messages
-																			</span>
-																		</a>
-																	</li>
-																	<li class="m-nav__item">
-																		<a href="" class="m-nav__link">
-																			<i class="m-nav__link-icon flaticon-multimedia-2"></i>
-																			<span class="m-nav__link-text">
-																				Upload File
-																			</span>
-																		</a>
-																	</li>
-																	<li class="m-nav__section">
-																		<span class="m-nav__section-text">
-																			Useful Links
-																		</span>
-																	</li>
-																	<li class="m-nav__item">
-																		<a href="" class="m-nav__link">
-																			<i class="m-nav__link-icon flaticon-info"></i>
-																			<span class="m-nav__link-text">
-																				FAQ
-																			</span>
-																		</a>
-																	</li>
-																	<li class="m-nav__item">
-																		<a href="" class="m-nav__link">
-																			<i class="m-nav__link-icon flaticon-lifebuoy"></i>
-																			<span class="m-nav__link-text">
-																				Support
-																			</span>
-																		</a>
-																	</li>
-																	<li class="m-nav__separator m-nav__separator--fit m--hide"></li>
-																	<li class="m-nav__item m--hide">
-																		<a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
-																			Submit
-																		</a>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
+											<a href="#" class="m-portlet__nav-link m-btn--pill">
+												<div class="m-input-icon m-input-icon--right">
+													<input type="text" class="form-control form-control-lg m-input m-input--solid m-input--pill" placeholder="Search FAQ...">
+													<span class="m-input-icon__icon m-input-icon__icon--right">
+														<span>
+															<i class="la la-search m--font-brand"></i>
+														</span>
+													</span>
 												</div>
-											</div>
+											</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 							<div class="m-portlet__body">
-								<!--begin: Search Form -->
-								<div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30">
-									<div class="row align-items-center">
-										<div class="col-xl-8 order-2 order-xl-1">
-											<div class="form-group m-form__group row align-items-center">
-												<div class="col-md-4">
-													<div class="m-form__group m-form__group--inline">
-														<div class="m-form__label">
-															<label>
-																Status:
-															</label>
-														</div>
-														<div class="m-form__control">
-															<select class="form-control m-bootstrap-select m-bootstrap-select--solid" id="m_form_status">
-																<option value="">
-																	All
-																</option>
-																<option value="1">
-																	Pending
-																</option>
-																<option value="2">
-																	Delivered
-																</option>
-																<option value="3">
-																	Canceled
-																</option>
-															</select>
-														</div>
-													</div>
-													<div class="d-md-none m--margin-bottom-10"></div>
-												</div>
-												<div class="col-md-4">
-													<div class="m-form__group m-form__group--inline">
-														<div class="m-form__label">
-															<label class="m-label m-label--single">
-																Type:
-															</label>
-														</div>
-														<div class="m-form__control">
-															<select class="form-control m-bootstrap-select m-bootstrap-select--solid" id="m_form_type">
-																<option value="">
-																	All
-																</option>
-																<option value="1">
-																	Online
-																</option>
-																<option value="2">
-																	Retail
-																</option>
-																<option value="3">
-																	Direct
-																</option>
-															</select>
-														</div>
-													</div>
-													<div class="d-md-none m--margin-bottom-10"></div>
-												</div>
-												<div class="col-md-4">
-													<div class="m-input-icon m-input-icon--left">
-														<input type="text" class="form-control m-input m-input--solid" placeholder="Search..." id="generalSearch">
-														<span class="m-input-icon__icon m-input-icon__icon--left">
-															<span>
-																<i class="la la-search"></i>
+								<div class="row">
+									<div class="col-xl-3">
+										<div class="m-tabs" data-tabs="true" data-tabs-contents="#m_sections">
+											<ul class="m-nav m-nav--active-bg m-nav--active-bg-padding-lg m-nav--font-lg m-nav--font-bold m--margin-bottom-20 m--margin-top-10 m--margin-right-40" id="m_nav" role="tablist">
+												<li class="m-nav__item" >
+													<a class="m-nav__link m-tabs__item m-tabs__item--active" data-tab-target="#m_section_1" href="#">
+														<span class="m-nav__link-text">
+															Buttons
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a class="m-nav__link m-tabs__item" data-tab-target="#m_section_2" href="#">
+														<span class="m-nav__link-text">
+															Google Maps
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a class="m-nav__link collapsed" role="tab" id="m_nav_link_1" data-toggle="collapse" href="#m_nav_sub_1" aria-expanded=" false">
+														<span class="m-nav__link-title">
+															<span class="m-nav__link-wrap">
+																<span class="m-nav__link-text">
+																	Datatables
+																</span>
 															</span>
 														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 order-1 order-xl-2 m--align-right">
-											<a href="#" class="btn btn-info m-btn m-btn--custom m-btn--icon m-btn--air">
-												<span>
-													<i class="la la-cart-plus"></i>
-													<span>
-														New Order
-													</span>
-												</span>
-											</a>
-											<div class="m-separator m-separator--dashed d-xl-none"></div>
+														<span class="m-nav__link-arrow"></span>
+													</a>
+													<ul class="m-nav__sub collapse" id="m_nav_sub_1" role="tabpanel" aria-labelledby="m_nav_link_1" data-parent="#m_nav">
+														<li class="m-nav__item">
+															<a class="m-nav__link m-tabs__item" data-tab-target="#m_section_3" href="#">
+																<span class="m-nav__link-bullet m-nav__link-bullet--dot">
+																	<span></span>
+																</span>
+																<span class="m-nav__link-text">
+																	Ul Fatures
+																</span>
+															</a>
+														</li>
+														<li class="m-nav__item">
+															<a class="m-nav__link m-tabs__item" data-tab-target="#m_section_4" href="#">
+																<span class="m-nav__link-bullet m-nav__link-bullet--dot">
+																	<span></span>
+																</span>
+																<span class="m-nav__link-title">
+																	<span class="m-nav__link-wrap">
+																		<span class="m-nav__link-text">
+																			Configuration
+																		</span>
+																	</span>
+																</span>
+															</a>
+														</li>
+														<li class="m-nav__item">
+															<a class="m-nav__link m-tabs__item" data-tab-target="#m_section_5" href="#">
+																<span class="m-nav__link-bullet m-nav__link-bullet--dot">
+																	<span></span>
+																</span>
+																<span class="m-nav__link-text">
+																	Menu Options
+																</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="m-nav__item">
+													<a class="m-nav__link  m-tabs__item" data-tab-target="#m_section_6" href="#">
+														<span class="m-nav__link-text">
+															Theme Configuration
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a class="m-nav__link collapsed" role="tab" id="m_nav_link_2"  data-toggle="collapse" href="#m_nav_sub_2" aria-expanded="  false">
+														<span class="m-nav__link-title">
+															<span class="m-nav__link-wrap">
+																<span class="m-nav__link-text">
+																	Top Menu
+																</span>
+															</span>
+														</span>
+														<span class="m-nav__link-arrow"></span>
+													</a>
+													<ul class="m-nav__sub collapse" id="m_nav_sub_2" role="tabpanel" aria-labelledby="m_nav_link_2" data-parent="#m_nav">
+														<li class="m-nav__item">
+															<a class="m-nav__link" data-toggle="tab" href="#m_section_7" role="tab">
+																<span class="m-nav__link-bullet m-nav__link-bullet--line">
+																	<span></span>
+																</span>
+																<span class="m-nav__link-text">
+																	New
+																</span>
+															</a>
+														</li>
+														<li class="m-nav__item">
+															<a class="m-nav__link" data-toggle="tab" href="#m_section_8" role="tab">
+																<span class="m-nav__link-bullet m-nav__link-bullet--line">
+																	<span></span>
+																</span>
+																<span class="m-nav__link-title">
+																	<span class="m-nav__link-wrap">
+																		<span class="m-nav__link-text">
+																			Pending
+																		</span>
+																	</span>
+																</span>
+															</a>
+														</li>
+														<li class="m-nav__item">
+															<a class="m-nav__link" data-toggle="tab" href="#m_section_9" role="tab">
+																<span class="m-nav__link-bullet m-nav__link-bullet--line">
+																	<span></span>
+																</span>
+																<span class="m-nav__link-text">
+																	Replied
+																</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="m-nav__item">
+													<a class="m-nav__link"  data-toggle="pill"  href="#">
+														<span class="m-nav__link-text">
+															Sidebar Menu
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a class="m-nav__link"  data-toggle="pill"  href="#" >
+														<span class="m-nav__link-text">
+															Horizontal Menu
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a class="m-nav__link"  data-toggle="pill"  href="#">
+														<span class="m-nav__link-text">
+															GULP Tasks
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a href="" class="m-nav__link">
+														<span class="m-nav__link-text">
+															Coding & Extending
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a href="" class="m-nav__link">
+														<span class="m-nav__link-text">
+															References
+														</span>
+													</a>
+												</li>
+											</ul>
 										</div>
 									</div>
-								</div>
-								<!--end: Search Form -->
-		<!--begin: Selected Rows Group Action Form -->
-								<div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30 collapse" id="m_datatable_group_action_form">
-									<div class="row align-items-center">
-										<div class="col-xl-12">
-											<div class="m-form__group m-form__group--inline">
-												<div class="m-form__label m-form__label-no-wrap">
-													<label class="m--font-bold m--font-danger-">
-														Selected
-														<span id="m_datatable_selected_number"></span>
-														records:
-													</label>
-												</div>
-												<div class="m-form__control">
-													<div class="btn-toolbar">
-														<div class="dropdown">
-															<button type="button" class="btn btn-accent btn-sm dropdown-toggle" data-toggle="dropdown">
-																Update status
-															</button>
-															<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-																<a class="dropdown-item" href="#">
-																	Pending
-																</a>
-																<a class="dropdown-item" href="#">
-																	Delivered
-																</a>
-																<a class="dropdown-item" href="#">
-																	Canceled
-																</a>
+									<div class="col-xl-9">
+										<div class="m-tabs-content" id="m_sections">
+											<!--begin::Section 1-->
+											<div class="m-tabs-content__item m-tabs-content__item--active" id="m_section_1">
+												<h4 class="m--font-bold m--margin-top-15 m--margin-bottom-20">
+													General Instruction
+												</h4>
+												<div class="m-accordion m-accordion--section m-accordion--padding-lg" id="m_section_1_content">
+													<!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed-" role="tab" id="m_section_1_content_1_head" data-toggle="collapse" href="#m_section_1_content_1_body" >
+															<span class="m-accordion__item-title">
+																Lorem Ipsum has been the industry
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse show" id="m_section_1_content_1_body" role="tabpanel" aria-labelledby="m_section_1_content_1_head" data-parent="#m_section_1_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+																</p>
+																<p>
+																	Type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
 															</div>
 														</div>
-														&nbsp;&nbsp;&nbsp;
-														<button class="btn btn-sm btn-danger" type="button" id="m_datatable_delete_all">
-															Delete All
-														</button>
-														&nbsp;&nbsp;&nbsp;
-														<button class="btn btn-sm btn-success" type="button" data-toggle="modal" data-target="#m_modal_fetch_id">
-															Fetch Selected Records
-														</button>
 													</div>
+													<!--end::Item-->    
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_1_content_2_head" data-toggle="collapse" href="#m_section_1_content_2_body" >
+															<span class="m-accordion__item-title">
+																It has survived not only five centuries
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_1_content_2_body" role="tabpanel" aria-labelledby="m_section_1_content_2_head" data-parent="#m_section_1_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever
+																</p>
+																<p>
+																	Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  nto  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha.
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->   
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_1_content_3_head" data-toggle="collapse" href="#m_section_1_content_3_body" >
+															<span class="m-accordion__item-title">
+																Type and scrambled it to make a type specimen book
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_1_content_3_body" role="tabpanel" aria-labelledby="m_section_1_content_3_head" data-parent="#m_section_1_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->
 												</div>
 											</div>
+											<!--begin::Section 1-->  
+                    <!--begin::Section 2-->
+											<div class="m-tabs-content__item" id="m_section_2">
+												<h4 class="m--font-bold m--margin-top-15 m--margin-bottom-20">
+													Terms & Conditions
+												</h4>
+												<div class="m-accordion m-accordion--section m-accordion--padding-lg" id="m_section_2_content">
+													<!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed-" role="tab" id="m_section_2_content_1_head" data-toggle="collapse" href="#m_section_2_content_1_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-gift"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																Lorem Ipsum has been the industry
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse show" id="m_section_2_content_1_body" role="tabpanel" aria-labelledby="m_section_2_content_1_head" data-parent="#m_section_2_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+																</p>
+																<p>
+																	Type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->    
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_2_content_2_head" data-toggle="collapse" href="#m_section_2_content_2_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-calendar-3"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																It has survived not only five centuries
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_2_content_2_body" role="tabpanel" aria-labelledby="m_section_2_content_2_head" data-parent="#m_section_2_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever
+																</p>
+																<p>
+																	Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  nto  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha.
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->   
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_2_content_3_head" data-toggle="collapse" href="#m_section_2_content_3_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-security"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																Type and scrambled it to make a type specimen book
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_2_content_3_body" role="tabpanel" aria-labelledby="m_section_2_content_3_head" data-parent="#m_section_2_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->
+												</div>
+											</div>
+											<!--begin::Section 2-->
+                    <!--begin::Section 3-->
+											<div class="m-tabs-content__item" id="m_section_3">
+												<h4 class="m--font-bold m--margin-top-15 m--margin-bottom-20">
+													User Policy
+												</h4>
+												<div class="m-accordion m-accordion--bordered" id="m_section_3_content">
+													<!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head" role="tab" id="m_section_3_content_1_head" data-toggle="collapse" href="#m_section_3_content_1_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-gift"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																Lorem Ipsum has been the industry
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse show" id="m_section_3_content_1_body" role="tabpanel" aria-labelledby="m_section_3_content_1_head" data-parent="#m_section_3_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+																</p>
+																<p>
+																	Type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->    
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_3_content_2_head" data-toggle="collapse" href="#m_section_3_content_2_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-calendar-3"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																It has survived not only five centuries
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_3_content_2_body" role="tabpanel" aria-labelledby="m_section_3_content_2_head" data-parent="#m_section_3_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever
+																</p>
+																<p>
+																	Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  nto  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha.
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->   
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_3_content_3_head" data-toggle="collapse" href="#m_section_3_content_3_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-security"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																Type and scrambled it to make a type specimen book
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_3_content_3_body" role="tabpanel" aria-labelledby="m_section_3_content_3_head" data-parent="#m_section_3_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->
+												</div>
+											</div>
+											<!--begin::Section 3-->
 										</div>
 									</div>
 								</div>
-								<!--end: Selected Rows Group Action Form -->
-		<!--begin: Datatable -->
-								<div class="m_datatable" id="local_record_selection"></div>
-								<!--end: Datatable -->
 							</div>
 						</div>
-						
+						<!--end::Portlet-->
 					</div>
 				</div>
 			</div>
 			<!-- end:: Body -->
 <!-- begin::Footer -->
-			<footer class="m-grid__item  m-footer ">
-				<div class="m-container m-container--responsive m-container--xxl m-container--full-height">
+			<footer class="m-grid__item		m-footer ">
+				<div class="m-container m-container--fluid m-container--full-height m-page__container">
 					<div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
 						<div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
 							<span class="m-footer__copyright">
-								2018 &copy; Nymbl. All Rights Reserved.
-								<a href="" class="m-link">
-									
+								2017 &copy; Metronic theme by
+								<a href="https://keenthemes.com" class="m-link">
+									Keenthemes
 								</a>
 							</span>
 						</div>
@@ -3360,7 +3673,7 @@
 										</span>
 									</a>
 								</li>
-								<li class="m-nav__item m-nav__item--last">
+								<li class="m-nav__item m-nav__item">
 									<a href="#" class="m-nav__link" data-toggle="m-tooltip" title="Support Center" data-placement="left">
 										<i class="m-nav__link-icon flaticon-info m--icon-font-size-lg3"></i>
 									</a>
@@ -3403,7 +3716,7 @@
 								<div class="m-messenger__wrapper">
 									<div class="m-messenger__message m-messenger__message--in">
 										<div class="m-messenger__message-pic">
-											<img src="components/assets/app/media/img//users/user3.jpg" alt=""/>
+											<img src="../../assets/app/media/img//users/user3.jpg" alt=""/>
 										</div>
 										<div class="m-messenger__message-body">
 											<div class="m-messenger__message-arrow"></div>
@@ -3433,7 +3746,7 @@
 								<div class="m-messenger__wrapper">
 									<div class="m-messenger__message m-messenger__message--in">
 										<div class="m-messenger__message-pic">
-											<img src="components/assets/app/media/img//users/user3.jpg" alt=""/>
+											<img src="../../assets/app/media/img//users/user3.jpg" alt=""/>
 										</div>
 										<div class="m-messenger__message-body">
 											<div class="m-messenger__message-arrow"></div>
@@ -3466,7 +3779,7 @@
 								<div class="m-messenger__wrapper">
 									<div class="m-messenger__message m-messenger__message--in">
 										<div class="m-messenger__message-pic">
-											<img src="components/assets/app/media/img//users/user3.jpg"  alt=""/>
+											<img src="../../assets/app/media/img//users/user3.jpg"  alt=""/>
 										</div>
 										<div class="m-messenger__message-body">
 											<div class="m-messenger__message-arrow"></div>
@@ -3543,7 +3856,7 @@
 								<div class="m-messenger__wrapper">
 									<div class="m-messenger__message m-messenger__message--in">
 										<div class="m-messenger__message-pic">
-											<img src="components/assets/app/media/img//users/user3.jpg"  alt=""/>
+											<img src="../../assets/app/media/img//users/user3.jpg"  alt=""/>
 										</div>
 										<div class="m-messenger__message-body">
 											<div class="m-messenger__message-arrow"></div>
@@ -4010,5 +4323,4 @@
 				</a>
 			</li>
 		</ul>
-		
 @endsection
