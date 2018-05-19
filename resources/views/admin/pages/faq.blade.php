@@ -946,7 +946,7 @@
 																</li>
 																<li class="m-nav__separator m-nav__separator--fit"></li>
 																<li class="m-nav__item">
-																	<a href="profile.html" class="m-nav__link">
+																	<a href="{{route('admin.faq')}}" class="m-nav__link">
 																		<i class="m-nav__link-icon flaticon-info"></i>
 																		<span class="m-nav__link-text">
 																			FAQ
@@ -2817,7 +2817,7 @@
 											</span>
 										</li>
 										<li class="m-menu__item  m-menu__item--active" aria-haspopup="true" >
-											<a  href="../../snippets/faq/faq-1.html" class="m-menu__link ">
+											<a  href="{{route('admin.faq')}}" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -3015,7 +3015,7 @@
 										-
 									</li>
 									<li class="m-nav__item">
-										<a href="" class="m-nav__link">
+										<a href="{{route('admin.faq')}}" class="m-nav__link">
 											<span class="m-nav__link-text">
 												FAQS
 											</span>
