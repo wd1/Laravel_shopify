@@ -27,6 +27,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('authCallback', 'Auth\ShopifyController@authCallback');
     Route::get('linkShop', 'Auth\ShopifyController@linkShop');
     Route::post('/upload', ['as' =>  'upload', 'uses' => 'Admin\PagesController@upload']);
+    Route::post('/download', ['as' =>  'download', 'uses' => 'Admin\PagesController@download']);
+    Route::get('/download', ['as' =>  'download', 'uses' => 'Admin\PagesController@download']);
     // Route::get('/upload', ['as' =>  'upload', 'uses' => 'Admin\PagesController@upload']);
 });
 
@@ -46,4 +48,5 @@ Route::post('activation/resend', ['as' =>  'activation_key_resend.post', 'uses' 
 // username forgot_username
 Route::get('username/reminder', ['as' =>  'username_reminder', 'uses' => 'Auth\ForgotUsernameController@showForgotUsernameForm']);
 Route::post('username/reminder', ['as' =>  'username_reminder.post', 'uses' => 'Auth\ForgotUsernameController@sendUserameReminder']);
+
 

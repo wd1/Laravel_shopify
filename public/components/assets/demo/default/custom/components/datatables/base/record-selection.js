@@ -9,7 +9,7 @@ var DatatableRecordSelectionDemo = function() {
 			type: 'remote',
 			source: {
 				read: {
-					url: 'https://keenthemes.com/metronic/preview/inc/api/datatables/demos/default.php',
+					url: '/download',
 				},
 			},
 			pageSize: 10,
@@ -42,11 +42,11 @@ var DatatableRecordSelectionDemo = function() {
 				textAlign: 'center',
 				selector: {class: 'm-checkbox--solid m-checkbox--brand'},
 			}, {
-				field: 'thumb_image',
+				field: 'img_url',
 				title: 'Thumbnail',
 				width: 100,
 				template: function(row) {
-					return '<img style="width:100px;height:100px;" src="http://nymbl.io/dashboard/assets/img/no_image.jpg"'+'</>';
+					return '<img style="width:100px;height:100px;" src="'+row.img_url+'"'+'</>';
 				},
 			}, {
 				field: 'ID',
