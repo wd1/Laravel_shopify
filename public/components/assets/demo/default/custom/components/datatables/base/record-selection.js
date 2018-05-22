@@ -9,7 +9,7 @@ var DatatableRecordSelectionDemo = function() {
 			type: 'remote',
 			source: {
 				read: {
-					url: '/download',
+					url: 'download',
 				},
 			},
 			pageSize: 10,

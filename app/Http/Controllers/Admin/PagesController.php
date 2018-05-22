@@ -43,7 +43,7 @@ class PagesController extends Controller
         $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
 
         // $destinationPath = '../../public_html/nymbl.io/dashboard/library';
-        $destinationPath = '../../nymbl.io/dashboard/library/'.(auth()->user()->id+10000000);
+        $destinationPath = 'library/'.(auth()->user()->id+10000000);
 
         $image->move($destinationPath, $input['imagename']);
 
@@ -52,7 +52,7 @@ class PagesController extends Controller
 
     public function download()
     {
-        $dir = '../../nymbl.io/dashboard/library/'.(auth()->user()->id+10000000);
+        $dir = 'library/'.(auth()->user()->id+10000000);
         $files1 = array_values(array_diff(scandir($dir), array('..', '.')));
         $filecount = 0;
         $files = glob($dir . "*");
