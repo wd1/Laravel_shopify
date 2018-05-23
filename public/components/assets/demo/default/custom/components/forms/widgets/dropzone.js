@@ -3,6 +3,7 @@
 var DropzoneDemo = function () {    
     //== Private functions
     var demos = function () {
+        
         // single file upload
         Dropzone.options.mDropzoneOne = {
             paramName: "file", // The name that will be used to transfer the file
@@ -40,7 +41,9 @@ var DropzoneDemo = function () {
             maxFilesize: 20, // MB
             addRemoveLinks: true,
             acceptedFiles: "image/*",
+
             accept: function(file, done) {
+                console.log(file);
                 if (file.name == "justinbieber.jpg") {
                     done("Naha, you don't.");
                 } else { 

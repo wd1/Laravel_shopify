@@ -45466,6 +45466,11 @@ var Dropzone = function (_Emitter) {
          */
         dictInvalidFileType: "You can't upload files of this type.",
 
+		/**
+         * If the file aspect ratio doesn't match.
+         */
+        dictInvalidFileSize: "You can't upload files of this aspect ratio. Must be more than 7:10",
+
         /**
          * If the server response was invalid.
          * `{{statusCode}}` will be replaced with the servers status code.
@@ -46794,16 +46799,46 @@ var Dropzone = function (_Emitter) {
   }, {
     key: "accept",
     value: function accept(file, done) {
-      if (file.size > this.options.maxFilesize * 1024 * 1024) {
-        return done(this.options.dictFileTooBig.replace("{{filesize}}", Math.round(file.size / 1024 / 10.24) / 100).replace("{{maxFilesize}}", this.options.maxFilesize));
-      } else if (!Dropzone.isValidFile(file, this.options.acceptedFiles)) {
-        return done(this.options.dictInvalidFileType);
-      } else if (this.options.maxFiles != null && this.getAcceptedFiles().length >= this.options.maxFiles) {
-        done(this.options.dictMaxFilesExceeded.replace("{{maxFiles}}", this.options.maxFiles));
-        return this.emit("maxfilesexceeded", file);
-      } else {
-        return this.options.accept.call(this, file, done);
-      }
+	  window.URL    = window.URL || window.webkitURL;
+	  var useBlob   = false && window.URL;
+	  var reader = new FileReader();
+	  	// console.log(this);
+		var parent= this;
+		reader.addEventListener("load", function () {
+			var image  = new Image();
+			image.addEventListener("load", function () {
+				var imageInfo = file.name +' '+
+					image.width +'×'+
+					image.height +' '+
+					file.type +' '+
+					Math.round(file.size/1024) +'KB';
+				// Show image and info
+				// document.body.appendChild( this );
+				// document.body.insertAdjacentHTML("beforeend", imageInfo +'<br>');
+				if (useBlob) {
+					// Free some memory
+					window.URL.revokeObjectURL(image.src);
+				}
+				if (file.size > parent.options.maxFilesize * 1024 * 1024) {
+					return done(parent.options.dictFileTooBig.replace("{{filesize}}", Math.round(file.size / 1024 / 10.24) / 100).replace("{{maxFilesize}}", this.options.maxFilesize));
+				} else if (!Dropzone.isValidFile(file, parent.options.acceptedFiles)) {
+					return done(parent.options.dictInvalidFileType);
+				} else if (parent.options.maxFiles != null && parent.getAcceptedFiles().length >= parent.options.maxFiles) {
+					done(parent.options.dictMaxFilesExceeded.replace("{{maxFiles}}", parent.options.maxFiles));
+					return parent.emit("maxfilesexceeded", file);
+				} else if (image.width/image.height>7/10) {
+					return done(parent.options.dictInvalidFileSize);
+				} else if (image.width<1000) {
+					return done("Width is too small. Must be larger than 1000px");
+				}else {
+					return parent.options.accept.call(parent, file, done);
+				}
+			});
+			image.src = useBlob ? window.URL.createObjectURL(file) : reader.result;
+		});
+
+		reader.readAsDataURL(file);  
+      
     }
   }, {
     key: "addFile",
