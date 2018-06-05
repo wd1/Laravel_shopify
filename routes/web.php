@@ -49,4 +49,6 @@ Route::post('activation/resend', ['as' =>  'activation_key_resend.post', 'uses' 
 Route::get('username/reminder', ['as' =>  'username_reminder', 'uses' => 'Auth\ForgotUsernameController@showForgotUsernameForm']);
 Route::post('username/reminder', ['as' =>  'username_reminder.post', 'uses' => 'Auth\ForgotUsernameController@sendUserameReminder']);
 
-
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}

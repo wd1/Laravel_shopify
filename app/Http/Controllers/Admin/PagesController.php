@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Upload;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
@@ -39,14 +41,26 @@ class PagesController extends Controller
         ]);
 
         $image = $request->file('file');
-
-        $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-
-        // $destinationPath = '../../public_html/nymbl.io/dashboard/library';
+        
+        $input['imagename'] = pathinfo($image->getClientOriginalName(),PATHINFO_FILENAME);//$image->getClientOriginalExtension()
+        $input['imageext'] = pathinfo($image->getClientOriginalName(),PATHINFO_EXTENSION);
         $destinationPath = 'library/'.(auth()->user()->id+10000000);
 
-        $image->move($destinationPath, $input['imagename']);
-
+        //$count = Upload::where('userid', '=', auth()->user()->id)->where('image_name', '=', $image->getClientOriginalName())->count();
+        // $destinationPath = '../../public_html/nymbl.io/dashboard/library';
+        $newpath = $destinationPath.'/'.$input['imagename'].'.'.$input['imageext'];
+        $newname = $input['imagename'].'.'.$input['imageext'];
+        $counter = 0;
+        while (file_exists($newpath)) {
+            $newname = $input['imagename'] .'('. $counter .').'. $input['imageext'];
+            $newpath = $destinationPath.'/'.$newname;
+            $counter++;
+        }
+        $image->move($destinationPath, $newname);
+        $upload =  Upload::create([
+            'userid' => (auth()->user()->id),
+			'image_name' => $newname
+        ]);
         return back()->with('success','Image Upload successful');
     }
 
