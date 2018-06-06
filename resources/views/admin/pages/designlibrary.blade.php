@@ -3272,7 +3272,7 @@
 													<label class="m--font-bold m--font-danger-">
 														Selected
 														<span id="m_datatable_selected_number"></span>
-														records:
+														design(s):
 													</label>
 												</div>
 												<div class="m-form__control">

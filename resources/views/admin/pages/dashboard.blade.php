@@ -65,17 +65,17 @@
 										<i class="la la-close"></i>
 									</button>
 									<div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-dark m-aside-header-menu-mobile--submenu-skin-dark "  >
-										<ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+										<ul class="m-menu__nav">
 											<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" aria-haspopup="true">
-												<a  href="#" class="m-menu__link m-menu__toggle">
+												<a  href="{{route('admin.dashboard')}}" class="m-menu__link">
 													<span class="m-menu__item-here"></span>
 													<i class="m-menu__link-icon flaticon-analytics"></i>
 													<span class="m-menu__link-text">
 														Dashboard
 													</span>
-													<i class="m-menu__hor-arrow la la-angle-down"></i>
-													<i class="m-menu__ver-arrow la la-angle-right"></i>
+													
 												</a>
+												<!--
 												<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
 													<span class="m-menu__arrow m-menu__arrow--adjust"></span>
 													<ul class="m-menu__subnav">
@@ -212,7 +212,7 @@
 															</a>
 														</li>
 													</ul>
-												</div>
+												</div> -->
 											</li>
 											<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
 												<a  href="#" class="m-menu__link m-menu__toggle">
@@ -1442,8 +1442,8 @@
 											<div class="m-portlet__body">
 												<div class="form-group m-form__group row" style="height:95%;">
 													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px 18px;margin-left: -5px;">
-														<div style="padding: 100px; height:100%;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
-															<div class="m-dropzone__msg dz-message needsclick" style="margin-top:25%;">
+														<div style="padding: 175px; height:100%;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
+															<div class="m-dropzone__msg dz-message needsclick" style="margin:0px;">
 																<h3 class="m-dropzone__msg-title">Drop design(s) here or click to upload.</h3>
 																<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 
 Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>

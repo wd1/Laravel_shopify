@@ -88,6 +88,7 @@ class PagesController extends Controller
         for($i=0; $i<count($files1)-1; $i++) {
             $result=$result.'{
                 "RecordID": 1,
+                "id":'. $i.',
                 "img_url": "'.$dir.'/'.$files1[$i].'",
                 "OrderID": "61715-075",
                 "Country": "China",
@@ -115,6 +116,7 @@ class PagesController extends Controller
         }
         $result=$result.'{
                 "RecordID": 1,
+                "id":'. $i.',
                 "img_url": "'.$dir.'/'.$files1[count($files1)-1].'",
                 "OrderID": "61715-075",
                 "Country": "China",

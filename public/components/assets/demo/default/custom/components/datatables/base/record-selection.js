@@ -51,8 +51,11 @@ var DatatableRecordSelectionDemo = function() {
 			}, {
 				field: 'ID',
 				title: 'ID',
-				width: 40,
-				template: '{{RecordID}}',
+				width: 100,
+				template: function(row) {
+					// callback function support for column rendering
+					return row.id + 10000;
+				},//'{{RecordID}}+10000000',
 			}, {
 				field: 'ShipCountry',
 				title: 'Ship Country',
@@ -60,6 +63,13 @@ var DatatableRecordSelectionDemo = function() {
 				template: function(row) {
 					// callback function support for column rendering
 					return row.ShipCountry + ' - ' + row.ShipCity;
+				},
+			}, {
+				field: 'path',
+				title: 'URL',
+				width: 150,
+				template: function(row) {
+					return row.img_url;
 				},
 			}, {
 				field: 'ShipCity',
