@@ -472,19 +472,20 @@ var mApp = function() {
                 
                 html = '<div class="' + classes + '"><span>' + options.message + '</span><span>' + loading + '</span></div>';
                 options.width = mUtil.realWidth(html) + 10;
-                options.width = 10;
-                console.log(options.width);
+                options.width = target[0].offsetWidth / 2 - 155;
+                console.log(target[0].offsetWidth,target[0].offsetHeight);
+                
                 if (target == 'body') {
                     html = '<div class="' + classes + '" style="margin-left:-'+ (options.width / 2) +'px;"><span>' + options.message + '</span><span>' + loading + '</span></div>';
                 }
+                
             } else {
                 html = loading;
             }
-
+            // html = '<div class="' + classes + '" style="margin-left:-'+ (options.width / 2) +'px;margin-top:-50px;"><span>' + options.message + '</span><span>' + loading + '</span></div>';
             var params = {
                 message: html,
-                centerY: options.centerY,
-                centerX: options.centerX,
+
                 css: {
                     top: '30%',
                     left: '50%',
@@ -506,7 +507,7 @@ var mApp = function() {
                     }                    
                 }
             };
-
+            
             if (target == 'body') {
                 params.css.top = '50%';
                 $.blockUI(params);

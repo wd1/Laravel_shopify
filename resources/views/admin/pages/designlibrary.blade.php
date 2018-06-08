@@ -56,7 +56,7 @@
 									<div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-dark m-aside-header-menu-mobile--submenu-skin-dark "  >
 										<ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
 											<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" aria-haspopup="true">
-												<a  href="#" class="m-menu__link m-menu__toggle">
+												<a  href="{{route('admin.dashboard')}}" class="m-menu__link m-menu__toggle">
 													<span class="m-menu__item-here"></span>
 													<i class="m-menu__link-icon flaticon-analytics"></i>
 													<span class="m-menu__link-text">
@@ -344,12 +344,12 @@
 											<li class="m-menu__item">
 												<a  href="{{route('admin.designlibrary')}}" class="m-menu__link">
 													<span class="m-menu__item-here"></span>
-													<i class="m-menu__link-icon flaticon-suitcase"></i>
+													<i class="m-menu__link-icon flaticon-tabs"></i>
 													<span class="m-menu__link-text">
 														Library
 													</span>
-													<i class="m-menu__hor-arrow la la-angle-down"></i>
-													<i class="m-menu__ver-arrow la la-angle-right"></i>
+													<!-- <i class="m-menu__hor-arrow la la-angle-down"></i>
+													<i class="m-menu__ver-arrow la la-angle-right"></i> -->
 												</a>
 												<!-- <div class="m-menu__submenu  m-menu__submenu--fixed-xl m-menu__submenu--center" >
 													<span class="m-menu__arrow m-menu__arrow--adjust"></span>
@@ -3250,11 +3250,11 @@
 											</div>
 										</div>
 										<div class="col-xl-4 order-1 order-xl-2 m--align-right">
-											<a href="#" class="btn btn-info m-btn m-btn--custom m-btn--icon m-btn--air">
+											<a href="{{route('admin.dashboard')}}#upload_form" class="btn btn-info m-btn m-btn--custom m-btn--icon m-btn--air">
 												<span>
 													<i class="la la-cart-plus"></i>
 													<span>
-														New Order
+														Add a Design
 													</span>
 												</span>
 											</a>
@@ -3279,28 +3279,28 @@
 													<div class="btn-toolbar">
 														<div class="dropdown">
 															<button type="button" class="btn btn-accent btn-sm dropdown-toggle" data-toggle="dropdown">
-																Update status
+																Create from Image(s)
 															</button>
 															<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 																<a class="dropdown-item" href="#">
-																	Pending
+																	Store
 																</a>
 																<a class="dropdown-item" href="#">
-																	Delivered
+																	Mockup Only
 																</a>
 																<a class="dropdown-item" href="#">
-																	Canceled
+																	Store & Products CSV
 																</a>
 															</div>
 														</div>
-														&nbsp;&nbsp;&nbsp;
+														<!-- &nbsp;&nbsp;&nbsp;
 														<button class="btn btn-sm btn-danger" type="button" id="m_datatable_delete_all">
 															Delete All
 														</button>
 														&nbsp;&nbsp;&nbsp;
 														<button class="btn btn-sm btn-success" type="button" data-toggle="modal" data-target="#m_modal_fetch_id">
 															Fetch Selected Records
-														</button>
+														</button> -->
 													</div>
 												</div>
 											</div>

@@ -25511,11 +25511,13 @@ body.m-portlet--fullscreen {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  display: table;
+  display: block;
+  margin-top:-55px;
   table-layout: fixed; }
   .m-blockui > span {
     display: table-cell;
     vertical-align: middle;
+    margin-top: 100px;
     padding: 8px 15px;
     font-size: 1rem;
     font-weight: 400; }

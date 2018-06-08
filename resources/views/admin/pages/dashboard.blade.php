@@ -355,12 +355,12 @@
 											<li class="m-menu__item">
 												<a  href="{{route('admin.designlibrary')}}" class="m-menu__link">
 													<span class="m-menu__item-here"></span>
-													<i class="m-menu__link-icon flaticon-suitcase"></i>
+													<i class="m-menu__link-icon flaticon-tabs"></i>
 													<span class="m-menu__link-text">
 														Library
 													</span>
-													<i class="m-menu__hor-arrow la la-angle-down"></i>
-													<i class="m-menu__ver-arrow la la-angle-right"></i>
+													<!-- <i class="m-menu__hor-arrow la la-angle-down"></i>
+													<i class="m-menu__ver-arrow la la-angle-right"></i> -->
 												</a>
 												<!-- <div class="m-menu__submenu  m-menu__submenu--fixed-xl m-menu__submenu--center" >
 													<span class="m-menu__arrow m-menu__arrow--adjust"></span>
@@ -1438,11 +1438,11 @@
 												</ul>
 											</div>
 										</div>
-										<form class="m-form m-form--fit m-form--label-align-right" style="height:100%;">
+										<form id="upload_form" class="m-form m-form--fit m-form--label-align-right" style="height:100%;">
 											<div class="m-portlet__body">
 												<div class="form-group m-form__group row" style="height:95%;">
 													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px 18px;margin-left: -5px;">
-														<div style="padding: 175px; height:100%;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
+														<div style="padding: 175px;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
 															<div class="m-dropzone__msg dz-message needsclick" style="margin:0px;">
 																<h3 class="m-dropzone__msg-title">Drop design(s) here or click to upload.</h3>
 																<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 
@@ -1560,7 +1560,7 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 										</div>
 										<div class="m-portlet__body">
 											<!--begin: Datatable -->
-											<div class="m_datatable" id="m_datatable_latest_orders"></div>
+											<div class="m_datatable" id="m_datatable_latest_orders" style="height:480px !important"></div>
 											<!--end: Datatable -->
 										</div>
 									</div>

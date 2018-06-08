@@ -34,21 +34,14 @@ var DatatableRecordSelectionDemo = function() {
 
 		// columns definition
 		columns: [
-			{
+			 {
 				field: 'RecordID',
 				title: '#',
 				sortable: false,
 				width: 40,
 				textAlign: 'center',
 				selector: {class: 'm-checkbox--solid m-checkbox--brand'},
-			}, {
-				field: 'img_url',
-				title: 'Thumbnail',
-				width: 100,
-				template: function(row) {
-					return '<img style="width:100px;height:100px;" src="'+row.img_url+'"'+'</>';
-				},
-			}, {
+			},{
 				field: 'ID',
 				title: 'ID',
 				width: 100,
@@ -57,8 +50,15 @@ var DatatableRecordSelectionDemo = function() {
 					return row.id + 10000;
 				},//'{{RecordID}}+10000000',
 			}, {
+				field: 'img_url',
+				title: 'Thumbnail',
+				width: 100,
+				template: function(row) {
+					return '<img style="width:100px;height:100px;" src="'+row.img_url+'"'+'</>';
+				},
+			}, {
 				field: 'ShipCountry',
-				title: 'Ship Country',
+				title: 'Customer',
 				width: 150,
 				template: function(row) {
 					// callback function support for column rendering
@@ -66,80 +66,75 @@ var DatatableRecordSelectionDemo = function() {
 				},
 			}, {
 				field: 'path',
-				title: 'URL',
+				title: 'Design URL',
 				width: 150,
 				template: function(row) {
-					return row.img_url;
+					return '<a target="_blank" href="'+row.img_url+'">'+row.img_url+'</a>';
 				},
 			}, {
-				field: 'ShipCity',
-				title: 'Ship City',
-			}, {
-				field: 'Currency',
-				title: 'Currency',
-				width: 100,
+				field: 'Latitude',
+				title: 'Ship Status',
 			}, {
 				field: 'ShipDate',
 				title: 'Ship Date',
-			}, {
-				field: 'Latitude',
-				title: 'Latitude',
-			}, {
-				field: 'Status',
-				title: 'Status',
-				template: function(row) {
-					var status = {
-						1: {'title': 'Pending', 'class': 'm-badge--brand'},
-						2: {'title': 'Delivered', 'class': ' m-badge--metal'},
-						3: {'title': 'Canceled', 'class': ' m-badge--primary'},
-						4: {'title': 'Success', 'class': ' m-badge--success'},
-						5: {'title': 'Info', 'class': ' m-badge--info'},
-						6: {'title': 'Danger', 'class': ' m-badge--danger'},
-						7: {'title': 'Warning', 'class': ' m-badge--warning'},
-					};
-					return '<span class="m-badge ' + status[row.Status].class + ' m-badge--wide">' + status[row.Status].title + '</span>';
-				},
-			}, {
-				field: 'Type',
-				title: 'Type',
-				template: function(row) {
-					var status = {
-						1: {'title': 'Online', 'state': 'danger'},
-						2: {'title': 'Retail', 'state': 'primary'},
-						3: {'title': 'Direct', 'state': 'accent'},
-					};
-					return '<span class="m-badge m-badge--' + status[row.Type].state + ' m-badge--dot"></span>&nbsp;<span class="m--font-bold m--font-' + status[row.Type].state +
-						'">' +
-						status[row.Type].title + '</span>';
-				},
-			}, {
-				field: 'Actions',
-				width: 110,
-				title: 'Actions',
-				sortable: false,
-				overflow: 'visible',
-				template: function (row, index, datatable) {
-					var dropup = (datatable.getPageSize() - index) <= 4 ? 'dropup' : '';
-					return '\
-						<div class="dropdown ' + dropup + '">\
-							<a href="#" class="btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown">\
-                                <i class="la la-ellipsis-h"></i>\
-                            </a>\
-						  	<div class="dropdown-menu dropdown-menu-right">\
-						    	<a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>\
-						    	<a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>\
-						    	<a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>\
-						  	</div>\
-						</div>\
-						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Edit details">\
-							<i class="la la-edit"></i>\
-						</a>\
-						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" title="Delete">\
-							<i class="la la-trash"></i>\
-						</a>\
-					';
-				},
-			}],
+			}
+			// , {
+			// 	field: 'Status',
+			// 	title: 'Status',
+			// 	template: function(row) {
+			// 		var status = {
+			// 			1: {'title': 'Pending', 'class': 'm-badge--brand'},
+			// 			2: {'title': 'Delivered', 'class': ' m-badge--metal'},
+			// 			3: {'title': 'Canceled', 'class': ' m-badge--primary'},
+			// 			4: {'title': 'Success', 'class': ' m-badge--success'},
+			// 			5: {'title': 'Info', 'class': ' m-badge--info'},
+			// 			6: {'title': 'Danger', 'class': ' m-badge--danger'},
+			// 			7: {'title': 'Warning', 'class': ' m-badge--warning'},
+			// 		};
+			// 		return '<span class="m-badge ' + status[row.Status].class + ' m-badge--wide">' + status[row.Status].title + '</span>';
+			// 	},
+			// }, {
+			// 	field: 'Type',
+			// 	title: 'Type',
+			// 	template: function(row) {
+			// 		var status = {
+			// 			1: {'title': 'Online', 'state': 'danger'},
+			// 			2: {'title': 'Retail', 'state': 'primary'},
+			// 			3: {'title': 'Direct', 'state': 'accent'},
+			// 		};
+			// 		return '<span class="m-badge m-badge--' + status[row.Type].state + ' m-badge--dot"></span>&nbsp;<span class="m--font-bold m--font-' + status[row.Type].state +
+			// 			'">' +
+			// 			status[row.Type].title + '</span>';
+			// 	},
+			// }, {
+			// 	field: 'Actions',
+			// 	width: 110,
+			// 	title: 'Actions',
+			// 	sortable: false,
+			// 	overflow: 'visible',
+			// 	template: function (row, index, datatable) {
+			// 		var dropup = (datatable.getPageSize() - index) <= 4 ? 'dropup' : '';
+			// 		return '\
+			// 			<div class="dropdown ' + dropup + '">\
+			// 				<a href="#" class="btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown">\
+            //                     <i class="la la-ellipsis-h"></i>\
+            //                 </a>\
+			// 			  	<div class="dropdown-menu dropdown-menu-right">\
+			// 			    	<a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>\
+			// 			    	<a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>\
+			// 			    	<a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>\
+			// 			  	</div>\
+			// 			</div>\
+			// 			<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Edit details">\
+			// 				<i class="la la-edit"></i>\
+			// 			</a>\
+			// 			<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" title="Delete">\
+			// 				<i class="la la-trash"></i>\
+			// 			</a>\
+			// 		';
+			// 	},
+			// }
+			],
 	};
 
 	// basic demo
