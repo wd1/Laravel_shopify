@@ -1010,14 +1010,16 @@
 			<button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn">
 				<i class="la la-close"></i>
 			</button>
+			<!-- BEGIN: Aside Menu -->
+			<!-- 
 			<div id="m_aside_left" class="m-aside-left  m-aside-left--skin-dark ">
-				<!-- BEGIN: Aside Menu -->
-	<div 
-		id="m_ver_menu" 
-		class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " 
-		data-menu-vertical="true"
-		 data-menu-scrollable="true" data-menu-dropdown-timeout="500"  
-		>
+				
+				<div 
+					id="m_ver_menu" 
+					class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " 
+					data-menu-vertical="true"
+					data-menu-scrollable="true" data-menu-dropdown-timeout="500"  
+					>
 					<ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
 						<li class="m-menu__section">
 							<h4 class="m-menu__section-text">
@@ -1390,8 +1392,9 @@
 						</li>
 					</ul>
 				</div>
+				</div> -->
 				<!-- END: Aside Menu -->
-			</div>
+			
 			<!-- END: Left Aside -->					
 		<!-- begin::Body -->
 			<div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor-desktop m-grid--desktop m-body">
