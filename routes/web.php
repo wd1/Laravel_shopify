@@ -20,6 +20,9 @@ Route::group(['namespace' => 'Admin', 'prefix' => '', 'middleware' => 'auth'], f
 	Route::get('/blank', ['as' => 'admin.blank', 'uses' => 'PagesController@getBlank']);
     Route::get('/designlibrary', ['as' => 'admin.designlibrary', 'uses' => 'PagesController@getDesignLibrary']);
     Route::get('/faq', ['as' => 'admin.faq', 'uses' => 'PagesController@getFAQ']);
+    Route::get('/about', ['as' => 'admin.about', 'uses' => 'PagesController@getAbout']);
+    Route::get('/terms', ['as' => 'admin.terms', 'uses' => 'PagesController@getTerms']);
+    Route::get('/privacy', ['as' => 'admin.privacy', 'uses' => 'PagesController@getPrivacy']);
 });
 
 Route::group(['middleware' => ['web']], function () {

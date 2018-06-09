@@ -2866,7 +2866,7 @@
 						<div class="d-flex align-items-center">
 							<div class="mr-auto">
 								<h3 class="m-subheader__title m-subheader__title--separator">
-									FAQ v1
+									Terms
 								</h3>
 								<ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
 									<li class="m-nav__item m-nav__item--home">
@@ -2875,88 +2875,26 @@
 										</a>
 									</li>
 									<li class="m-nav__separator">
-										-
+										
 									</li>
 									<li class="m-nav__item">
-										<a href="{{route('admin.faq')}}" class="m-nav__link">
+										<a href="#" class="m-nav__link">
 											<span class="m-nav__link-text">
-												FAQS
+												
 											</span>
 										</a>
 									</li>
 									<li class="m-nav__separator">
-										-
+										
 									</li>
 									<li class="m-nav__item">
 										<a href="" class="m-nav__link">
 											<span class="m-nav__link-text">
-												FAQ v1
+												
 											</span>
 										</a>
 									</li>
 								</ul>
-							</div>
-							<div>
-								<div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" data-dropdown-toggle="hover" aria-expanded="true">
-									<a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
-										<i class="la la-plus m--hide"></i>
-										<i class="la la-ellipsis-h"></i>
-									</a>
-									<div class="m-dropdown__wrapper">
-										<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-										<div class="m-dropdown__inner">
-											<div class="m-dropdown__body">
-												<div class="m-dropdown__content">
-													<ul class="m-nav">
-														<li class="m-nav__section m-nav__section--first m--hide">
-															<span class="m-nav__section-text">
-																Quick Actions
-															</span>
-														</li>
-														<li class="m-nav__item">
-															<a href="" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-share"></i>
-																<span class="m-nav__link-text">
-																	Activity
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a href="" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-chat-1"></i>
-																<span class="m-nav__link-text">
-																	Messages
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a href="" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-info"></i>
-																<span class="m-nav__link-text">
-																	FAQ
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a href="" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-lifebuoy"></i>
-																<span class="m-nav__link-text">
-																	Support
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__separator m-nav__separator--fit"></li>
-														<li class="m-nav__item">
-															<a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
-																Submit
-															</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -2964,7 +2902,7 @@
 					<div class="m-content">
 						<!--begin::Portlet-->
 						<div class="m-portlet m-portlet--space">
-							<div class="m-portlet__head">
+							<!-- <div class="m-portlet__head">
 								<div class="m-portlet__head-caption">
 									<div class="m-portlet__head-title">
 										<h3 class="m-portlet__head-text">
@@ -2988,171 +2926,13 @@
 										</li>
 									</ul>
 								</div>
-							</div>
+							</div> -->
 							<div class="m-portlet__body">
 								<div class="row">
-									<div class="col-xl-3">
-										<div class="m-tabs" data-tabs="true" data-tabs-contents="#m_sections">
-											<ul class="m-nav m-nav--active-bg m-nav--active-bg-padding-lg m-nav--font-lg m-nav--font-bold m--margin-bottom-20 m--margin-top-10 m--margin-right-40" id="m_nav" role="tablist">
-												<li class="m-nav__item" >
-													<a class="m-nav__link m-tabs__item m-tabs__item--active" data-tab-target="#m_section_1" href="#">
-														<span class="m-nav__link-text">
-															Buttons
-														</span>
-													</a>
-												</li>
-												<li class="m-nav__item">
-													<a class="m-nav__link m-tabs__item" data-tab-target="#m_section_2" href="#">
-														<span class="m-nav__link-text">
-															Google Maps
-														</span>
-													</a>
-												</li>
-												<li class="m-nav__item">
-													<a class="m-nav__link collapsed" role="tab" id="m_nav_link_1" data-toggle="collapse" href="#m_nav_sub_1" aria-expanded=" false">
-														<span class="m-nav__link-title">
-															<span class="m-nav__link-wrap">
-																<span class="m-nav__link-text">
-																	Datatables
-																</span>
-															</span>
-														</span>
-														<span class="m-nav__link-arrow"></span>
-													</a>
-													<ul class="m-nav__sub collapse" id="m_nav_sub_1" role="tabpanel" aria-labelledby="m_nav_link_1" data-parent="#m_nav">
-														<li class="m-nav__item">
-															<a class="m-nav__link m-tabs__item" data-tab-target="#m_section_3" href="#">
-																<span class="m-nav__link-bullet m-nav__link-bullet--dot">
-																	<span></span>
-																</span>
-																<span class="m-nav__link-text">
-																	Ul Fatures
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a class="m-nav__link m-tabs__item" data-tab-target="#m_section_4" href="#">
-																<span class="m-nav__link-bullet m-nav__link-bullet--dot">
-																	<span></span>
-																</span>
-																<span class="m-nav__link-title">
-																	<span class="m-nav__link-wrap">
-																		<span class="m-nav__link-text">
-																			Configuration
-																		</span>
-																	</span>
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a class="m-nav__link m-tabs__item" data-tab-target="#m_section_5" href="#">
-																<span class="m-nav__link-bullet m-nav__link-bullet--dot">
-																	<span></span>
-																</span>
-																<span class="m-nav__link-text">
-																	Menu Options
-																</span>
-															</a>
-														</li>
-													</ul>
-												</li>
-												<li class="m-nav__item">
-													<a class="m-nav__link  m-tabs__item" data-tab-target="#m_section_6" href="#">
-														<span class="m-nav__link-text">
-															Theme Configuration
-														</span>
-													</a>
-												</li>
-												<li class="m-nav__item">
-													<a class="m-nav__link collapsed" role="tab" id="m_nav_link_2"  data-toggle="collapse" href="#m_nav_sub_2" aria-expanded="  false">
-														<span class="m-nav__link-title">
-															<span class="m-nav__link-wrap">
-																<span class="m-nav__link-text">
-																	Top Menu
-																</span>
-															</span>
-														</span>
-														<span class="m-nav__link-arrow"></span>
-													</a>
-													<ul class="m-nav__sub collapse" id="m_nav_sub_2" role="tabpanel" aria-labelledby="m_nav_link_2" data-parent="#m_nav">
-														<li class="m-nav__item">
-															<a class="m-nav__link" data-toggle="tab" href="#m_section_7" role="tab">
-																<span class="m-nav__link-bullet m-nav__link-bullet--line">
-																	<span></span>
-																</span>
-																<span class="m-nav__link-text">
-																	New
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a class="m-nav__link" data-toggle="tab" href="#m_section_8" role="tab">
-																<span class="m-nav__link-bullet m-nav__link-bullet--line">
-																	<span></span>
-																</span>
-																<span class="m-nav__link-title">
-																	<span class="m-nav__link-wrap">
-																		<span class="m-nav__link-text">
-																			Pending
-																		</span>
-																	</span>
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a class="m-nav__link" data-toggle="tab" href="#m_section_9" role="tab">
-																<span class="m-nav__link-bullet m-nav__link-bullet--line">
-																	<span></span>
-																</span>
-																<span class="m-nav__link-text">
-																	Replied
-																</span>
-															</a>
-														</li>
-													</ul>
-												</li>
-												<li class="m-nav__item">
-													<a class="m-nav__link"  data-toggle="pill"  href="#">
-														<span class="m-nav__link-text">
-															Sidebar Menu
-														</span>
-													</a>
-												</li>
-												<li class="m-nav__item">
-													<a class="m-nav__link"  data-toggle="pill"  href="#" >
-														<span class="m-nav__link-text">
-															Horizontal Menu
-														</span>
-													</a>
-												</li>
-												<li class="m-nav__item">
-													<a class="m-nav__link"  data-toggle="pill"  href="#">
-														<span class="m-nav__link-text">
-															GULP Tasks
-														</span>
-													</a>
-												</li>
-												<li class="m-nav__item">
-													<a href="" class="m-nav__link">
-														<span class="m-nav__link-text">
-															Coding & Extending
-														</span>
-													</a>
-												</li>
-												<li class="m-nav__item">
-													<a href="" class="m-nav__link">
-														<span class="m-nav__link-text">
-															References
-														</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-xl-9">
+									<div class="">
 										<div class="m-tabs-content" id="m_sections">
 											<!--begin::Section 1-->
-											<div class="m-tabs-content__item m-tabs-content__item--active" id="m_section_1">
+											<div class="m-tabs-content__item" id="m_section_1">
 												<h4 class="m--font-bold m--margin-top-15 m--margin-bottom-20">
 													General Instruction
 												</h4>
@@ -3257,7 +3037,7 @@
 											</div>
 											<!--begin::Section 1-->  
                     <!--begin::Section 2-->
-											<div class="m-tabs-content__item" id="m_section_2">
+											<div class="m-tabs-content__item m-tabs-content__item--active" id="m_section_2">
 												<h4 class="m--font-bold m--margin-top-15 m--margin-bottom-20">
 													Terms & Conditions
 												</h4>

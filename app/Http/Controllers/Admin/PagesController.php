@@ -32,6 +32,21 @@ class PagesController extends Controller
         return view('admin.pages.faq');
     }
 
+    public function getAbout()
+    {
+        return view('admin.pages.about');
+    }
+
+    public function getPrivacy()
+    {
+        return view('admin.pages.privacy');
+    }
+
+    public function getTerms()
+    {
+        return view('admin.pages.terms');
+    }
+
     public function upload(Request $request)
     {
         $this->validate($request, [

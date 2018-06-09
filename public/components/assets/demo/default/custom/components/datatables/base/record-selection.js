@@ -159,7 +159,15 @@ var DatatableRecordSelectionDemo = function() {
 		datatable.on('m-datatable--on-check m-datatable--on-uncheck m-datatable--on-layout-updated', function(e) {
 			var checkedNodes = datatable.rows('.m-datatable__row--active').nodes();
 			var count = checkedNodes.length;
-			$('#m_datatable_selected_number').html(count);
+			var count_string = '';
+			if( count == 1) {
+				count_string = count + " Design";
+				$('#m_datatable_button').html('Create from Image');
+			} else {
+				count_string = count + " Designs";
+				$('#m_datatable_button').html('Create from Images');
+			}
+			$('#m_datatable_selected_number').html(count_string);
 			if (count > 0) {
 				$('#m_datatable_group_action_form').collapse('show');
 			} else {

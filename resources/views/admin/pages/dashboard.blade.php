@@ -1445,7 +1445,7 @@
 											<div class="m-portlet__body">
 												<div class="form-group m-form__group row" style="height:95%;">
 													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px 18px;margin-left: -5px;">
-														<div style="padding: 175px;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
+														<div style="padding: 150px;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
 															<div class="m-dropzone__msg dz-message needsclick" style="margin:0px;">
 																<h3 class="m-dropzone__msg-title">Drop design(s) here or click to upload.</h3>
 																<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 
@@ -2203,35 +2203,29 @@ Only .png, .jpg, and .jpeg are allowed. 20MB max.</span>
 						<div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">
 							<ul class="m-footer__nav m-nav m-nav--inline m--pull-right">
 								<li class="m-nav__item">
-									<a href="#" class="m-nav__link">
+									<a href="{{route('admin.about')}}" class="m-nav__link">
 										<span class="m-nav__link-text">
 											About
 										</span>
 									</a>
 								</li>
 								<li class="m-nav__item">
-									<a href="#"  class="m-nav__link">
+									<a href="{{route('admin.privacy')}}"  class="m-nav__link">
 										<span class="m-nav__link-text">
 											Privacy
 										</span>
 									</a>
 								</li>
 								<li class="m-nav__item">
-									<a href="#" class="m-nav__link">
+									<a href="{{route('admin.terms')}}" class="m-nav__link">
 										<span class="m-nav__link-text">
 											T&C
 										</span>
 									</a>
 								</li>
-								<li class="m-nav__item">
-									<a href="#" class="m-nav__link">
-										<span class="m-nav__link-text">
-											Purchase
-										</span>
-									</a>
-								</li>
+								
 								<li class="m-nav__item m-nav__item--last">
-									<a href="#" class="m-nav__link" data-toggle="m-tooltip" title="Support Center" data-placement="left">
+									<a href="{{route('admin.faq')}}" class="m-nav__link" data-toggle="m-tooltip" title="Support Center" data-placement="left">
 										<i class="m-nav__link-icon flaticon-info m--icon-font-size-lg3"></i>
 									</a>
 								</li>

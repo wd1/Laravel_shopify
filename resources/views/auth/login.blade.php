@@ -11,13 +11,13 @@
 				<div class="m-login__container">
 					<div class="m-login__logo">
 						<a href="#">
-							<img src="components/assets/app/media/img//logos/logo-1.png">
+							<img width="100" src="assets/css/demo/demo9/media/img/logo/dashboardfavicon.png">
 						</a>
 					</div>
 					<div class="">
 						<div class="m-login__head">
 							<h3 class="m-login__title">
-								Sign In To Admin
+								Sign In to Nymbl App
 							</h3>
 							@include('notifications.status_message')
 		  				    @include('notifications.errors_message')

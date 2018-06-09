@@ -11,7 +11,7 @@
 					<div class="m-login__container">
 						<div class="m-login__logo">
 							<a href="#">
-								<img src="components/assets/app/media/img//logos/logo-1.png">
+								<img  width="100" src="assets/css/demo/demo9/media/img/logo/dashboardfavicon.png">
 							</a>
 						</div>
 						<div class="">
