@@ -105,7 +105,7 @@ class PagesController extends Controller
                 "RecordID": 1,
                 "id":'. $i.',
                 "img_url": "'.$dir.'/'.$files1[$i].'",
-                "OrderID": "61715-075",
+                "filename": "'.$files1[$i].'",
                 "Country": "China",
                 "ShipCountry": "CN",
                 "ShipCity": "Jim Brown",

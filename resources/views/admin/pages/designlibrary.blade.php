@@ -1,7 +1,7 @@
 
 @extends('layouts.admin')
 
-@section('title', 'Design Library')
+@section('title', 'Nymbl - Design Library')
 @section('description', 'This is the Design Library page')
 
 @section('content')
@@ -844,7 +844,7 @@
 											<a href="#" class="m-nav__link m-dropdown__toggle">
 												<span class="m-nav__link-icon m-nav__link-icon-alt">
 													<span class="m-nav__link-icon-wrapper">
-														<i class="flaticon-grid-menu"></i>
+														<i class="flaticon-chat"></i>
 													</span>
 												</span>
 											</a>
@@ -3117,7 +3117,7 @@
 										<div class="col-xl-4 order-1 order-xl-2 m--align-right">
 											<a href="{{route('admin.dashboard')}}#upload_form" class="btn btn-info m-btn m-btn--custom m-btn--icon m-btn--air">
 												<span>
-													<i class="la la-cart-plus"></i>
+													<i class="la flaticon-multimedia-2"></i>
 													<span>
 														Add a Design
 													</span>

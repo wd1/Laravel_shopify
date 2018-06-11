@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Nymbl | Dashboard')
+@section('title', 'Nymbl - Terms')
 @section('description', 'This is the dashboard')
 
 @section('content')
@@ -842,7 +842,7 @@
 											<a href="#" class="m-nav__link m-dropdown__toggle">
 												<span class="m-nav__link-icon m-nav__link-icon-alt">
 													<span class="m-nav__link-icon-wrapper">
-														<i class="flaticon-grid-menu"></i>
+														<i class="flaticon-chat"></i>
 													</span>
 												</span>
 											</a>

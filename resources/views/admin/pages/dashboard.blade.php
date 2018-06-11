@@ -992,7 +992,7 @@
 											<a href="#" class="m-nav__link m-dropdown__toggle">
 												<span class="m-nav__link-icon m-nav__link-icon-alt">
 													<span class="m-nav__link-icon-wrapper">
-														<i class="flaticon-grid-menu"></i>
+														<i class="flaticon-chat"></i>
 													</span>
 												</span>
 											</a>
@@ -1430,7 +1430,7 @@
 												<ul class="nav nav-pills nav-pills--brand m-nav-pills--align-right m-nav-pills--btn-pill m-nav-pills--btn-sm" role="tablist">
 													<li class="nav-item m-tabs__item">
 														<a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_widget4_tab1_content" role="tab">
-															All
+															All Items
 														</a>
 													</li>
 													<li class="nav-item m-tabs__item">
@@ -1445,7 +1445,7 @@
 											<div class="m-portlet__body">
 												<div class="form-group m-form__group row" style="height:95%;">
 													<div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px 18px;margin-left: -5px;">
-														<div style="padding: 150px;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
+														<div style="padding: 130px;"  class="m-dropzone dropzone m-dropzone--success dz-clickable" action="{{ route('upload') }}" id="m-dropzone-three">
 															<div class="m-dropzone__msg dz-message needsclick" style="margin:0px;">
 																<h3 class="m-dropzone__msg-title">Drop design(s) here or click to upload.</h3>
 																<span class="m-dropzone__msg-desc">Nymbl will create your products and product mockups automatically. 

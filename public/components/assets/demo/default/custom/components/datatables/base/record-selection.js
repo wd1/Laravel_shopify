@@ -44,7 +44,7 @@ var DatatableRecordSelectionDemo = function() {
 			},{
 				field: 'ID',
 				title: 'ID',
-				width: 100,
+				width: 40,
 				template: function(row) {
 					// callback function support for column rendering
 					return row.id + 10000;
@@ -57,26 +57,32 @@ var DatatableRecordSelectionDemo = function() {
 					return '<img style="width:100px;height:100px;" src="'+row.img_url+'"'+'</>';
 				},
 			}, {
-				field: 'ShipCountry',
-				title: 'Customer',
+				field: 'Custsomer',
+				title: 'Image Name',
 				width: 150,
 				template: function(row) {
 					// callback function support for column rendering
-					return row.ShipCountry + ' - ' + row.ShipCity;
+					return row.filename;
 				},
 			}, {
 				field: 'path',
-				title: 'Design URL',
+				title: 'Image URL',
 				width: 150,
 				template: function(row) {
 					return '<a target="_blank" href="'+row.img_url+'">'+row.img_url+'</a>';
 				},
 			}, {
 				field: 'Latitude',
-				title: 'Ship Status',
+				title: 'Mockups',
+				template: function(row) {
+					return '<a id="m_aside_header_topbar_mobile_toggle" href="#" class="m-brand__icon"><i class="flaticon-folder-2"></i></a>';
+				},
 			}, {
 				field: 'ShipDate',
-				title: 'Ship Date',
+				title: 'Links',
+				template: function(row) {
+					return '';
+				},
 			}
 			// , {
 			// 	field: 'Status',
