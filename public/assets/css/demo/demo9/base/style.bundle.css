@@ -6572,8 +6572,8 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #6f7bcb; }
   .btn-focus:hover {
     color: #fff;
-    background-color: #840ad9;
-    border-color: #7c0acd; }
+    background-color: #6f7bc0;
+    border-color: #6f7bc1; }
   .btn-focus:focus, .btn-focus.focus {
     box-shadow: 0 0 0 0.2rem rgba(152, 22, 244, 0.5); }
   .btn-focus.disabled, .btn-focus:disabled {
@@ -6583,8 +6583,8 @@ a.text-dark:hover, a.text-dark:focus {
   .btn-focus:not(:disabled):not(.disabled):active, .btn-focus:not(:disabled):not(.disabled).active,
   .show > .btn-focus.dropdown-toggle {
     color: #fff;
-    background-color: #7c0acd;
-    border-color: #7509c1; }
+    background-color: #6f7bc1;
+    border-color: #6f7bc3; }
     .btn-focus:not(:disabled):not(.disabled):active:focus, .btn-focus:not(:disabled):not(.disabled).active:focus,
     .show > .btn-focus.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(152, 22, 244, 0.5); }
@@ -12062,9 +12062,9 @@ b, strong {
 .m-link.m-link--focus {
   color: #6f7bcb; }
   .m-link.m-link--focus:hover {
-    color: #7c0acd; }
+    color: #6f7bc1; }
     .m-link.m-link--focus:hover:after {
-      border-bottom: 1px solid #7c0acd;
+      border-bottom: 1px solid #6f7bc1;
       opacity: 0.3 ;
       filter: alpha(opacity=30) ; }
 
@@ -16177,7 +16177,7 @@ code {
   background-color: #6f7bcb; }
 
 .m-list-badge .m-list-badge__items a.m-list-badge__item.m-list-badge__item--focus:hover {
-  background: #7c0acd;
+  background: #6f7bc1;
   color: #ffffff; }
 
 .m-list-badge .m-list-badge__items .m-list-badge__item.m-list-badge__item--primary {
@@ -24628,7 +24628,7 @@ body.m-portlet--fullscreen {
     color: #ffffff; }
 
 .m-wizard.m-wizard--3.m-wizard--focus .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span {
-  background-color: #7c0acd; }
+  background-color: #6f7bc1; }
   .m-wizard.m-wizard--3.m-wizard--focus .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
     color: #ffffff; }
 
@@ -24939,7 +24939,7 @@ body.m-portlet--fullscreen {
     .m-wizard.m-wizard--4.m-wizard--focus .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number > span > span {
       color: #ffffff; }
   .m-wizard.m-wizard--4.m-wizard--focus .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span {
-    background-color: #7c0acd; }
+    background-color: #6f7bc1; }
     .m-wizard.m-wizard--4.m-wizard--focus .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover > span > span {
       color: #ffffff; }
   .m-wizard.m-wizard--4.m-wizard--focus .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-label {

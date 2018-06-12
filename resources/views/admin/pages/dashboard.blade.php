@@ -942,10 +942,10 @@
 																	</a>
 																</li>
 																<li class="m-nav__item">
-																	<a href="profile.html" class="m-nav__link">
-																		<i class="m-nav__link-icon flaticon-share"></i>
+																	<a href="{{route('admin.billing')}}" class="m-nav__link">
+																		<i class="m-nav__link-icon flaticon-coins"></i>
 																		<span class="m-nav__link-text">
-																			Activity
+																			Billing
 																		</span>
 																	</a>
 																</li>

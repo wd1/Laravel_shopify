@@ -978,10 +978,10 @@
 																	</a>
 																</li>
 																<li class="m-nav__item">
-																	<a href="profile.html" class="m-nav__link">
+																	<a href="{{route('admin.billing')}}" class="m-nav__link">
 																		<i class="m-nav__link-icon flaticon-share"></i>
 																		<span class="m-nav__link-text">
-																			Activity
+																			Billing
 																		</span>
 																	</a>
 																</li>
@@ -1457,10 +1457,10 @@
 																</span>
 															</li>
 															<li class="m-nav__item">
-																<a href="" class="m-nav__link">
+																<a href="{{route('admin.billing')}}" class="m-nav__link">
 																	<i class="m-nav__link-icon flaticon-share"></i>
 																	<span class="m-nav__link-text">
-																		Activity
+																		Billing
 																	</span>
 																</a>
 															</li>
@@ -1552,10 +1552,10 @@
 													</a>
 												</li>
 												<li class="m-nav__item">
-													<a href="header/profile&amp;demo=default.html" class="m-nav__link">
+													<a href="{{route('admin.billing')}}" class="m-nav__link">
 														<i class="m-nav__link-icon flaticon-share"></i>
 														<span class="m-nav__link-text">
-															Activity
+															Billing
 														</span>
 													</a>
 												</li>

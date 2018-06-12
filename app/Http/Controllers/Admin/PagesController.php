@@ -47,6 +47,10 @@ class PagesController extends Controller
         return view('admin.pages.terms');
     }
 
+    public function getBilling()
+    {
+        return view('admin.pages.billing');
+    }
     public function upload(Request $request)
     {
         $this->validate($request, [
