@@ -979,7 +979,7 @@
 																</li>
 																<li class="m-nav__item">
 																	<a href="{{route('admin.billing')}}" class="m-nav__link">
-																		<i class="m-nav__link-icon flaticon-share"></i>
+																		<i class="m-nav__link-icon flaticon-coins"></i>
 																		<span class="m-nav__link-text">
 																			Billing
 																		</span>
@@ -1458,7 +1458,7 @@
 															</li>
 															<li class="m-nav__item">
 																<a href="{{route('admin.billing')}}" class="m-nav__link">
-																	<i class="m-nav__link-icon flaticon-share"></i>
+																	<i class="m-nav__link-icon flaticon-coins"></i>
 																	<span class="m-nav__link-text">
 																		Billing
 																	</span>
@@ -1553,7 +1553,7 @@
 												</li>
 												<li class="m-nav__item">
 													<a href="{{route('admin.billing')}}" class="m-nav__link">
-														<i class="m-nav__link-icon flaticon-share"></i>
+														<i class="m-nav__link-icon flaticon-coins"></i>
 														<span class="m-nav__link-text">
 															Billing
 														</span>

@@ -6388,8 +6388,8 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #6f7bcb; }
   .btn-brand:hover {
     color: #fff;
-    background-color: #582ae6;
-    border-color: #4f1ee5; }
+    background-color: #636eb9;
+    border-color: #636eb9; }
   .btn-brand:focus, .btn-brand.focus {
     box-shadow: 0 0 0 0.2rem rgba(115, 76, 234, 0.5); }
   .btn-brand.disabled, .btn-brand:disabled {
@@ -6575,7 +6575,7 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #6f7bc0;
     border-color: #6f7bc1; }
   .btn-focus:focus, .btn-focus.focus {
-    box-shadow: 0 0 0 0.2rem rgba(152, 22, 244, 0.5); }
+    box-shadow: 0 0 0 0.2rem blue; }
   .btn-focus.disabled, .btn-focus:disabled {
     color: #fff;
     background-color: #6f7bcb;
@@ -6587,7 +6587,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #6f7bc3; }
     .btn-focus:not(:disabled):not(.disabled):active:focus, .btn-focus:not(:disabled):not(.disabled).active:focus,
     .show > .btn-focus.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(152, 22, 244, 0.5); }
+      box-shadow: 0 0 0 0.2rem blue; }
 
 .btn-outline-focus {
   color: #6f7bcb;
@@ -6599,7 +6599,7 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #6f7bcb;
     border-color: #6f7bcb; }
   .btn-outline-focus:focus, .btn-outline-focus.focus {
-    box-shadow: 0 0 0 0.2rem rgba(152, 22, 244, 0.5); }
+    box-shadow: 0 0 0 0.2rem #636eb9; }
   .btn-outline-focus.disabled, .btn-outline-focus:disabled {
     color: #6f7bcb;
     background-color: transparent; }
@@ -6610,7 +6610,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #6f7bcb; }
     .btn-outline-focus:not(:disabled):not(.disabled):active:focus, .btn-outline-focus:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-focus.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(152, 22, 244, 0.5); }
+      box-shadow: 0 0 0 0.2rem #636eb9; }
 
 .btn-primary {
   color: #fff;
@@ -12665,9 +12665,9 @@ code {
 .btn-outline-focus.m-btn--air,
 .btn-focus.m-btn--air,
 .m-btn--gradient-from-focus.m-btn--air {
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(152, 22, 244, 0.19) !important;
-  -moz-box-shadow: 0px 5px 10px 2px rgba(152, 22, 244, 0.19) !important;
-  box-shadow: 0px 5px 10px 2px rgba(152, 22, 244, 0.19) !important; }
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0,0,255, 0.19) !important;
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0,0,255, 0.19) !important;
+  box-shadow: 0px 5px 10px 2px rgba(0,0,255, 0.19) !important; }
   .btn-outline-focus.m-btn--air.focus, .btn-outline-focus.m-btn--air:focus, .btn-outline-focus.m-btn--air:hover,
   .btn-focus.m-btn--air.focus,
   .btn-focus.m-btn--air:focus,
@@ -12675,9 +12675,9 @@ code {
   .m-btn--gradient-from-focus.m-btn--air.focus,
   .m-btn--gradient-from-focus.m-btn--air:focus,
   .m-btn--gradient-from-focus.m-btn--air:hover {
-    -webkit-box-shadow: 0px 5px 10px 2px rgba(152, 22, 244, 0.36) !important;
-    -moz-box-shadow: 0px 5px 10px 2px rgba(152, 22, 244, 0.36) !important;
-    box-shadow: 0px 5px 10px 2px rgba(152, 22, 244, 0.36) !important; }
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0,0,255,0.3) !important;
+    -moz-box-shadow: 0px 5px 10px 2px rgba(0,0,255,0.3) !important;
+    box-shadow: 0px 5px 10px 2px rgba(0,0,255,0.3) !important; }
 
 .btn-outline-focus.focus, .btn-outline-focus:focus, .btn-outline-focus:hover {
   border-color: #6f7bcb;

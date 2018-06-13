@@ -795,7 +795,7 @@
 																</li>
 																<li class="m-nav__item">
 																	<a href="{{route('admin.billing')}}" class="m-nav__link">
-																		<i class="m-nav__link-icon flaticon-share"></i>
+																		<i class="m-nav__link-icon flaticon-coins"></i>
 																		<span class="m-nav__link-text">
 																			Billing
 																		</span>
@@ -2909,7 +2909,7 @@
 														</li>
 														<li class="m-nav__item">
 															<a href="{{route('admin.billing')}}" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-share"></i>
+																<i class="m-nav__link-icon flaticon-coins"></i>
 																<span class="m-nav__link-text">
 																	Billing
 																</span>
@@ -3117,7 +3117,7 @@
 										<div class="col-xl-4 order-1 order-xl-2 m--align-right">
 											<a href="{{route('admin.dashboard')}}#upload_form" class="btn btn-info m-btn m-btn--custom m-btn--icon m-btn--air">
 												<span>
-													<i class="la flaticon-multimedia-2"></i>
+													<i class="flaticon-multimedia"></i>
 													<span>
 														Add a Design
 													</span>
@@ -3159,11 +3159,11 @@
 																</a>
 															</div>
 														</div>
-														<!-- &nbsp;&nbsp;&nbsp;
-														<button class="btn btn-sm btn-danger" type="button" id="m_datatable_delete_all">
-															Delete All
+														 &nbsp;&nbsp;&nbsp;
+														<button class="btn btn-sm btn-danger" type="button" id="m_datatable_delete">
+															Delete
 														</button>
-														&nbsp;&nbsp;&nbsp;
+														<!--&nbsp;&nbsp;&nbsp;
 														<button class="btn btn-sm btn-success" type="button" data-toggle="modal" data-target="#m_modal_fetch_id">
 															Fetch Selected Records
 														</button> -->

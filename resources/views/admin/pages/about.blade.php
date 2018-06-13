@@ -793,7 +793,7 @@
 																</li>
 																<li class="m-nav__item">
 																	<a href="profile.html" class="m-nav__link">
-																		<i class="m-nav__link-icon flaticon-share"></i>
+																		<i class="m-nav__link-icon flaticon-coins"></i>
 																		<span class="m-nav__link-text">
 																			Billing
 																		</span>
@@ -1153,7 +1153,7 @@
 							</li>
 							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
 								<a  href="#" class="m-menu__link m-menu__toggle">
-									<i class="m-menu__link-icon flaticon-share"></i>
+									<i class="m-menu__link-icon flaticon-coins"></i>
 									<span class="m-menu__link-text">
 										Icons
 									</span>
