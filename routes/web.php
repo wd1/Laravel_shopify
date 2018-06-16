@@ -24,6 +24,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => '', 'middleware' => 'auth'], f
     Route::get('/terms', ['as' => 'admin.terms', 'uses' => 'PagesController@getTerms']);
     Route::get('/privacy', ['as' => 'admin.privacy', 'uses' => 'PagesController@getPrivacy']);
     Route::get('/billing', ['as' => 'admin.billing', 'uses' => 'PagesController@getBilling']);
+    Route::get('/api/v1', ['as' => 'admin.api.v1', 'uses' => 'PagesController@getAPIV1']);
 });
 
 Route::group(['middleware' => ['web']], function () {

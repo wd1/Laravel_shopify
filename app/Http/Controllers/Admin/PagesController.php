@@ -51,6 +51,15 @@ class PagesController extends Controller
     {
         return view('admin.pages.billing');
     }
+
+    public function getAPIV1()
+    {
+        $obj = [
+            'id' => auth()->user()->id,
+            'email' => auth()->user()->email
+        ];
+        echo json_encode($obj);
+    }
     public function upload(Request $request)
     {
         $this->validate($request, [
