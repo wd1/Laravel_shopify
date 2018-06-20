@@ -6,7 +6,10 @@ use Auth;
 use App\Order;
 use App\Http\Requests;
 use Illuminate\Http\Request;
- 
+use Stripe\Stripe;
+use Stripe\Customer;
+use Stripe\Charge;
+
 class OrderController extends Controller
 {
     /**
@@ -30,7 +33,26 @@ class OrderController extends Controller
     */
     public function postPayWithStripe(Request $request, \App\Product $product)
     {
-        return $this->chargeCustomer($product->id, $product->price, $product->name, $request->input('stripeToken'));
+        try {
+            Stripe::setApiKey(config('services.stripe.secret'));
+
+            $customer = Customer::create(array(
+                'email' => $request->stripeEmail,
+                'source' => $request->stripeToken
+            ));
+
+            $charge = Charge::create(array(
+                'customer' => $customer->id,
+                'amount' => 1999,
+                'currency' => 'usd'
+            ));
+
+            return 'Charge successful';
+        } catch (\Exception $ex) {
+            return $ex->getMessage();
+        }
+
+        //return $this->chargeCustomer($product->id, $product->price, $product->name, $request->input('stripeToken'));
 
         /*
         $user = User::find(3);
@@ -60,7 +82,8 @@ class OrderController extends Controller
     */
     public function chargeCustomer($product_id, $product_price, $product_name, $token)
     {
-        \Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+        // dd(config('services.stripe.secret'));
+        \Stripe\Stripe::setApiKey("sk_test_4PkVw92BxmBISwG6Busn3Nru");
         
         if (!$this->isStripeCustomer())
         {

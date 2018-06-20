@@ -873,7 +873,18 @@
 				</div>
 			</div>
 			<!--begin::Form-->
-			<form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator">
+			<form action="/store" method="POST" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator">
+				{{ csrf_field() }}
+				<script
+					src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+					data-key="<?php echo config('services.stripe.key') ?>"
+					data-amount="999"
+					data-name="Web Coder Pro, Ltd"
+					data-description="widget"
+					data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+					data-locale="auto"
+					data-currency="gbp">
+				</script>
 				<div class="m-portlet__body">	
 					<div class="form-group m-form__group row">
 						<label class="col-lg-2 col-form-label">Card#:</label>

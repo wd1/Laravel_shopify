@@ -31,8 +31,8 @@ return [
 
     'stripe' => [
         'model' => App\User::class,
-        'key' => 'pk_live_4PkVzXRU3uGiheG0PIBmmSNY',
-        'secret' => 'sk_live_4PkVQyDtbWFNswXvJK1fxAvt',
+        'key' => 'pk_test_4PkVTb7cWkm5Fg2QR4ypwLXI',//'pk_live_4PkVzXRU3uGiheG0PIBmmSNY',
+        'secret' =>'sk_test_4PkVw92BxmBISwG6Busn3Nru', //'sk_live_4PkVQyDtbWFNswXvJK1fxAvt',
     ],
 
 ];
