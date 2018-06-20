@@ -12,7 +12,7 @@
 */
 
 Route::get('/',         ['as' => 'front.home',   'uses' => 'Front\PagesController@getHome']);
-
+Route::get('/api/v1', ['as' => 'admin.api.v1', 'uses' => 'Front\PagesController@getAPIV1']);
 
 Route::group(['namespace' => 'Admin', 'prefix' => '', 'middleware' => 'auth'], function()
 {
@@ -24,9 +24,20 @@ Route::group(['namespace' => 'Admin', 'prefix' => '', 'middleware' => 'auth'], f
     Route::get('/terms', ['as' => 'admin.terms', 'uses' => 'PagesController@getTerms']);
     Route::get('/privacy', ['as' => 'admin.privacy', 'uses' => 'PagesController@getPrivacy']);
     Route::get('/billing', ['as' => 'admin.billing', 'uses' => 'PagesController@getBilling']);
-    Route::get('/api/v1', ['as' => 'admin.api.v1', 'uses' => 'PagesController@getAPIV1']);
+    //Route::get('/api/v1', ['as' => 'admin.api.v1', 'uses' => 'PagesController@getAPIV1']);
+    
 });
+Route::post('/pay/{product}', [
+    'uses' => 'OrderController@postPayWithStripe',
+    'as' => 'pay',
+    'middleware' => 'auth'
+]);
 
+Route::post('/store', [
+    'uses' => 'OrderController@postPayWithStripe',
+    'as' => 'store',
+    'middleware' => 'auth'
+]);
 Route::group(['middleware' => ['web']], function () {
     Route::get('/login', 'Auth\ShopifyController@access');
     Route::get('authCallback', 'Auth\ShopifyController@authCallback');

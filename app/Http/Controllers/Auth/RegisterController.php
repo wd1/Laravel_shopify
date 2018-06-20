@@ -84,6 +84,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $APIKEY = hash('sha256', (time() . $data['email'] . rand()));
+        $APIKEY = substr($APIKEY,0,50);
         $user =  User::create([
             'username' => $data['email'],
 			'first_name' => $data['first_name'],
@@ -91,7 +93,8 @@ class RegisterController extends Controller
             'storename' => $data['storename'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'activated' => !config('settings.send_activation_email')  // if we do not send the activation email, then set this flag to 1 right away
+            'activated' => !config('settings.send_activation_email'),  // if we do not send the activation email, then set this flag to 1 right away
+            'apikey' => $APIKEY
         ]);
 
         return $user;

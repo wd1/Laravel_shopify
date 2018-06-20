@@ -54,6 +54,7 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'SuperClosure\\' => 13,
+            'Stripe\\' => 7,
         ),
         'R' => 
         array (
@@ -74,6 +75,7 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         'L' => 
         array (
             'League\\Flysystem\\' => 17,
+            'Laravel\\Cashier\\' => 16,
         ),
         'I' => 
         array (
@@ -87,12 +89,14 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         ),
         'F' => 
         array (
+            'FontLib\\' => 8,
             'Firebase\\JWT\\' => 13,
             'Faker\\' => 6,
         ),
         'D' => 
         array (
             'Dotenv\\' => 7,
+            'Dompdf\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
         ),
@@ -192,6 +196,10 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         array (
             0 => __DIR__ . '/..' . '/jeremeamia/SuperClosure/src',
         ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
+        ),
         'RocketCode\\' => 
         array (
             0 => __DIR__ . '/..' . '/rocket-code/shopify/src/RocketCode',
@@ -224,6 +232,10 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
+        'Laravel\\Cashier\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/cashier/src',
+        ),
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
@@ -240,6 +252,10 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'FontLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-font-lib/src/FontLib',
+        ),
         'Firebase\\JWT\\' => 
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
@@ -251,6 +267,10 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+        'Dompdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dompdf/dompdf/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -283,6 +303,17 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
     );
 
     public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Svg\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src',
+            ),
+            'Sabberworm\\CSS' => 
+            array (
+                0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/lib',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 
@@ -325,17 +356,26 @@ class ComposerStaticInit6fadc8b69f6194d85cf5c586aebaa3d6
     );
 
     public static $classMap = array (
+        'AddStripeToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2018_06_20_054942_add_stripe_to_users_table.php',
         'Auth0\\Login\\Auth0Controller' => __DIR__ . '/..' . '/auth0/login/src/controllers/Auth0Controller.php',
         'Auth0\\Login\\Facade\\Auth0' => __DIR__ . '/..' . '/auth0/login/src/facade/Auth0.php',
+        'Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
         'CreateActivationKeysTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_23_025708_create_activation_keys_table.php',
         'CreateActivationKeysTable2' => __DIR__ . '/../..' . '/database/migrations/2018_03_27_181540_create_activation_keys_table2.php',
+        'CreateOrdersTable' => __DIR__ . '/../..' . '/database/migrations/2018_06_20_063320_create_orders_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreateProductsTable' => __DIR__ . '/../..' . '/database/migrations/2018_06_20_063313_create_products_table.php',
         'CreateUploadsTable' => __DIR__ . '/../..' . '/database/migrations/2018_06_05_021137_create_uploads_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'HTML5_Data' => __DIR__ . '/..' . '/dompdf/dompdf/lib/html5lib/Data.php',
+        'HTML5_InputStream' => __DIR__ . '/..' . '/dompdf/dompdf/lib/html5lib/InputStream.php',
+        'HTML5_Parser' => __DIR__ . '/..' . '/dompdf/dompdf/lib/html5lib/Parser.php',
+        'HTML5_Tokenizer' => __DIR__ . '/..' . '/dompdf/dompdf/lib/html5lib/Tokenizer.php',
+        'HTML5_TreeBuilder' => __DIR__ . '/..' . '/dompdf/dompdf/lib/html5lib/TreeBuilder.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
