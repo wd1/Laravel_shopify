@@ -873,7 +873,7 @@
 				</div>
 			</div>
 			<!--begin::Form-->
-			<form action="/store" method="POST" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator">
+			<form action="store" method="POST" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator">
 				{{ csrf_field() }}
 				<script
 					src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
