@@ -79,6 +79,13 @@ var DatatableRecordSelectionDemo = function() {
 					return '<span style="width:110px;text-align:center;display:block;"><a id="m_aside_header_topbar_mobile_toggle" href="#" class="m-brand__icon"><i class="flaticon-folder-2" style="font-size:30px;"></i></a></span>';
 				},
 			}, {
+				field: 'Operation',
+				title: 'Opeation',
+				width: 110,
+				template: function(row) {
+					return '<button type="button" class="btn btn-primary" onClick="doModal()">Edit</button>';
+				},
+			}, {
 				field: 'ShipDate',
 				title: 'Links',
 				template: function(row) {

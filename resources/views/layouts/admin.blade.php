@@ -57,7 +57,7 @@
 </head>
 
 <body class="m--skin- m-page--loading-enabled m-page--loading m-content--skin-light m-header--fixed m-header--fixed-mobile m-aside-left--offcanvas-default m-aside-left--enabled m-aside-left--fixed m-aside-left--skin-dark m-aside--offcanvas-default" >
-
+    
     <div id="wrapper">
         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
             {{ csrf_field() }}
@@ -91,8 +91,11 @@
     <!-- begin::Page Loader -->
     <script>
         $(window).on('load', function() {
-            $('body').removeClass('m-page--loading');         
+            $('body').removeClass('m-page--loading');   
         });
+        function doModal() {
+            $("#infoModal").modal('show');
+        }
     </script>
 </body>
 
