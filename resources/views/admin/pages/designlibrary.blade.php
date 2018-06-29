@@ -16,7 +16,7 @@
 				</button>
 			</div>
 			<div class="modal-body" style="height: 80%;">
-				<iframe src="/designer/" style="width:100%;height:100%;border: 1px solid;"></iframe>
+				<iframe src="/designer/?KEY=mykey" style="width:100%;height:100%;border: 1px solid;"></iframe>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
