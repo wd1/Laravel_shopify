@@ -8,7 +8,7 @@
 
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-danger" role="document" style="height:100%;max-width:90%;">
-		<div class="modal-content" style="height:80%;">
+		<div class="modal-content" style="height:95%;">
 			<div class="modal-header">
 				<h4 class="modal-title">Nymbl | Creator</h4>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -16,7 +16,7 @@
 				</button>
 			</div>
 			<div class="modal-body" style="height: 80%;">
-				<iframe id="designer_modal" style="width:100%;height:100%;"></iframe>
+				<iframe id="designer_modal" style="width:100%;height:100%;border:none;" scrolling="no"></iframe>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
