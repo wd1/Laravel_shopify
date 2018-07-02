@@ -97,6 +97,7 @@
             $("#infoModal").modal('show');
         }
         $("#designer_modal").load('/designer/?KEY=mykey #loader_parent');
+        console.log('/designer/?KEY=mykey #loader_parent');
     </script>
 </body>
 
