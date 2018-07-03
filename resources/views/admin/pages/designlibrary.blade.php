@@ -15,7 +15,7 @@
 					<span aria-hidden="true">×</span>
 				</button>
 			</div>
-			<div class="modal-body" style="height: 80%;">
+			<div class="modal-body" style="height: 80%;padding:0px;">
 				<iframe id="designer_modal" src="/designer/?key=mykey #loader_parent" style="width:100%;height:100%;border:none;" scrolling="no"></iframe>
 			</div>
 			<div class="modal-footer">
