@@ -46826,7 +46826,7 @@ var Dropzone = function (_Emitter) {
 				} else if (parent.options.maxFiles != null && parent.getAcceptedFiles().length >= parent.options.maxFiles) {
 					done(parent.options.dictMaxFilesExceeded.replace("{{maxFiles}}", parent.options.maxFiles));
 					return parent.emit("maxfilesexceeded", file);
-				} else if (image.width/image.height>7/10) {
+				} else if (image.height/image.width>7/10) {
 					return done(parent.options.dictInvalidFileSize);
 				} else if (image.width<1000) {
 					return done("Width is too small. Must be larger than 1000px");
