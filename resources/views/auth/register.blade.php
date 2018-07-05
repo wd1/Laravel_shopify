@@ -92,9 +92,9 @@
 									</div>
 								</div>
 								<div class="m-login__form-action">
-									<button class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air  m-login__btn" type="submit">Sign up</button>
+									<button class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air  m-login__btn" style="background-color: #36a3f7;border-color: #36a3f7;" type="submit">Sign up</button>
 									&nbsp;&nbsp;
-									<a  href="{{ url('/login') }}" id="m_login_signup_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom  m-login__btn">
+									<a  href="{{ url('/login') }}" id="m_login_signup_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom  m-login__btn" style="color: #36a3f7;border-color: #36a3f7;">
 										Cancel
 									</a>
 								</div>

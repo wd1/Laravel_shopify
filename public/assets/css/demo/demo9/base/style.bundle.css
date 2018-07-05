@@ -34962,3 +34962,8 @@ body.m-page--boxed {
       text-align: center;
       float: none;
       margin: 0 auto; } }
+
+#m_login_signup_cancel:hover {
+  background:#36a3f7;
+
+}

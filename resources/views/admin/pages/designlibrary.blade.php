@@ -7,11 +7,11 @@
 @section('content')
 
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-danger" role="document" style="height:100%;max-width:90%;">
+	<div class="modal-dialog modal-danger" role="document" style="height:100%;max-width:80%;">
 		<div class="modal-content" style="height:95%;">
 			<div class="modal-header">
-				<h4 class="modal-title">Nymbl | Creator</h4>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<h4 class="modal-title" style="width: 100%;text-align: center;">Nymbl | Mockup Editor</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    height: 56px;vertical-align: middle;">
 					<span aria-hidden="true">×</span>
 				</button>
 			</div>
@@ -256,39 +256,7 @@
 							<div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
 								<div class="m-stack__item m-topbar__nav-wrapper">
 									<ul class="m-topbar__nav m-nav m-nav--inline">
-										<li class="
-				wn--large m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width m-dropdown--skin-light	m-list-search m-list-search--skin-light" 
-				data-dropdown-toggle="click" data-dropdown-persistent="true" id="m_quicksearch" data-search-type="dropdown">
-											<a href="#" class="m-nav__link m-dropdown__toggle">
-												<span class="m-nav__link-icon">
-													<span class="m-nav__link-icon-wrapper">
-														<i class="flaticon-search-1"></i>
-													</span>
-												</span>
-											</a>
-											<div class="m-dropdown__wrapper">
-												<span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
-												<div class="m-dropdown__inner ">
-													<div class="m-dropdown__header">
-														<form  class="m-list-search__form">
-															<div class="m-list-search__form-wrapper">
-																<span class="m-list-search__form-input-wrapper">
-																	<input id="m_quicksearch_input" autocomplete="off" type="text" name="q" class="m-list-search__form-input" value="" placeholder="Search...">
-																</span>
-																<span class="m-list-search__form-icon-close" id="m_quicksearch_close">
-																	<i class="la la-remove"></i>
-																</span>
-															</div>
-														</form>
-													</div>
-													<div class="m-dropdown__body">
-														<div class="m-dropdown__scrollable m-scrollable" data-max-height="300" data-mobile-max-height="200">
-															<div class="m-dropdown__content"></div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
+										
 										<li class="m-nav__item m-nav__item--accent m-dropdown m-dropdown--large m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" data-dropdown-toggle="click" data-dropdown-persistent="true">
 											<a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
 												<span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>
