@@ -67,9 +67,10 @@ var DatatableRecordSelectionDemo = function() {
 			}, {
 				field: 'path',
 				title: 'Image URL',
-				width: 150,
+				width: 110,
+				textAlign: 'center',
 				template: function(row) {
-					return '<a target="_blank" href="'+row.img_url+'">'+row.img_url+'</a>';
+					return '<a target="_blank" style="text-align:center;" href="'+row.img_url+'"><span style="width:110px;text-align:center;display:block;"><a id="m_aside_header_topbar_mobile_toggle" href="#" class="m-brand__icon"><i class="flaticon-attachment" style="font-size:30px;"></i></a></span></a>';
 				},
 			}, {
 				field: 'Latitude',
@@ -81,17 +82,17 @@ var DatatableRecordSelectionDemo = function() {
 				},
 			}, {
 				field: 'Operation',
-				title: 'Opeation',
+				title: 'Create',
 				width: 110,
 				textAlign: 'center',
 				template: function(row) {
-					return '<button type="button" class="btn btn-primary" onClick="doModal()">Edit</button>';
+					return '<button type="button" class="btn btn-primary" /*onClick="doModal()"*/ >Mockups &<br> Store</button>';
 				},
 			}, {
 				field: 'ShipDate',
 				title: 'Links',
 				template: function(row) {
-					return '';
+					return '<a target="_blank" style="text-align:center;display:block;" href="/designer" >Edit Mockups</a><a target="_blank" style="text-align:center;display:block;" href="#">View Store</a>';
 				},
 			}
 			// , {

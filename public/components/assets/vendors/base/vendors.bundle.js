@@ -45469,7 +45469,7 @@ var Dropzone = function (_Emitter) {
 		/**
          * If the file aspect ratio doesn't match.
          */
-        dictInvalidFileSize: "You can't upload files of this aspect ratio. Must be more than 7:10",
+        dictInvalidFileSize: "You can't upload files of this aspect ratio. Must be 7:10 or less",
 
         /**
          * If the server response was invalid.
@@ -46826,7 +46826,7 @@ var Dropzone = function (_Emitter) {
 				} else if (parent.options.maxFiles != null && parent.getAcceptedFiles().length >= parent.options.maxFiles) {
 					done(parent.options.dictMaxFilesExceeded.replace("{{maxFiles}}", parent.options.maxFiles));
 					return parent.emit("maxfilesexceeded", file);
-				} else if (image.height/image.width>7/10) {
+				} else if (image.height/image.width<7/10) {
 					return done(parent.options.dictInvalidFileSize);
 				} else if (image.width<1000) {
 					return done("Width is too small. Must be larger than 1000px");
