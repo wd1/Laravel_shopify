@@ -86,14 +86,14 @@ var DatatableRecordSelectionDemo = function() {
 				width: 110,
 				textAlign: 'center',
 				template: function(row) {
-					return '<button type="button" class="btn btn-primary" onClick="doModal()" >Mockups &<br> Store</button>';
+					return '<button type="button" class="btn btn-primary" /*onClick="doModal()"*/ >Mockups &<br> Store</button>';
 				},
 			}, {
 				field: 'ShipDate',
 				title: 'Links',
 				textAlign: 'center',
 				template: function(row) {
-					return '<a target="_blank" style="text-align:center;display:block;" href="/designer" >Edit Mockups</a><a target="_blank" style="text-align:center;display:block;" href="#">View Store Page</a>';
+					return '<a style="text-align:center;display:block;" href="#" onClick="doModal()">Edit Mockups</a><a target="_blank" style="text-align:center;display:block;" href="#">View Store Page</a>';
 				},
 			}
 			// , {

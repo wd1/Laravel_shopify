@@ -1,8 +1,8 @@
 
 @extends('layouts.admin')
 
-@section('title', 'Nymbl - Design Library')
-@section('description', 'This is the Design Library page')
+@section('title', 'Nymbl - Billing')
+@section('description', 'This is the Billing page')
 
 @section('content')
 
