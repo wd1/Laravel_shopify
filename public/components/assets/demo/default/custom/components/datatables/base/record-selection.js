@@ -70,7 +70,7 @@ var DatatableRecordSelectionDemo = function() {
 				width: 110,
 				textAlign: 'center',
 				template: function(row) {
-					return '<a target="_blank" style="text-align:center;" href="'+row.img_url+'"><span style="width:110px;text-align:center;display:block;"><a id="m_aside_header_topbar_mobile_toggle" href="#" class="m-brand__icon"><i class="flaticon-attachment" style="font-size:30px;"></i></a></span></a>';
+					return '<a target="_blank" style="text-align:center;" href="'+row.img_url+'"><span style="width:110px;text-align:center;display:block;"><i class="flaticon-attachment" style="font-size:30px;"></i></span></a>';
 				},
 			}, {
 				field: 'Latitude',
@@ -86,13 +86,14 @@ var DatatableRecordSelectionDemo = function() {
 				width: 110,
 				textAlign: 'center',
 				template: function(row) {
-					return '<button type="button" class="btn btn-primary" /*onClick="doModal()"*/ >Mockups &<br> Store</button>';
+					return '<button type="button" class="btn btn-primary" onClick="doModal()" >Mockups &<br> Store</button>';
 				},
 			}, {
 				field: 'ShipDate',
 				title: 'Links',
+				textAlign: 'center',
 				template: function(row) {
-					return '<a target="_blank" style="text-align:center;display:block;" href="/designer" >Edit Mockups</a><a target="_blank" style="text-align:center;display:block;" href="#">View Store</a>';
+					return '<a target="_blank" style="text-align:center;display:block;" href="/designer" >Edit Mockups</a><a target="_blank" style="text-align:center;display:block;" href="#">View Store Page</a>';
 				},
 			}
 			// , {
