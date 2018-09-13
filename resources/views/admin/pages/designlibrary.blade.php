@@ -9,16 +9,14 @@
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-danger" role="document" style="height:100%;max-width:80%;">
 		<div class="modal-content" style="height:95%;">
-			<div class="modal-header">
-				<h4 class="modal-title" style="width: 100%;text-align: center;">Nymbl | Mockup Editor</h4>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    height: 56px;vertical-align: middle;">
+			<div class="modal-body" style="height: 80%;padding:0px;background: #eee;">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-right: 5px;">
 					<span aria-hidden="true">×</span>
 				</button>
-			</div>
-			<div class="modal-body" style="height: 80%;padding:0px;">
 				<iframe id="designer_modal" src="/designer/?key=mykey" style="width:100%;height:100%;border:none;" scrolling="no"></iframe>
 			</div>
 			<div class="modal-footer">
+				<h4 class="modal-title" style="width: 100%;">Nymbl | Mockup Editor</h4>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				<button type="button" class="btn btn-danger">Save changes</button>
 			</div>
