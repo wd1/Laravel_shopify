@@ -95,7 +95,7 @@ class PagesController extends Controller
     public function download()
     {
         $dir = 'library/'.(auth()->user()->id+10000000);
-        $files1 = array_values(array_diff(scandir($dir), array('..', '.')));
+        $files1 = array_values(array_diff(scandir($dir, SCANDIR_SORT_ASCENDING), array('..', '.')));
         $filecount = 0;
         $files = glob($dir . "*");
         if ($files){
