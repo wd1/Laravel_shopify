@@ -54,7 +54,7 @@ var DatatableRecordSelectionDemo = function() {
 				title: 'Thumbnail',
 				width: 100,
 				template: function(row) {
-					return '<img style="width:100px;height:100px;" src="'+row.img_url+'"'+'</>';
+					return '<img style="height:100px;" src="'+row.img_url+'"'+'</>';
 				},
 			}, {
 				field: 'Custsomer',
