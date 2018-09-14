@@ -24,7 +24,27 @@
 
 	</div>
 
-</div>		
+</div>
+<div class="modal fade" id="returninfoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title"></h4>
+				<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>Removed successfully</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+
+</div>	
 		<div class="m-grid m-grid--hor m-grid--root m-page" style="padding:0px 70px;">
 			<!-- BEGIN: Header -->
 			<header class="m-grid__item    m-header "  data-minimize="minimize" data-minimize-mobile="minimize" data-minimize-offset="200" data-minimize-mobile-offset="200" >	
@@ -894,10 +914,6 @@
 														 &nbsp;&nbsp;&nbsp;
 														<button class="btn btn-sm btn-danger" type="button" id="m_datatable_delete">
 															Delete
-														</button>
-														&nbsp;&nbsp;&nbsp;
-														<button class="btn btn-sm btn-success" type="button" data-toggle="modal" data-target="#m_modal_fetch_id">
-															Fetch Selected Records
 														</button>
 													</div>
 												</div>

@@ -92,6 +92,21 @@ class PagesController extends Controller
         return back()->with('success','Image Upload successful');
     }
 
+
+    public function delete_uploads(Request $request)
+    {
+        $names_str = $_POST['names'];
+        $names = explode(',', $names_str);
+        $destinationPath = 'library/'.(auth()->user()->id+10000000);
+        for($i=0; $i< count($names)-1; $i++) {
+            $newpath = $destinationPath.'/'.$names[$i];
+            while (file_exists($newpath)) {
+                unlink($newpath);
+            }
+        }
+        echo 'success';
+    }
+
     public function download()
     {
         $dir = 'library/'.(auth()->user()->id+10000000);

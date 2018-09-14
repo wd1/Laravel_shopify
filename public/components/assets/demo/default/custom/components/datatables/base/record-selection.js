@@ -60,6 +60,7 @@ var DatatableRecordSelectionDemo = function() {
 				field: 'Custsomer',
 				title: 'Image Name',
 				width: 150,
+				textAlign: 'center',
 				template: function(row) {
 					// callback function support for column rendering
 					return row.filename;
@@ -193,6 +194,34 @@ var DatatableRecordSelectionDemo = function() {
 			}
 		});
 
+		$('#m_datatable_delete').on('click', function(e) {
+			var checkedNodes = datatable.rows('.m-datatable__row--active').nodes();
+			var params = '';
+			console.log(options)
+			
+			for(i=0; i<checkedNodes.length; i++) {
+				params = params + checkedNodes[i].childNodes[3].children[0].innerHTML +","; 
+			}
+			$.ajax({
+				headers: {
+							'X-CSRF-TOKEN': window.Laravel.csrfToken
+						},
+				url: "delete_uploads",
+				type: "post",
+				data: {names: params} ,
+				success: function (response) {
+				// you will get response from your php page (what you echo or print)       
+					location.reload();  
+					// $("#returninfoModal").modal('show');
+					// console.log(response);
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					console.log(textStatus, errorThrown);
+				}
+
+
+			});
+		});
 		$('#m_modal_fetch_id').on('show.bs.modal', function(e) {
 			var ids = datatable.rows('.m-datatable__row--active').
 				nodes().

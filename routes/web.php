@@ -45,6 +45,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/upload', ['as' =>  'upload', 'uses' => 'Admin\PagesController@upload']);
     Route::post('/download', ['as' =>  'download', 'uses' => 'Admin\PagesController@download']);
     Route::get('/download', ['as' =>  'download', 'uses' => 'Admin\PagesController@download']);
+    Route::post('/delete_uploads', ['as' =>  'delete_uploads', 'uses' => 'Admin\PagesController@delete_uploads']);
+    Route::get('/delete_uploads', ['as' =>  'delete_uploads', 'uses' => 'Admin\PagesController@delete_uploads']);
     // Route::get('/upload', ['as' =>  'upload', 'uses' => 'Admin\PagesController@upload']);
 });
 
