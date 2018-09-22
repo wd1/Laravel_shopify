@@ -1,79 +1,35 @@
-<!DOCTYPE html>
-<!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 4
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
-<html lang="en" >
-	<!-- begin::Head -->
-	<head>
-		<meta charset="utf-8" />
-		<title>
-			Metronic | Accordions
-		</title>
-		<meta name="description" content="Accordion examples">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--begin::Web font -->
-		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-		<script>
-          WebFont.load({
-            google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
-            active: function() {
-                sessionStorage.fonts = true;
-            }
-          });
-		</script>
-		<!--end::Web font -->
-        <!--begin::Base Styles -->
-		<link href="../../assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="../../assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
-		<!--end::Base Styles -->
-		<link rel="shortcut icon" href="../../assets/demo/default/media/img/logo/favicon.ico" />
-	</head>
-	<!-- end::Head -->
-    <!-- end::Body -->
-	<body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
-		<!-- begin:: Page -->
-		<div class="m-grid m-grid--hor m-grid--root m-page">
+@extends('layouts.admin')
+
+@section('title', 'Nymbl - Products')
+@section('description', 'This is the dashboard')
+
+@section('content')
+		<div class="m-grid m-grid--hor m-grid--root m-page" style="padding:0px 70px;">
 			<!-- BEGIN: Header -->
-			<header class="m-grid__item    m-header "  data-minimize-offset="200" data-minimize-mobile-offset="200" >
+			<header class="m-grid__item    m-header "  data-minimize="minimize" data-minimize-mobile="minimize" data-minimize-offset="200" data-minimize-mobile-offset="200" >
 				<div class="m-container m-container--fluid m-container--full-height">
-					<div class="m-stack m-stack--ver m-stack--desktop">
+					<div class="m-stack m-stack--ver m-stack--desktop  m-header__wrapper">
 						<!-- BEGIN: Brand -->
-						<div class="m-stack__item m-brand  m-brand--skin-dark ">
+						<div class="m-stack__item m-brand m-brand--mobile">
 							<div class="m-stack m-stack--ver m-stack--general">
 								<div class="m-stack__item m-stack__item--middle m-brand__logo">
-									<a href="../../index.html" class="m-brand__logo-wrapper">
-										<img alt="" src="../../assets/demo/default/media/img/logo/logo_default_dark.png"/>
+									<a href="{{route('admin.dashboard')}}" class="m-brand__logo-wrapper">
+										<img alt="" style="width:31px;" src="assets/css/demo/demo9/media/img/logo/dashboardfavicon.png"/>
 									</a>
 								</div>
 								<div class="m-stack__item m-stack__item--middle m-brand__tools">
-									<!-- BEGIN: Left Aside Minimize Toggle -->
-									<a href="javascript:;" id="m_aside_left_minimize_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-desktop-inline-block 
-					 ">
-										<span></span>
-									</a>
-									<!-- END -->
-							<!-- BEGIN: Responsive Aside Left Menu Toggler -->
-									<a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block">
+									<!-- BEGIN: Responsive Aside Left Menu Toggler -->
+									<a href="javascript:;" id="" class="m-brand__icon m-brand__toggler m-brand__toggler--left   m_aside_left_toggler">
 										<span></span>
 									</a>
 									<!-- END -->
 							<!-- BEGIN: Responsive Header Menu Toggler -->
-									<a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
+									<a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler">
 										<span></span>
 									</a>
 									<!-- END -->
-			<!-- BEGIN: Topbar Toggler -->
-									<a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
+									<!-- BEGIN: Topbar Toggler -->
+									<a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon">
 										<i class="flaticon-more"></i>
 									</a>
 									<!-- BEGIN: Topbar Toggler -->
@@ -81,607 +37,339 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 						</div>
 						<!-- END: Brand -->
-						<div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
-							<!-- BEGIN: Horizontal Menu -->
-							<button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-dark " id="m_aside_header_menu_mobile_close_btn">
-								<i class="la la-close"></i>
-							</button>
-							<div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-dark m-aside-header-menu-mobile--submenu-skin-dark "  >
-								<ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
-									<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
-										<a  href="#" class="m-menu__link m-menu__toggle">
-											<i class="m-menu__link-icon flaticon-add"></i>
-											<span class="m-menu__link-text">
-												Actions
-											</span>
-											<i class="m-menu__hor-arrow la la-angle-down"></i>
-											<i class="m-menu__ver-arrow la la-angle-right"></i>
-										</a>
-										<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
-											<span class="m-menu__arrow m-menu__arrow--adjust"></span>
-											<ul class="m-menu__subnav">
-												<li class="m-menu__item "  aria-haspopup="true">
-													<a  href="../../header/actions.html" class="m-menu__link ">
-														<i class="m-menu__link-icon flaticon-file"></i>
-														<span class="m-menu__link-text">
-															Create New Post
-														</span>
-													</a>
-												</li>
-												<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-													<a  href="../../header/actions.html" class="m-menu__link ">
-														<i class="m-menu__link-icon flaticon-diagram"></i>
-														<span class="m-menu__link-title">
-															<span class="m-menu__link-wrap">
-																<span class="m-menu__link-text">
-																	Generate Reports
-																</span>
-																<span class="m-menu__link-badge">
-																	<span class="m-badge m-badge--success">
-																		2
-																	</span>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
-													<a  href="#" class="m-menu__link m-menu__toggle">
-														<i class="m-menu__link-icon flaticon-business"></i>
-														<span class="m-menu__link-text">
-															Manage Orders
-														</span>
-														<i class="m-menu__hor-arrow la la-angle-right"></i>
-														<i class="m-menu__ver-arrow la la-angle-right"></i>
-													</a>
-													<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right">
-														<span class="m-menu__arrow "></span>
-														<ul class="m-menu__subnav">
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
+						<div class="m-stack__item m-stack__item--middle m-stack__item--left m-header-head" id="m_header_nav">
+							<div class="m-stack m-stack--ver m-stack--desktop">
+								<div class="m-stack__item m-stack__item--middle m-stack__item--fit">
+									<!-- BEGIN: Aside Left Toggle -->
+									<a href="http://localhost:8000" class="m-menu__link">
+										<span class="m-menu__item-here"></span>
+										<i class="m-menu__link-icon flaticon-analytics"></i>								
+									</a>
+									<!-- END: Aside Left Toggle -->
+								</div>
+								<div class="m-stack__item m-stack__item--fluid">
+									<!-- BEGIN: Horizontal Menu -->
+									<button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-dark " id="m_aside_header_menu_mobile_close_btn">
+										<i class="la la-close"></i>
+									</button>
+									<div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-dark m-aside-header-menu-mobile--submenu-skin-dark "  >
+										<ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+											<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" aria-haspopup="true">
+												<a  href="{{route('admin.dashboard')}}" class="m-menu__link ">
+													<span class="m-menu__item-here"></span>
+													<i class="m-menu__link-icon flaticon-symbol"></i>
+													<span class="m-menu__link-text">
+														Orders
+													</span>
+													
+												</a>
+												
+											</li>
+											<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
+												<a  href="{{route('admin.products')}}" class="m-menu__link">
+													<span class="m-menu__item-here"></span>
+													<i class="m-menu__link-icon flaticon-business"></i>
+													<span class="m-menu__link-text">
+														Products
+													</span>
+												</a>
+											</li>
+											<li class="m-menu__item">
+												<a  href="{{route('admin.designlibrary')}}" class="m-menu__link">
+													<span class="m-menu__item-here"></span>
+													<i class="m-menu__link-icon flaticon-suitcase"></i>
+													<span class="m-menu__link-text">
+														Library
+													</span>
+													<i class="m-menu__hor-arrow la la-angle-down"></i>
+													<i class="m-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<!-- <div class="m-menu__submenu  m-menu__submenu--fixed-xl m-menu__submenu--center" >
+													<span class="m-menu__arrow m-menu__arrow--adjust"></span>
+													<div class="m-menu__subnav">
+														<ul class="m-menu__content">
+															<li class="m-menu__item">
+																<h3 class="m-menu__heading m-menu__toggle">
 																	<span class="m-menu__link-text">
-																		Latest Orders
+																		Finance Reports
 																	</span>
-																</a>
+																	<i class="m-menu__ver-arrow la la-angle-right"></i>
+																</h3>
+																<ul class="m-menu__inner">
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-icon flaticon-map"></i>
+																			<span class="m-menu__link-text">
+																				Annual Reports
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-icon flaticon-user"></i>
+																			<span class="m-menu__link-text">
+																				HR Reports
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-icon flaticon-clipboard"></i>
+																			<span class="m-menu__link-text">
+																				IPO Reports
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-icon flaticon-graphic-1"></i>
+																			<span class="m-menu__link-text">
+																				Finance Margins
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-icon flaticon-graphic-2"></i>
+																			<span class="m-menu__link-text">
+																				Revenue Reports
+																			</span>
+																		</a>
+																	</li>
+																</ul>
 															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
+															<li class="m-menu__item">
+																<h3 class="m-menu__heading m-menu__toggle">
 																	<span class="m-menu__link-text">
-																		Pending Orders
+																		Project Reports
 																	</span>
-																</a>
+																	<i class="m-menu__ver-arrow la la-angle-right"></i>
+																</h3>
+																<ul class="m-menu__inner">
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Coca Cola CRM
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Delta Airlines Booking Site
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Malibu Accounting
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Vineseed Website Rewamp
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Zircon Mobile App
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--line">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Mercury CMS
+																			</span>
+																		</a>
+																	</li>
+																</ul>
 															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Processed Orders
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Delivery Reports
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Payments
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Customers
-																	</span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</li>
-												<li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
-													<a  href="#" class="m-menu__link m-menu__toggle">
-														<i class="m-menu__link-icon flaticon-chat-1"></i>
-														<span class="m-menu__link-text">
-															Customer Feedbacks
-														</span>
-														<i class="m-menu__hor-arrow la la-angle-right"></i>
-														<i class="m-menu__ver-arrow la la-angle-right"></i>
-													</a>
-													<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right">
-														<span class="m-menu__arrow "></span>
-														<ul class="m-menu__subnav">
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Customer Feedbacks
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Supplier Feedbacks
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Reviewed Feedbacks
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Resolved Feedbacks
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Feedback Reports
-																	</span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</li>
-												<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-													<a  href="../../header/actions.html" class="m-menu__link ">
-														<i class="m-menu__link-icon flaticon-users"></i>
-														<span class="m-menu__link-text">
-															Register Member
-														</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
-										<a  href="#" class="m-menu__link m-menu__toggle">
-											<i class="m-menu__link-icon flaticon-line-graph"></i>
-											<span class="m-menu__link-text">
-												Reports
-											</span>
-											<i class="m-menu__hor-arrow la la-angle-down"></i>
-											<i class="m-menu__ver-arrow la la-angle-right"></i>
-										</a>
-										<div class="m-menu__submenu  m-menu__submenu--fixed m-menu__submenu--left" style="width:1000px">
-											<span class="m-menu__arrow m-menu__arrow--adjust"></span>
-											<div class="m-menu__subnav">
-												<ul class="m-menu__content">
-													<li class="m-menu__item">
-														<h3 class="m-menu__heading m-menu__toggle">
-															<span class="m-menu__link-text">
-																Finance Reports
-															</span>
-															<i class="m-menu__ver-arrow la la-angle-right"></i>
-														</h3>
-														<ul class="m-menu__inner">
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-map"></i>
-																	<span class="m-menu__link-text">
-																		Annual Reports
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-user"></i>
+															<li class="m-menu__item">
+																<h3 class="m-menu__heading m-menu__toggle">
 																	<span class="m-menu__link-text">
 																		HR Reports
 																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-clipboard"></i>
-																	<span class="m-menu__link-text">
-																		IPO Reports
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-graphic-1"></i>
-																	<span class="m-menu__link-text">
-																		Finance Margins
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-graphic-2"></i>
-																	<span class="m-menu__link-text">
-																		Revenue Reports
-																	</span>
-																</a>
-															</li>
-														</ul>
-													</li>
-													<li class="m-menu__item">
-														<h3 class="m-menu__heading m-menu__toggle">
-															<span class="m-menu__link-text">
-																Project Reports
-															</span>
-															<i class="m-menu__ver-arrow la la-angle-right"></i>
-														</h3>
-														<ul class="m-menu__inner">
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--line">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Coca Cola CRM
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--line">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Delta Airlines Booking Site
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--line">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Malibu Accounting
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--line">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Vineseed Website Rewamp
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--line">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Zircon Mobile App
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--line">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Mercury CMS
-																	</span>
-																</a>
-															</li>
-														</ul>
-													</li>
-													<li class="m-menu__item">
-														<h3 class="m-menu__heading m-menu__toggle">
-															<span class="m-menu__link-text">
-																HR Reports
-															</span>
-															<i class="m-menu__ver-arrow la la-angle-right"></i>
-														</h3>
-														<ul class="m-menu__inner">
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--dot">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Staff Directory
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--dot">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Client Directory
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--dot">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Salary Reports
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--dot">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Staff Payslips
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--dot">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Corporate Expenses
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-bullet m-menu__link-bullet--dot">
-																		<span></span>
-																	</i>
-																	<span class="m-menu__link-text">
-																		Project Expenses
-																	</span>
-																</a>
-															</li>
-														</ul>
-													</li>
-													<li class="m-menu__item">
-														<h3 class="m-menu__heading m-menu__toggle">
-															<span class="m-menu__link-text">
-																Reporting Apps
-															</span>
-															<i class="m-menu__ver-arrow la la-angle-right"></i>
-														</h3>
-														<ul class="m-menu__inner">
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Report Adjusments
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Sources & Mediums
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Reporting Settings
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Conversions
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Report Flows
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<span class="m-menu__link-text">
-																		Audit & Logs
-																	</span>
-																</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</li>
-									<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
-										<a  href="#" class="m-menu__link m-menu__toggle">
-											<i class="m-menu__link-icon flaticon-paper-plane"></i>
-											<span class="m-menu__link-title">
-												<span class="m-menu__link-wrap">
-													<span class="m-menu__link-text">
-														Apps
-													</span>
-													<span class="m-menu__link-badge">
-														<span class="m-badge m-badge--brand m-badge--wide">
-															new
-														</span>
-													</span>
-												</span>
-											</span>
-											<i class="m-menu__hor-arrow la la-angle-down"></i>
-											<i class="m-menu__ver-arrow la la-angle-right"></i>
-										</a>
-										<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
-											<span class="m-menu__arrow m-menu__arrow--adjust"></span>
-											<ul class="m-menu__subnav">
-												<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-													<a  href="../../header/actions.html" class="m-menu__link ">
-														<i class="m-menu__link-icon flaticon-business"></i>
-														<span class="m-menu__link-text">
-															eCommerce
-														</span>
-													</a>
-												</li>
-												<li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
-													<a  href="../../crud/datatable_v1.html" class="m-menu__link m-menu__toggle">
-														<i class="m-menu__link-icon flaticon-computer"></i>
-														<span class="m-menu__link-text">
-															Audience
-														</span>
-														<i class="m-menu__hor-arrow la la-angle-right"></i>
-														<i class="m-menu__ver-arrow la la-angle-right"></i>
-													</a>
-													<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right">
-														<span class="m-menu__arrow "></span>
-														<ul class="m-menu__subnav">
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-users"></i>
-																	<span class="m-menu__link-text">
-																		Active Users
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-interface-1"></i>
-																	<span class="m-menu__link-text">
-																		User Explorer
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-lifebuoy"></i>
-																	<span class="m-menu__link-text">
-																		Users Flows
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-graphic-1"></i>
-																	<span class="m-menu__link-text">
-																		Market Segments
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-graphic"></i>
-																	<span class="m-menu__link-text">
-																		User Reports
-																	</span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</li>
-												<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-													<a  href="../../header/actions.html" class="m-menu__link ">
-														<i class="m-menu__link-icon flaticon-map"></i>
-														<span class="m-menu__link-text">
-															Marketing
-														</span>
-													</a>
-												</li>
-												<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-													<a  href="../../header/actions.html" class="m-menu__link ">
-														<i class="m-menu__link-icon flaticon-graphic-2"></i>
-														<span class="m-menu__link-title">
-															<span class="m-menu__link-wrap">
-																<span class="m-menu__link-text">
-																	Campaigns
-																</span>
-																<span class="m-menu__link-badge">
-																	<span class="m-badge m-badge--success">
-																		3
-																	</span>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
-													<a  href="#" class="m-menu__link m-menu__toggle">
-														<i class="m-menu__link-icon flaticon-infinity"></i>
-														<span class="m-menu__link-text">
-															Cloud Manager
-														</span>
-														<i class="m-menu__hor-arrow la la-angle-right"></i>
-														<i class="m-menu__ver-arrow la la-angle-right"></i>
-													</a>
-													<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
-														<span class="m-menu__arrow "></span>
-														<ul class="m-menu__subnav">
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-add"></i>
-																	<span class="m-menu__link-title">
-																		<span class="m-menu__link-wrap">
+																	<i class="m-menu__ver-arrow la la-angle-right"></i>
+																</h3>
+																<ul class="m-menu__inner">
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
+																				<span></span>
+																			</i>
 																			<span class="m-menu__link-text">
-																				File Upload
+																				Staff Directory
 																			</span>
-																			<span class="m-menu__link-badge">
-																				<span class="m-badge m-badge--danger">
-																					3
-																				</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Client Directory
 																			</span>
-																		</span>
-																	</span>
-																</a>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Salary Reports
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Staff Payslips
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Corporate Expenses
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<i class="m-menu__link-bullet m-menu__link-bullet--dot">
+																				<span></span>
+																			</i>
+																			<span class="m-menu__link-text">
+																				Project Expenses
+																			</span>
+																		</a>
+																	</li>
+																</ul>
 															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-signs-1"></i>
+															<li class="m-menu__item">
+																<h3 class="m-menu__heading m-menu__toggle">
 																	<span class="m-menu__link-text">
-																		File Attributes
+																		Reporting Apps
 																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-folder"></i>
-																	<span class="m-menu__link-text">
-																		Folders
-																	</span>
-																</a>
-															</li>
-															<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-																<a  href="../../header/actions.html" class="m-menu__link ">
-																	<i class="m-menu__link-icon flaticon-cogwheel-2"></i>
-																	<span class="m-menu__link-text">
-																		System Settings
-																	</span>
-																</a>
+																	<i class="m-menu__ver-arrow la la-angle-right"></i>
+																</h3>
+																<ul class="m-menu__inner">
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<span class="m-menu__link-text">
+																				Report Adjusments
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<span class="m-menu__link-text">
+																				Sources & Mediums
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<span class="m-menu__link-text">
+																				Reporting Settings
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<span class="m-menu__link-text">
+																				Conversions
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<span class="m-menu__link-text">
+																				Report Flows
+																			</span>
+																		</a>
+																	</li>
+																	<li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+																		<a  href="{{route('admin.blank')}}" class="m-menu__link ">
+																			<span class="m-menu__link-text">
+																				Audit & Logs
+																			</span>
+																		</a>
+																	</li>
+																</ul>
 															</li>
 														</ul>
 													</div>
-												</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
+												</div> -->
+											</li>
+											<!-- <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
+												
+												<a href="{{ route('auth0login') }}" class="m-menu__link m-menu__toggle">
+													<span class="m-menu__item-here"></span>
+													<i class="m-menu__link-icon flaticon-stopwatch"></i>
+													<span class="m-menu__link-text">
+														Link Account
+													</span>
+												</a>
+											</li> -->
+										</ul>
+									</div>
+									<!-- END: Horizontal Menu -->
+								</div>
 							</div>
-							<!-- END: Horizontal Menu -->								<!-- BEGIN: Topbar -->
+						</div>
+						<div class="m-stack__item m-stack__item--middle m-stack__item--center">
+							<!-- BEGIN: Brand -->
+							<a href="{{route('admin.dashboard')}}" class="m-brand m-brand--desktop">
+								<img alt="" style="width:31px;" src="assets/css/demo/demo9/media/img/logo/dashboardfavicon.png"/>
+							</a>
+							<!-- END: Brand -->
+						</div>
+						<div class="m-stack__item m-stack__item--right">
+							<!-- BEGIN: Topbar -->
 							<div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
 								<div class="m-stack__item m-topbar__nav-wrapper">
 									<ul class="m-topbar__nav m-nav m-nav--inline">
 										<li class="
-	m-nav__item m-dropdown m-dropdown--large m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width m-dropdown--skin-light	m-list-search m-list-search--skin-light" 
+	m-nav__item m-nav__item--focus m-dropdown m-dropdown--large m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width m-dropdown--skin-light	m-list-search m-list-search--skin-light" 
 	data-dropdown-toggle="click" data-dropdown-persistent="true" id="m_quicksearch" data-search-type="dropdown">
 											<a href="#" class="m-nav__link m-dropdown__toggle">
 												<span class="m-nav__link-icon">
-													<i class="flaticon-search-1"></i>
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-search-1"></i>
+													</span>
 												</span>
 											</a>
 											<div class="m-dropdown__wrapper">
@@ -707,17 +395,19 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 											</div>
 										</li>
-										<li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" data-dropdown-toggle="click" data-dropdown-persistent="true">
+										<li class="m-nav__item m-nav__item--accent m-dropdown m-dropdown--large m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" data-dropdown-toggle="click" data-dropdown-persistent="true">
 											<a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
 												<span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>
 												<span class="m-nav__link-icon">
-													<i class="flaticon-music-2"></i>
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-music-2"></i>
+													</span>
 												</span>
 											</a>
 											<div class="m-dropdown__wrapper">
 												<span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
 												<div class="m-dropdown__inner">
-													<div class="m-dropdown__header m--align-center" style="background: url(../../assets/app/media/img/misc/notification_bg.jpg); background-size: cover;">
+													<div class="m-dropdown__header m--align-center">
 														<span class="m-dropdown__header-title">
 															9 New
 														</span>
@@ -838,7 +528,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</div>
 																</div>
 																<div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
-																	<div class="m-scrollable" data-max-height="250" data-mobile-max-height="200">
+																	<div class="m-scrollable" m-scrollabledata-scrollable="true" data-max-height="250" data-mobile-max-height="200">
 																		<div class="m-list-timeline m-list-timeline--skin-light">
 																			<div class="m-list-timeline__items">
 																				<div class="m-list-timeline__item">
@@ -916,86 +606,34 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 											</div>
 										</li>
-										<li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"  data-dropdown-toggle="click">
+										<li class="m-nav__item m-dropdown m-dropdown--medium m-dropdown--arrow  m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" data-dropdown-toggle="click">
 											<a href="#" class="m-nav__link m-dropdown__toggle">
-												<span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
-												<span class="m-nav__link-icon">
-													<i class="flaticon-share"></i>
+												<span class="m-topbar__username m--hidden-mobile">
+													{{ Auth::user()->first_name }}
 												</span>
-											</a>
-											<div class="m-dropdown__wrapper">
-												<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-												<div class="m-dropdown__inner">
-													<div class="m-dropdown__header m--align-center" style="background: url(../../assets/app/media/img/misc/quick_actions_bg.jpg); background-size: cover;">
-														<span class="m-dropdown__header-title">
-															Quick Actions
-														</span>
-														<span class="m-dropdown__header-subtitle">
-															Shortcuts
-														</span>
-													</div>
-													<div class="m-dropdown__body m-dropdown__body--paddingless">
-														<div class="m-dropdown__content">
-															<div class="m-scrollable" data-scrollable="false" data-max-height="380" data-mobile-max-height="200">
-																<div class="m-nav-grid m-nav-grid--skin-light">
-																	<div class="m-nav-grid__row">
-																		<a href="#" class="m-nav-grid__item">
-																			<i class="m-nav-grid__icon flaticon-file"></i>
-																			<span class="m-nav-grid__text">
-																				Generate Report
-																			</span>
-																		</a>
-																		<a href="#" class="m-nav-grid__item">
-																			<i class="m-nav-grid__icon flaticon-time"></i>
-																			<span class="m-nav-grid__text">
-																				Add New Event
-																			</span>
-																		</a>
-																	</div>
-																	<div class="m-nav-grid__row">
-																		<a href="#" class="m-nav-grid__item">
-																			<i class="m-nav-grid__icon flaticon-folder"></i>
-																			<span class="m-nav-grid__text">
-																				Create New Task
-																			</span>
-																		</a>
-																		<a href="#" class="m-nav-grid__item">
-																			<i class="m-nav-grid__icon flaticon-clipboard"></i>
-																			<span class="m-nav-grid__text">
-																				Completed Tasks
-																			</span>
-																		</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" data-dropdown-toggle="click">
-											<a href="#" class="m-nav__link m-dropdown__toggle">
 												<span class="m-topbar__userpic">
-													<img src="../../assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt=""/>
+													<img src="assets/css/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt=""/>
 												</span>
-												<span class="m-topbar__username m--hide">
-													Nick
+												<span class="m-nav__link-icon m-topbar__usericon  m--hide">
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-user-ok"></i>
+													</span>
 												</span>
 											</a>
 											<div class="m-dropdown__wrapper">
 												<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
 												<div class="m-dropdown__inner">
-													<div class="m-dropdown__header m--align-center" style="background: url(../../assets/app/media/img/misc/user_profile_bg.jpg); background-size: cover;">
-														<div class="m-card-user m-card-user--skin-dark">
+													<div class="m-dropdown__header m--align-center">
+														<div class="m-card-user m-card-user--skin-light">
 															<div class="m-card-user__pic">
-																<img src="../../assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless" alt=""/>
+																<img src="assets/css/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless" alt=""/>
 															</div>
 															<div class="m-card-user__details">
 																<span class="m-card-user__name m--font-weight-500">
-																	Mark Andre
+																	{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
 																</span>
 																<a href="" class="m-card-user__email m--font-weight-300 m-link">
-																	mark.andre@gmail.com
+																	{{ Auth::user()->email }}
 																</a>
 															</div>
 														</div>
@@ -1009,7 +647,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</span>
 																</li>
 																<li class="m-nav__item">
-																	<a href="../../header/profile.html" class="m-nav__link">
+																	<a href="profile.html" class="m-nav__link">
 																		<i class="m-nav__link-icon flaticon-profile-1"></i>
 																		<span class="m-nav__link-title">
 																			<span class="m-nav__link-wrap">
@@ -1026,15 +664,15 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</a>
 																</li>
 																<li class="m-nav__item">
-																	<a href="../../header/profile.html" class="m-nav__link">
+																	<a href="{{route('admin.billing')}}" class="m-nav__link">
 																		<i class="m-nav__link-icon flaticon-share"></i>
 																		<span class="m-nav__link-text">
-																			Activity
+																			Billing
 																		</span>
 																	</a>
 																</li>
 																<li class="m-nav__item">
-																	<a href="../../header/profile.html" class="m-nav__link">
+																	<a href="profile.html" class="m-nav__link">
 																		<i class="m-nav__link-icon flaticon-chat-1"></i>
 																		<span class="m-nav__link-text">
 																			Messages
@@ -1043,7 +681,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																</li>
 																<li class="m-nav__separator m-nav__separator--fit"></li>
 																<li class="m-nav__item">
-																	<a href="../../header/profile.html" class="m-nav__link">
+																	<a href="{{route('admin.faq')}}" class="m-nav__link">
 																		<i class="m-nav__link-icon flaticon-info"></i>
 																		<span class="m-nav__link-text">
 																			FAQ
@@ -1051,7 +689,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</a>
 																</li>
 																<li class="m-nav__item">
-																	<a href="../../header/profile.html" class="m-nav__link">
+																	<a href="profile.html" class="m-nav__link">
 																		<i class="m-nav__link-icon flaticon-lifebuoy"></i>
 																		<span class="m-nav__link-text">
 																			Support
@@ -1060,9 +698,11 @@ License: You must have a valid license purchased only from themeforest(the above
 																</li>
 																<li class="m-nav__separator m-nav__separator--fit"></li>
 																<li class="m-nav__item">
-																	<a href="../../snippets/pages/user/login-1.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+																	<a href="logout.php" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder" onclick="event.preventDefault();
+										 document.getElementById('logout-form').submit();">
 																		Logout
 																	</a>
+                                                                    
 																</li>
 															</ul>
 														</div>
@@ -1070,10 +710,12 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 											</div>
 										</li>
-										<li id="m_quick_sidebar_toggle" class="m-nav__item">
+										<li id="m_quick_sidebar_toggle" class="m-nav__item m-nav__item--info m-nav__item--qs">
 											<a href="#" class="m-nav__link m-dropdown__toggle">
-												<span class="m-nav__link-icon">
-													<i class="flaticon-grid-menu"></i>
+												<span class="m-nav__link-icon m-nav__link-icon-alt">
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-chat"></i>
+													</span>
 												</span>
 											</a>
 										</li>
@@ -1094,12 +736,12 @@ License: You must have a valid license purchased only from themeforest(the above
 				</button>
 				<div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark ">
 					<!-- BEGIN: Aside Menu -->
-	<div 
-		id="m_ver_menu" 
-		class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " 
-		data-menu-vertical="true"
-		 data-menu-scrollable="false" data-menu-dropdown-timeout="500"  
-		>
+					<div 
+						id="m_ver_menu" 
+						class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " 
+						data-menu-vertical="true"
+						data-menu-scrollable="false" data-menu-dropdown-timeout="500"  
+						>
 						<ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
 							<li class="m-menu__item " aria-haspopup="true" >
 								<a  href="../../index.html" class="m-menu__link ">
@@ -1107,7 +749,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<span class="m-menu__link-title">
 										<span class="m-menu__link-wrap">
 											<span class="m-menu__link-text">
-												Orders
+												Dashboard
 											</span>
 											<span class="m-menu__link-badge">
 												<span class="m-badge m-badge--danger">
@@ -1124,7 +766,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</h4>
 								<i class="m-menu__section-icon flaticon-more-v3"></i>
 							</li>
-							<li class="m-menu__item  m-menu__item--submenu m-menu__item--open m-menu__item--expanded" aria-haspopup="true"  data-menu-submenu-toggle="hover">
+							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
 								<a  href="#" class="m-menu__link m-menu__toggle">
 									<i class="m-menu__link-icon flaticon-layers"></i>
 									<span class="m-menu__link-text">
@@ -1308,7 +950,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												</ul>
 											</div>
 										</li>
-										<li class="m-menu__item  m-menu__item--active" aria-haspopup="true" >
+										<li class="m-menu__item " aria-haspopup="true" >
 											<a  href="../../components/base/accordions.html" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
@@ -2891,7 +2533,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</ul>
 								</div>
 							</li>
-							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
+							<li class="m-menu__item  m-menu__item--submenu m-menu__item--open m-menu__item--expanded" aria-haspopup="true"  data-menu-submenu-toggle="hover">
 								<a  href="#" class="m-menu__link m-menu__toggle">
 									<i class="m-menu__link-icon flaticon-exclamation"></i>
 									<span class="m-menu__link-text">
@@ -2909,8 +2551,8 @@ License: You must have a valid license purchased only from themeforest(the above
 												</span>
 											</span>
 										</li>
-										<li class="m-menu__item " aria-haspopup="true" >
-											<a  href="../../snippets/faq/faq-1.html" class="m-menu__link ">
+										<li class="m-menu__item  m-menu__item--active" aria-haspopup="true" >
+											<a  href="{{route('admin.faq')}}" class="m-menu__link ">
 												<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 													<span></span>
 												</i>
@@ -3096,7 +2738,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="d-flex align-items-center">
 							<div class="mr-auto">
 								<h3 class="m-subheader__title m-subheader__title--separator">
-									Accordions
+									Products
 								</h3>
 								<ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
 									<li class="m-nav__item m-nav__item--home">
@@ -3105,803 +2747,401 @@ License: You must have a valid license purchased only from themeforest(the above
 										</a>
 									</li>
 									<li class="m-nav__separator">
-										-
+										
 									</li>
 									<li class="m-nav__item">
-										<a href="" class="m-nav__link">
+										<a href="#" class="m-nav__link">
 											<span class="m-nav__link-text">
-												Base
+												
 											</span>
 										</a>
 									</li>
 									<li class="m-nav__separator">
-										-
+										
 									</li>
 									<li class="m-nav__item">
 										<a href="" class="m-nav__link">
 											<span class="m-nav__link-text">
-												Accordions
+												
 											</span>
 										</a>
 									</li>
 								</ul>
 							</div>
-							<div>
-								<div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" data-dropdown-toggle="hover" aria-expanded="true">
-									<a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
-										<i class="la la-plus m--hide"></i>
-										<i class="la la-ellipsis-h"></i>
-									</a>
-									<div class="m-dropdown__wrapper">
-										<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-										<div class="m-dropdown__inner">
-											<div class="m-dropdown__body">
-												<div class="m-dropdown__content">
-													<ul class="m-nav">
-														<li class="m-nav__section m-nav__section--first m--hide">
-															<span class="m-nav__section-text">
-																Quick Actions
-															</span>
-														</li>
-														<li class="m-nav__item">
-															<a href="" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-share"></i>
-																<span class="m-nav__link-text">
-																	Activity
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a href="" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-chat-1"></i>
-																<span class="m-nav__link-text">
-																	Messages
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a href="" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-info"></i>
-																<span class="m-nav__link-text">
-																	FAQ
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__item">
-															<a href="" class="m-nav__link">
-																<i class="m-nav__link-icon flaticon-lifebuoy"></i>
-																<span class="m-nav__link-text">
-																	Support
-																</span>
-															</a>
-														</li>
-														<li class="m-nav__separator m-nav__separator--fit"></li>
-														<li class="m-nav__item">
-															<a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
-																Submit
-															</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 					<!-- END: Subheader -->
 					<div class="m-content">
-						<div class="row">
-							<div class="col-lg-6">
-								<!--begin::Portlet-->
-								<div class="m-portlet m-portlet--full-height">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Default Accordions
-												</h3>
-											</div>
-										</div>
-									</div>
-									<div class="m-portlet__body">
-										<!--begin::Section-->
-										<div class="m-accordion m-accordion--default" id="m_accordion_1" role="tablist">
-											<!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed"  role="tab" id="m_accordion_1_item_1_head" data-toggle="collapse" href="#m_accordion_1_item_1_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa flaticon-user-ok"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry's standard
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_1_item_1_body" class=" " role="tabpanel" aria-labelledby="m_accordion_1_item_1_head" data-parent="#m_accordion_1">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_1_item_2_head" data-toggle="collapse" href="#m_accordion_1_item_2_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-placeholder"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Remaining essentially unchanged
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_1_item_2_body" class=" " role="tabpanel" aria-labelledby="m_accordion_1_item_2_head" data-parent="#m_accordion_1">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_1_item_3_head" data-toggle="collapse" href="#m_accordion_1_item_3_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-alert-2"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Galley of type and scrambled
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_1_item_3_body" class=" " role="tabpanel" aria-labelledby="m_accordion_1_item_3_head" data-parent="#m_accordion_1">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item-->
-										</div>
-										<!--end::Section-->
+						<!--begin::Portlet-->
+						<div class="m-portlet m-portlet--space">
+							<!-- <div class="m-portlet__head">
+								<div class="m-portlet__head-caption">
+									<div class="m-portlet__head-title">
+										<h3 class="m-portlet__head-text">
+											FAQ Example
+										</h3>
 									</div>
 								</div>
-								<!--end::Portlet-->
-							</div>
-							<div class="col-lg-6">
-								<!--begin::Portlet-->
-								<div class="m-portlet m-portlet--full-height">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Bordered Accordions
-												</h3>
+								<div class="m-portlet__head-tools">
+									<ul class="m-portlet__nav">
+										<li class="m-portlet__nav-item">
+											<a href="#" class="m-portlet__nav-link m-btn--pill">
+												<div class="m-input-icon m-input-icon--right">
+													<input type="text" class="form-control form-control-lg m-input m-input--solid m-input--pill" placeholder="Search FAQ...">
+													<span class="m-input-icon__icon m-input-icon__icon--right">
+														<span>
+															<i class="la la-search m--font-brand"></i>
+														</span>
+													</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div> -->
+							<div class="m-portlet__body">
+								<div class="row">
+									<div class="">
+										<div class="m-tabs-content" id="m_sections">
+											<!--begin::Section 1-->
+											<div class="m-tabs-content__item" id="m_section_1">
+												<h4 class="m--font-bold m--margin-top-15 m--margin-bottom-20">
+													General Instruction
+												</h4>
+												<div class="m-accordion m-accordion--section m-accordion--padding-lg" id="m_section_1_content">
+													<!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed-" role="tab" id="m_section_1_content_1_head" data-toggle="collapse" href="#m_section_1_content_1_body" >
+															<span class="m-accordion__item-title">
+																Lorem Ipsum has been the industry
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse show" id="m_section_1_content_1_body" role="tabpanel" aria-labelledby="m_section_1_content_1_head" data-parent="#m_section_1_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+																</p>
+																<p>
+																	Type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->    
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_1_content_2_head" data-toggle="collapse" href="#m_section_1_content_2_body" >
+															<span class="m-accordion__item-title">
+																It has survived not only five centuries
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_1_content_2_body" role="tabpanel" aria-labelledby="m_section_1_content_2_head" data-parent="#m_section_1_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever
+																</p>
+																<p>
+																	Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  nto  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha.
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->   
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_1_content_3_head" data-toggle="collapse" href="#m_section_1_content_3_body" >
+															<span class="m-accordion__item-title">
+																Type and scrambled it to make a type specimen book
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_1_content_3_body" role="tabpanel" aria-labelledby="m_section_1_content_3_head" data-parent="#m_section_1_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->
+												</div>
 											</div>
+											<!--begin::Section 1-->  
+                    <!--begin::Section 2-->
+											<div class="m-tabs-content__item m-tabs-content__item--active" id="m_section_2">
+												<h4 class="m--font-bold m--margin-top-15 m--margin-bottom-20">
+													Products
+												</h4>
+												<div class="m-accordion m-accordion--section m-accordion--padding-lg" id="m_section_2_content">
+													<!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed-" role="tab" id="m_section_2_content_1_head" data-toggle="collapse" href="#m_section_2_content_1_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-gift"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																Lorem Ipsum has been the industry
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse show" id="m_section_2_content_1_body" role="tabpanel" aria-labelledby="m_section_2_content_1_head" data-parent="#m_section_2_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+																</p>
+																<p>
+																	Type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->    
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_2_content_2_head" data-toggle="collapse" href="#m_section_2_content_2_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-calendar-3"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																It has survived not only five centuries
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_2_content_2_body" role="tabpanel" aria-labelledby="m_section_2_content_2_head" data-parent="#m_section_2_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever
+																</p>
+																<p>
+																	Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  nto  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha.
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->   
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_2_content_3_head" data-toggle="collapse" href="#m_section_2_content_3_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-security"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																Type and scrambled it to make a type specimen book
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_2_content_3_body" role="tabpanel" aria-labelledby="m_section_2_content_3_head" data-parent="#m_section_2_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->
+												</div>
+											</div>
+											<!--begin::Section 2-->
+                    <!--begin::Section 3-->
+											<div class="m-tabs-content__item" id="m_section_3">
+												<h4 class="m--font-bold m--margin-top-15 m--margin-bottom-20">
+													User Policy
+												</h4>
+												<div class="m-accordion m-accordion--bordered" id="m_section_3_content">
+													<!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head" role="tab" id="m_section_3_content_1_head" data-toggle="collapse" href="#m_section_3_content_1_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-gift"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																Lorem Ipsum has been the industry
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse show" id="m_section_3_content_1_body" role="tabpanel" aria-labelledby="m_section_3_content_1_head" data-parent="#m_section_3_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+																</p>
+																<p>
+																	Type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->    
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_3_content_2_head" data-toggle="collapse" href="#m_section_3_content_2_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-calendar-3"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																It has survived not only five centuries
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_3_content_2_body" role="tabpanel" aria-labelledby="m_section_3_content_2_head" data-parent="#m_section_3_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever
+																</p>
+																<p>
+																	Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  nto  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha.
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->   
+                            <!--begin::Item-->
+													<div class="m-accordion__item">
+														<div class="m-accordion__item-head collapsed" role="tab" id="m_section_3_content_3_head" data-toggle="collapse" href="#m_section_3_content_3_body" >
+															<span class="m-accordion__item-icon">
+																<i class="flaticon-security"></i>
+															</span>
+															<span class="m-accordion__item-title">
+																Type and scrambled it to make a type specimen book
+															</span>
+															<span class="m-accordion__item-mode"></span>
+														</div>
+														<div class="m-accordion__item-body collapse" id="m_section_3_content_3_body" role="tabpanel" aria-labelledby="m_section_3_content_3_head" data-parent="#m_section_3_content">
+															<div class="m-accordion__item-content">
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+																</p>
+																<p>
+																	Lorem Ipsum has been the industry's
+																	<a href="#" class="m-link m--font-boldest">
+																		Example boldest link
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end::Item-->
+												</div>
+											</div>
+											<!--begin::Section 3-->
 										</div>
-									</div>
-									<div class="m-portlet__body">
-										<!--begin::Section-->
-										<div class="m-accordion m-accordion--bordered" id="m_accordion_2" role="tablist">
-											<!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed"  role="tab" id="m_accordion_2_item_1_head" data-toggle="collapse" href="#m_accordion_2_item_1_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa flaticon-user-ok"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														When an unknown printer took
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_2_item_1_body" class=" " role="tabpanel" aria-labelledby="m_accordion_2_item_1_head" data-parent="#m_accordion_2">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_2_item_2_head" data-toggle="collapse" href="#m_accordion_2_item_2_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-placeholder"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Ipsum has been the industry's standard
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_2_item_2_body" class=" " role="tabpanel" aria-labelledby="m_accordion_2_item_2_head" data-parent="#m_accordion_2">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_2_item_3_head" data-toggle="collapse" href="#m_accordion_2_item_3_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-alert-2"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Standard dummy text ever since the 1500s
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_2_item_3_body" class=" " role="tabpanel" aria-labelledby="m_accordion_2_item_3_head" data-parent="#m_accordion_2">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item-->
-										</div>
-										<!--end::Section-->
 									</div>
 								</div>
-								<!--end::Portlet-->
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-6">
-								<!--begin::Portlet-->
-								<div class="m-portlet m-portlet--full-height">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Borderless Solid Background Accordions
-												</h3>
-											</div>
-										</div>
-									</div>
-									<div class="m-portlet__body">
-										<!--begin::Section-->
-										<div class="m-accordion m-accordion--default m-accordion--solid" id="m_accordion_3" role="tablist">
-											<!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed"  role="tab" id="m_accordion_3_item_1_head" data-toggle="collapse" href="#m_accordion_3_item_1_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa flaticon-user-ok"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_3_item_1_body" class=" " role="tabpanel" aria-labelledby="m_accordion_3_item_1_head" data-parent="#m_accordion_3">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_3_item_2_head" data-toggle="collapse" href="#m_accordion_3_item_2_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-placeholder"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Standard dummy text ever since
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_3_item_2_body" class=" " role="tabpanel" aria-labelledby="m_accordion_3_item_2_head" data-parent="#m_accordion_3">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_3_item_3_head" data-toggle="collapse" href="#m_accordion_3_item_3_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-alert-2"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														The leap into electronic typesetting
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_3_item_3_body" class=" " role="tabpanel" aria-labelledby="m_accordion_3_item_3_head" data-parent="#m_accordion_3">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item-->
-										</div>
-										<!--end::Section-->
-									</div>
-								</div>
-								<!--end::Portlet-->
-							</div>
-							<div class="col-lg-6">
-								<!--begin::Portlet-->
-								<div class="m-portlet m-portlet--full-height">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Borderless & Solid Background Accordions
-												</h3>
-											</div>
-										</div>
-									</div>
-									<div class="m-portlet__body">
-										<!--begin::Section-->
-										<div class="m-accordion m-accordion--bordered m-accordion--solid" id="m_accordion_4" role="tablist">
-											<!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed"  role="tab" id="m_accordion_4_item_1_head" data-toggle="collapse" href="#m_accordion_4_item_1_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa flaticon-user-ok"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_4_item_1_body" class=" " role="tabpanel" aria-labelledby="m_accordion_4_item_1_head" data-parent="#m_accordion_4">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_4_item_2_head" data-toggle="collapse" href="#m_accordion_4_item_2_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-placeholder"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Leap into electronic typesetting
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_4_item_2_body" class=" " role="tabpanel" aria-labelledby="m_accordion_4_item_2_head" data-parent="#m_accordion_4">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_4_item_3_head" data-toggle="collapse" href="#m_accordion_4_item_3_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-alert-2"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Letraset sheets containing
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_4_item_3_body" class=" " role="tabpanel" aria-labelledby="m_accordion_4_item_3_head" data-parent="#m_accordion_4">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item-->
-										</div>
-										<!--end::Section-->
-									</div>
-								</div>
-								<!--end::Portlet-->
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-6">
-								<!--begin::Portlet-->
-								<div class="m-portlet m-portlet--full-height">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Default State Accordion Examples
-												</h3>
-											</div>
-										</div>
-									</div>
-									<div class="m-portlet__body">
-										<!--begin::Section-->
-										<div class="m-accordion m-accordion--default m-accordion--toggle-arrow" id="m_accordion_5" role="tablist">
-											<!--begin::Item-->
-											<div class="m-accordion__item m-accordion__item--danger">
-												<div class="m-accordion__item-head collapsed" srole="tab" id="m_accordion_5_item_1_head" data-toggle="collapse" href="#m_accordion_5_item_1_body" aria-expanded="  false">
-													<span class="m-accordion__item-icon">
-														<i class="fa flaticon-user-ok"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														It has been the industry since 2013
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_5_item_1_body" class=" " role="tabpanel" aria-labelledby="m_accordion_5_item_1_head" data-parent="#m_accordion_5">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item m-accordion__item--info">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_5_item_2_head" data-toggle="collapse" href="#m_accordion_5_item_2_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-placeholder"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_5_item_2_body" class=" " role="tabpanel" aria-labelledby="m_accordion_5_item_2_head" data-parent="#m_accordion_5">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item m-accordion__item--brand">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_5_item_3_head" data-toggle="collapse" href="#m_accordion_5_item_3_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-alert-2"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_5_item_3_body" class=" " role="tabpanel" aria-labelledby="m_accordion_5_item_3_head" data-parent="#m_accordion_5">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item-->
-										</div>
-										<!--end::Section-->
-									</div>
-								</div>
-								<!--end::Portlet-->
-							</div>
-							<div class="col-lg-6">
-								<!--begin::Portlet-->
-								<div class="m-portlet m-portlet--full-height">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Bordered State Accordion Examples
-												</h3>
-											</div>
-										</div>
-									</div>
-									<div class="m-portlet__body">
-										<!--begin::Section-->
-										<div class="m-accordion m-accordion--bordered" id="m_accordion_6" role="tablist">
-											<!--begin::Item-->
-											<div class="m-accordion__item m-accordion__item--focus">
-												<div class="m-accordion__item-head collapsed"  role="tab" id="m_accordion_6_item_1_head" data-toggle="collapse" href="#m_accordion_6_item_1_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa flaticon-user-ok"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_6_item_1_body" class=" " role="tabpanel" aria-labelledby="m_accordion_6_item_1_head" data-parent="#m_accordion_6">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item m-accordion__item--success">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_6_item_2_head" data-toggle="collapse" href="#m_accordion_6_item_2_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-placeholder"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Remaining essentially unchanged
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_6_item_2_body" class=" " role="tabpanel" aria-labelledby="m_accordion_6_item_2_head" data-parent="#m_accordion_6">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item m-accordion__item--primary">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_8_item_3_head" data-toggle="collapse" href="#m_accordion_6_item_3_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-alert-2"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_6_item_3_body" class=" " role="tabpanel" aria-labelledby="m_accordion_6_item_3_head" data-parent="#m_accordion_6">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item-->
-										</div>
-										<!--end::Section-->
-									</div>
-								</div>
-								<!--end::Portlet-->
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-lg-6">
-								<!--begin::Portlet-->
-								<div class="m-portlet m-portlet--full-height">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Default Solid Background Accordions
-												</h3>
-											</div>
-										</div>
-									</div>
-									<div class="m-portlet__body">
-										<!--begin::Section-->
-										<div class="m-accordion m-accordion--default m-accordion--solid m-accordion--section  m-accordion--toggle-arrow" id="m_accordion_7" role="tablist">
-											<!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_7_item_1_head" data-toggle="collapse" href="#m_accordion_7_item_1_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa flaticon-user-ok"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_7_item_1_body" role="tabpanel" aria-labelledby="m_accordion_7_item_1_head" data-parent="#m_accordion_7">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's
-															<a href="#" class="m-link m--font-boldest">
-																Example boldest link
-															</a>
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_7_item_2_head" data-toggle="collapse" href="#m_accordion_7_item_2_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-placeholder"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Galley of type and scrambled
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_7_item_2_body" role="tabpanel" aria-labelledby="m_accordion_7_item_2_head" data-parent="#m_accordion_7">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's
-															<a href="#" class="m-link m--font-boldest">
-																Example boldest link
-															</a>
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_7_item_3_head" data-toggle="collapse" href="#m_accordion_7_item_3_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-alert-2"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														It has survived not only five centuries
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_7_item_3_body" role="tabpanel" aria-labelledby="m_accordion_7_item_3_head" data-parent="#m_accordion_7">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's
-															<a href="#" class="m-link m--font-boldest">
-																Example boldest link
-															</a>
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item-->
-										</div>
-										<!--end::Section-->
-									</div>
-								</div>
-								<!--end::Portlet-->
-							</div>
-							<div class="col-lg-6">
-								<!--begin::Portlet-->
-								<div class="m-portlet m-portlet--full-height">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Default Solid Background Accordions
-												</h3>
-											</div>
-										</div>
-									</div>
-									<div class="m-portlet__body">
-										<!--begin::Section-->
-										<div class="m-accordion m-accordion--default m-accordion--solid m-accordion--section m-accordion--padding-lg" id="m_accordion_8" role="tablist">
-											<!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_8_item_1_head" data-toggle="collapse" href="#m_accordion_8_item_1_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa flaticon-user-ok"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_8_item_1_body" role="tabpanel" aria-labelledby="m_accordion_8_item_1_head" data-parent="#m_accordion_8">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's
-															<a href="#" class="m-link m--font-boldest">
-																Example boldest link
-															</a>
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_8_item_2_head" data-toggle="collapse" href="#m_accordion_8_item_2_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-placeholder"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Lorem Ipsum has been the industry
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_8_item_2_body" role="tabpanel" aria-labelledby="m_accordion_8_item_2_head" data-parent="#m_accordion_8">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's s0tandard dummy text ever since the 150s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's
-															<a href="#" class="m-link m--font-boldest">
-																Example boldest link
-															</a>
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item--> 
-                    <!--begin::Item-->
-											<div class="m-accordion__item">
-												<div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_8_item_3_head" data-toggle="collapse" href="#m_accordion_8_item_3_body" aria-expanded="    false">
-													<span class="m-accordion__item-icon">
-														<i class="fa  flaticon-alert-2"></i>
-													</span>
-													<span class="m-accordion__item-title">
-														Unknown printer took a galley of type
-													</span>
-													<span class="m-accordion__item-mode"></span>
-												</div>
-												<div class="m-accordion__item-body collapse" id="m_accordion_8_item_3_body" role="tabpanel" aria-labelledby="m_accordion_8_item_3_head" data-parent="#m_accordion_8">
-													<div class="m-accordion__item-content">
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-														</p>
-														<p>
-															Lorem Ipsum has been the industry's
-															<a href="#" class="m-link m--font-boldest">
-																Example boldest link
-															</a>
-														</p>
-													</div>
-												</div>
-											</div>
-											<!--end::Item-->
-										</div>
-										<!--end::Section-->
-									</div>
-								</div>
-								<!--end::Portlet-->
-							</div>
-						</div>
+						<!--end::Portlet-->
 					</div>
 				</div>
 			</div>
@@ -3921,35 +3161,28 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">
 							<ul class="m-footer__nav m-nav m-nav--inline m--pull-right">
 								<li class="m-nav__item">
-									<a href="#" class="m-nav__link">
+									<a href="{{route('admin.about')}}" class="m-nav__link">
 										<span class="m-nav__link-text">
 											About
 										</span>
 									</a>
 								</li>
 								<li class="m-nav__item">
-									<a href="#"  class="m-nav__link">
+									<a href="{{route('admin.privacy')}}"  class="m-nav__link">
 										<span class="m-nav__link-text">
 											Privacy
 										</span>
 									</a>
 								</li>
 								<li class="m-nav__item">
-									<a href="#" class="m-nav__link">
+									<a href="{{route('admin.terms')}}" class="m-nav__link">
 										<span class="m-nav__link-text">
 											T&C
 										</span>
 									</a>
 								</li>
-								<li class="m-nav__item">
-									<a href="#" class="m-nav__link">
-										<span class="m-nav__link-text">
-											Purchase
-										</span>
-									</a>
-								</li>
-								<li class="m-nav__item m-nav__item">
-									<a href="#" class="m-nav__link" data-toggle="m-tooltip" title="Support Center" data-placement="left">
+								<li class="m-nav__item m-nav__item--last">
+									<a href="{{route('admin.faq')}}" class="m-nav__link" data-toggle="m-tooltip" title="Support Center" data-placement="left">
 										<i class="m-nav__link-icon flaticon-info m--icon-font-size-lg3"></i>
 									</a>
 								</li>
@@ -3991,7 +3224,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="m-messenger__wrapper">
 									<div class="m-messenger__message m-messenger__message--in">
 										<div class="m-messenger__message-pic">
-											<img src="../../assets/app/media/img//users/user3.jpg" alt=""/>
+											<img src="components/assets/app/media/img//users/user3.jpg" alt=""/>
 										</div>
 										<div class="m-messenger__message-body">
 											<div class="m-messenger__message-arrow"></div>
@@ -4021,7 +3254,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="m-messenger__wrapper">
 									<div class="m-messenger__message m-messenger__message--in">
 										<div class="m-messenger__message-pic">
-											<img src="../../assets/app/media/img//users/user3.jpg" alt=""/>
+											<img src="components/assets/app/media/img//users/user3.jpg" alt=""/>
 										</div>
 										<div class="m-messenger__message-body">
 											<div class="m-messenger__message-arrow"></div>
@@ -4054,7 +3287,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="m-messenger__wrapper">
 									<div class="m-messenger__message m-messenger__message--in">
 										<div class="m-messenger__message-pic">
-											<img src="../../assets/app/media/img//users/user3.jpg"  alt=""/>
+											<img src="components/assets/app/media/img//users/user3.jpg"  alt=""/>
 										</div>
 										<div class="m-messenger__message-body">
 											<div class="m-messenger__message-arrow"></div>
@@ -4131,7 +3364,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="m-messenger__wrapper">
 									<div class="m-messenger__message m-messenger__message--in">
 										<div class="m-messenger__message-pic">
-											<img src="../../assets/app/media/img//users/user3.jpg"  alt=""/>
+											<img src="components/assets/app/media/img//users/user3.jpg"  alt=""/>
 										</div>
 										<div class="m-messenger__message-body">
 											<div class="m-messenger__message-arrow"></div>
@@ -4598,11 +3831,4 @@ License: You must have a valid license purchased only from themeforest(the above
 				</a>
 			</li>
 		</ul>
-		<!-- begin::Quick Nav -->	
-    	<!--begin::Base Scripts -->
-		<script src="../../assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
-		<script src="../../assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
-		<!--end::Base Scripts -->
-	</body>
-	<!-- end::Body -->
-</html>
+@endsection

@@ -22,6 +22,8 @@ Route::group(['namespace' => 'Admin', 'prefix' => '', 'middleware' => 'auth'], f
     Route::get('/faq', ['as' => 'admin.faq', 'uses' => 'PagesController@getFAQ']);
     Route::get('/about', ['as' => 'admin.about', 'uses' => 'PagesController@getAbout']);
     Route::get('/terms', ['as' => 'admin.terms', 'uses' => 'PagesController@getTerms']);
+    Route::get('/orders', ['as' => 'admin.orders', 'uses' => 'PagesController@getOrders']);
+    Route::get('/products', ['as' => 'admin.products', 'uses' => 'PagesController@getProducts']);
     Route::get('/privacy', ['as' => 'admin.privacy', 'uses' => 'PagesController@getPrivacy']);
     Route::get('/billing', ['as' => 'admin.billing', 'uses' => 'PagesController@getBilling']);
     //Route::get('/api/v1', ['as' => 'admin.api.v1', 'uses' => 'PagesController@getAPIV1']);

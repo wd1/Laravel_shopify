@@ -47,6 +47,16 @@ class PagesController extends Controller
         return view('admin.pages.terms');
     }
 
+    public function getOrders()
+    {
+        return view('admin.pages.orders');
+    }
+
+    public function getProducts()
+    {
+        return view('admin.pages.products');
+    }
+
     public function getBilling()
     {
         return view('admin.pages.billing');
